@@ -95,7 +95,7 @@ Once you have your folder set up, you can open the explorer which is the left si
 
 Open up your `main.py` file and type the following code:
 
-```
+```python
 print("Hello, world!")
 ```
 
@@ -103,25 +103,25 @@ To run this code, you have a few options. The first option is to click on the ru
 
 Another option is to open a terminal and manually run the program using:
 
-```
+```python
 python main.py
 ```
 
 You must run this command from the folder where `main.py` is saved. For example, if `main.py` is inside a folder called `python-projects`, first use the following in the terminal:
 
-```
+```python
 cd python-projects
 ```
 
 Then run:
 
-```
+```python
 python main.py
 ```
 
 In some environments, especially on macOS and Linux systems where Python 2 and Python 3 are both installed, you may need to use `python3` instead of `python`. This is common when the `python` command either does not exist or points to an older version of Python.
 
-```
+```python
 python3 main.py
 ```
 
@@ -141,7 +141,7 @@ Open up a terminal app and type in `python` and press `Enter`. This will start a
 
 When you start a new session, you might see this type of output initially:
 
-```
+```python
 Python 3.12.2 (main, Mar 21 2024, 22:48:26) [Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -149,20 +149,20 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 The `>>>` symbol means Python is waiting for you to type a command. Try printing `"Hello, world!"` to the terminal:
 
-```
+```python
 print("Hello, world!")
 ```
 
 You should see the text appear like this:
 
-```
+```python
 >>> print("Hello, world!")
 Hello, world!
 ```
 
 After the text is printed, Python goes back to the following:
 
-```
+```python
 >>>
 ```
 
@@ -172,13 +172,13 @@ The Python interpreter is following what is known as the Read, Evaluate, Print, 
 
 What happens if you try to type in an invalid command like this?
 
-```
+```python
 >>> something random
 ```
 
 Well, the Python interpreter will still follow the same REPL process. In this case, you will get an error message:
 
-```
+```python
 >>> something random
   File "<stdin>", line 1
     something random
@@ -209,19 +209,19 @@ Python in Your Local Environment
 
 Another option is to open a terminal and manually run the program. Here is an example to run a program called `main.py`:
 
-```
+```python
 python main.py
 ```
 
 You must run this command from the folder where `main.py` is saved. For example, if `main.py` is inside a folder called `python-projects`, first use the following in the terminal:
 
-```
+```python
 cd python-projects
 ```
 
 Then run:
 
-```
+```python
 python main.py
 ```
 
@@ -230,20 +230,20 @@ Using the Python Interactive Shell
 
 * **Definition**: An interactive shell is a program that lets you type commands one at a time and see the results. Open up a terminal app and type in `python` and press `Enter`. This will start a Python interactive shell. The `>>>` symbol means Python is waiting for you to type a command. Try printing `"Hello, world!"` to the terminal:
 
-```
+```python
 print("Hello, world!")
 ```
 
 You should see the text appear like this:
 
-```
+```python
 >>> print("Hello, world!")
 Hello, world!
 ```
 
 After the text is printed, Python goes back to the following:
 
-```
+```python
 >>>
 ```
 
@@ -261,7 +261,7 @@ In Python, variables are like a labelled box for storing and referencing data of
 
 In Python, you just write the name of the variable on the left, followed by the assignment operator, and the value you want to assign the variable on the right. Here's an example of how to declare `name` and `age` variables:
 
-```
+```python
 name = 'John Doe'
 age = 25
 ```
@@ -277,7 +277,7 @@ When naming variables in Python, there are some important rules you should keep 
 
 If you break any of those rules, your Python program will throw a `SyntaxError`:
 
-```
+```python
     5variable_name = 5
      ^
 SyntaxError: invalid syntax
@@ -287,13 +287,13 @@ Now let's go over some common naming conventions for variables in Python.
 
 First, variables names should be in lowercase, with separate words separated by an underscore. This is called snake case:
 
-```
+```python
 my_variable_name = 'freeCodeCamp'
 ```
 
 Next, you should use descriptive names for variables. For example, if you want to save a user's age as a variable, `user_age` is better than `age` or an abbreviation like `ua`:
 
-```
+```python
 user_age = 30
 ```
 
@@ -301,7 +301,7 @@ This way, you can easily communicate the purpose of a variable to other team mem
 
 Another convention is to avoid using single-letter variable names. This is very common in Python, but should be avoided because variable names with a single letter communicate no purpose or meaning:
 
-```
+```python
 x = 56 # What do you mean by x?
 ```
 
@@ -309,13 +309,13 @@ The pound symbol (`#`) and the text that follows in the example above is called 
 
 In Python, comments start with a pound symbol (`#`), and the language ignores everything after the `#` symbol on that line:
 
-```
+```python
 # This is a single-line comment
 ```
 
 Multi-line comments can be created by using consecutive single-line comments:
 
-```
+```python
 # This is a
 # multi-line
 # comment
@@ -335,7 +335,7 @@ One of the first things you do when you're learning any programming language is 
 
 To do that, you just need to put the string `Hello world!` in between the opening and closing parentheses you use to call the `print` function:
 
-```
+```python
 print('Hello world!') # Hello world!
 ```
 
@@ -343,7 +343,7 @@ You will learn more about strings and functions in Python in future lessons. For
 
 In the `print('Hello world!')` example, the string `'Hello world!'` is an **argument** passed to the `print` function. You can also use the `print` function to show multiple values, or arguments, at once by separating them with commas. For example:
 
-```
+```python
 print('My favorite colors are', 'blue', 'green', 'red')
 
 # Output: My favorite colors are blue green red
@@ -361,14 +361,14 @@ Python is a dynamically-typed language like JavaScript, meaning you don't need t
 
 Here are some examples:
 
-```
+```python
 name = 'John Doe' # Python knows this is a string
 age = 25 # Python knows this is an integer
 ```
 
 This is in contrast to some statically-typed languages like C#, Java, and C++, where you have to declare types with variables, like this:
 
-```
+```python
 string name = 'John Doe'
 int age = 25
 ```
@@ -390,70 +390,70 @@ Here are the most common data types you'll use in Python:
 
 * Integer: A whole number without decimals, for example, `10` or `-5`.
 
-```
+```python
 my_integer_var = 10
 print('Integer:', my_integer_var) # Integer: 10
 ```
 
 * Float: A number with a decimal point, like `4.41` or `-0.4`.
 
-```
+```python
 my_float_var = 4.50
 print('Float:', my_float_var) # Float: 4.5
 ```
 
 * String: A sequence of characters enclosed in single or double quotation marks like `'Hello world!'`.
 
-```
+```python
 my_string_var = 'hello'
 print('String:', my_string_var) # String: hello
 ```
 
 * Boolean: A true or false type, written as `True` or `False`.
 
-```
+```python
 my_boolean_var = True
 print('Boolean:', my_boolean_var) # Boolean: True
 ```
 
 * Set: An unordered collection of unique elements, like `{0.5, 4, 'apple'}`.
 
-```
+```python
 my_set_var = {7, 'hello', 8.5}
 print('Set:', my_set_var) # Set: {7, 'hello', 8.5}
 ```
 
 * Dictionary: A collection of key-value pairs enclosed in curly braces, like `{'name': 'John Doe', 'age': 28}`.
 
-```
+```python
 my_dictionary_var = {'name': 'Alice', 'age': 25}
 print('Dictionary:', my_dictionary_var) # Dictionary: {'name': 'Alice', 'age': 25}
 ```
 
 * Tuple: An immutable ordered collection, enclosed in parentheses, like `('apple', 4.5, 7)`.
 
-```
+```python
 my_tuple_var = (7, 'hello', 8.5)
 print('Tuple:', my_tuple_var) # Tuple: (7, 'hello', 8.5)
 ```
 
 * Range: A sequence of numbers, often used in loops, for example, `range(5)`.
 
-```
+```python
 my_range_var = range(5)
 print('Range:', my_range_var) # Range: range(0, 5)
 ```
 
 * List: An ordered collection of elements that supports different data types.
 
-```
+```python
 my_list = [22, 'Hello world', 3.14, True]
 print(my_list) # [22, 'Hello world', 3.14, True]
 ```
 
 * None: A special value that represents the absence of a value.
 
-```
+```python
 my_none_var = None
 print('None:', my_none_var) # None: None
 ```
@@ -468,13 +468,13 @@ In the prior lesson, you learned about common data types in Python including the
 
 Here is an example variable:
 
-```
+```python
 developer = 'Devin'
 ```
 
 To see what type `developer` is, you can use the `type()` function like this:
 
-```
+```python
 developer = 'Devin'
 
 print(type(developer)) # <class 'str'>
@@ -484,7 +484,7 @@ The output of `<class 'str'>` means that `developer` is a string type.
 
 If you fail to provide any arguments to the `type()` function, then you will receive the following error message:
 
-```
+```python
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: type() takes 1 or 3 arguments
@@ -492,7 +492,7 @@ TypeError: type() takes 1 or 3 arguments
 
 Here are all of the data types you have learned so far along with their types in the terminal:
 
-```
+```python
 my_integer_var = 10
 print(type(my_integer_var))  # <class 'int'>
 
@@ -528,13 +528,13 @@ There will be times in your program where you will need to verify that a particu
 
 Here is an example variable with a string assigned to it:
 
-```
+```python
 account_balance = '12'
 ```
 
 If you try to do mathematical expressions like division using the `account_balance` variable, then you will receive an error message.
 
-```
+```python
 account_balance = '12'
 
 account_balance / 2
@@ -546,7 +546,7 @@ account_balance / 2
 
 To see if `account_balance` is an integer, you can check using the `isinstance()` function like this:
 
-```
+```python
 account_balance = '12'
 
 isinstance(account_balance, int) # False
@@ -558,7 +558,7 @@ The `isinstance()` function also allows you to check for multiple types at once.
 
 Here is an example checking if `account_balance` is an `int` or `float`:
 
-```
+```python
 account_balance = 12
 isinstance(account_balance, (int, float)) # True
 ```
@@ -577,7 +577,7 @@ Let's look at what integers and floats are, how to perform arithmetic calculatio
 
 Integers are whole numbers without decimal points, either positive or negative:
 
-```
+```python
 my_int_1 = 56
 my_int_2 = -4
 
@@ -587,7 +587,7 @@ print(type(my_int_2)) # <class 'int'>
 
 Here's how to perform an addition operation with integers:
 
-```
+```python
 my_int_1 = 56
 my_int_2 = 12
 
@@ -597,7 +597,7 @@ print('Integer Addition:', sum_ints) # Integer Addition: 68
 
 Here's how to perform a subtraction with integers:
 
-```
+```python
 my_int_1 = 56
 my_int_2 = 12
 
@@ -608,7 +608,7 @@ print('Integer Subtraction:', diff_ints) # Integer Subtraction: 44
 
 Here's how to perform a multiplication operation with integers:
 
-```
+```python
 my_int_1 = 12
 my_int_2 = 4
 
@@ -619,7 +619,7 @@ print('Integer Multiplication:', product_ints) # Integer Multiplication: 48
 
 And here's how to perform a division operation with integers:
 
-```
+```python
 my_int_1 = 56
 my_int_2 = 12
 
@@ -630,7 +630,7 @@ print('Division:', div_ints) # Division: 4.666666666666667
 
 Floats are positive or negative numbers with decimal points, like `3.14`, `-0.5`, or `0.0`.
 
-```
+```python
 my_float_1 = -12.0
 my_float_2 = 4.9
 
@@ -640,7 +640,7 @@ print(type(my_float_2)) # <class 'float'>
 
 Here's an addition operation with floats:
 
-```
+```python
 my_float_1 = 5.4
 my_float_2 = 12.0
 
@@ -650,7 +650,7 @@ print('Float Addition:', float_addition) # Float Addition: 17.4
 
 Here's a subtraction operation with floats:
 
-```
+```python
 my_float_1 = 5.4
 my_float_2 = 12.0
 
@@ -660,7 +660,7 @@ print('Float Subtraction:', float_subtraction) # Float Subtraction: 6.6
 
 Here's a multiplication operation with floats:
 
-```
+```python
 my_float_1 = 5.4
 my_float_2 = 12.0
 
@@ -670,7 +670,7 @@ print('Float Multiplication:', float_multiplication) # Float Multiplication: 64.
 
 And here's a division operation with floats:
 
-```
+```python
 my_float_1 = 5.4
 my_float_2 = 12.0
 
@@ -680,7 +680,7 @@ print('Float Division:', float_division) # Float Division: 2.222222222222222
 
 If you add an integer and a float, the result is automatically converted to a float:
 
-```
+```python
 my_int = 56
 my_float = 5.4
 
@@ -696,7 +696,7 @@ You can also perform more complex arithmetic calculations such as getting the re
 
 The modulo operator (`%`) returns the remainder when the value on the left is divided by the value on the right:
 
-```
+```python
 my_int_1 = 56
 my_int_2 = 12
 
@@ -712,7 +712,7 @@ print('Float Modulo:', mod_floats) # Float Modulo: 1.1999999999999993
 
 Floor division divides two numbers and returns the greatest integer less than or equal to the result. This is done with the double forward slash operator (`//`):
 
-```
+```python
 my_int_1 = 56
 my_int_2 = 12
 
@@ -728,7 +728,7 @@ print('Float Floor Division:', floor_div_floats) # Float Floor Division: 2.0
 
 Exponentiation raises a number to the power of another, and is done with the double asterisk operator (`**`):
 
-```
+```python
 my_int_1 = 56
 my_int_2 = 12
 
@@ -752,7 +752,7 @@ Python also provides built-in functions for converting either numeric data or st
 
 The `float()` function returns a floating-point number constructed from the given number:
 
-```
+```python
 my_int_1 = 56
 my_float_1 = float(my_int_1)
 
@@ -762,7 +762,7 @@ print(type(my_float_1))  # <class 'float'>
 
 The `int()` function returns an integer constructed from the given number:
 
-```
+```python
 my_float = 12.92563
 my_int = int(my_float)
 
@@ -772,7 +772,7 @@ print(type(my_int))  # <class 'int'>
 
 Also, you can use the same built-in functions to convert a string into either a float or integer:
 
-```
+```python
 my_str_int = '45'
 my_str_float = '7.8'
 
@@ -787,7 +787,7 @@ Here are some other methods Python provides for working with integers and floats
 
 * `round()`: Rounds a number to the specified number of decimal places. By default this function rounds to the nearest integer, and returns a whole number with no decimal places:
 
-```
+```python
 my_int_1 = 4.798
 my_int_2 = 4.253
 
@@ -800,7 +800,7 @@ print(rounded_int_2) # 4.3
 
 * `abs()`: returns the absolute value of a number,
 
-```
+```python
 num = -15
 
 absolute_value = abs(num)
@@ -809,7 +809,7 @@ print(absolute_value) # 15
 
 * `pow()`: raises a number to the power of another or performs modular exponentiation.
 
-```
+```python
 result_1 = pow(2, 3)  # Equivalent to 2 ** 3
 print(result_1)  # 8
 
@@ -827,19 +827,19 @@ If you're familiar with a language like JavaScript, you've probably heard of the
 
 The basic syntax of an augmented assignment looks like this:
 
-```
+```python
 variable <operator>= value
 ```
 
 Which is a more efficient way of doing this:
 
-```
+```python
 variable = variable <operator> value
 ```
 
 For example, here's an example of using augmented assignment to add `5` to an existing variable:
 
-```
+```python
 my_var = 10
 my_var += 5
 
@@ -848,7 +848,7 @@ print(my_var) # 15
 
 And here is the same thing, but without augmented assignment:
 
-```
+```python
 my_var = 10
 my_var = my_var + 5
 
@@ -861,7 +861,7 @@ Every operator can use an augmented assignment. We've looked at the addition ass
 
 * The subtraction assignment operator (`-=`) subtracts the right operand from the left variable and stores the difference in the left variable:
 
-```
+```python
 count = 14
 count -= 3
 
@@ -870,7 +870,7 @@ print(count) # 11
 
 * The multiplication assignment operator (`*=`) multiplies the left variable by the right operand and stores the product back in the left variable:
 
-```
+```python
 product = 65
 product *= 7
 
@@ -879,7 +879,7 @@ print(product) # 455
 
 * The division assignment operator (`/=`) divides the left variable by the right and stores the result back in the left variable:
 
-```
+```python
 price = 100
 price /= 4
 
@@ -888,7 +888,7 @@ print(price) # 25.0
 
 * The floor division operator (`//=`) floor‑divides the left variable by the right and stores the result back in the left variable:
 
-```
+```python
 total_pages = 23
 total_pages //= 5
 
@@ -897,7 +897,7 @@ print(total_pages) # 4
 
 * The modulo assignment operator (`%=`) computes the remainder of the left variable divided by the right and stores it back in the left variable:
 
-```
+```python
 bits = 35
 bits %= 2
 
@@ -906,7 +906,7 @@ print(bits) # 1
 
 * The exponentiation assignment operator (`**=`) raises the left variable to the power of the right and stores the result back in the left variable:
 
-```
+```python
 power = 2
 power **= 3
 
@@ -915,7 +915,7 @@ print(power) # 8
 
 You can use some augmented assignment operators with strings, too. For example, the addition assignment operator makes it easy to concatenate strings:
 
-```
+```python
 greet = 'Hello'
 greet += ' World'
 
@@ -924,7 +924,7 @@ print(greet) # Hello World
 
 And the multiplication assignment operator can be used to repeat a string:
 
-```
+```python
 greet = 'Hello'
 greet *= 3
 
@@ -933,7 +933,7 @@ print(greet) # HelloHelloHello
 
 Other augmented assignments throw a `TypeError` when you use them with strings:
 
-```
+```python
 greet = 'Hello'
 greet -= ' World'
 
@@ -952,7 +952,7 @@ Instead of `x++`, you can simply write `x += 1`, which makes it obvious that you
 
 Writing `++x` in Python just applies the unary plus twice, and does not increment anything:
 
-```
+```python
 my_var = 5
 
 print(+my_var)   # 5
@@ -981,7 +981,7 @@ Variables
 
 * **Declaring Variables**: To declare a variable, you start with the variable name followed by the assignment operator (`=`) and then the value. This can be a number, string, boolean, etc. Here are some examples:
 
-```
+```python
 name = 'John Doe'
 age = 25
 ```
@@ -999,13 +999,13 @@ Comments
 
 * **Single Line Comments**: These types of comments should be used for short notes you wish to leave in your code.
 
-```
+```python
 # This is a single line comment
 ```
 
 * **Multi-line Strings**: These types of strings can be used to leave larger notes or to comment out sections of code.
 
-```
+```python
 """
 This is a multi-line string.
 Here is some code commented out.
@@ -1017,7 +1017,7 @@ age = 25
 
 * **`print()` Function**: To print data to the console, you can use the `print()` function like this:
 
-```
+```python
 print('Hello world!') # Hello world!
 ```
 
@@ -1027,70 +1027,70 @@ Common Data Types in Python
 * **Introduction**: Python is a dynamically-typed language like JavaScript, meaning you don't need to explicitly declare types for variables. The language knows what the type of a variable is based on what you assign to the variable.
 * **Integer**: A whole number without decimals:
 
-```
+```python
 my_integer_var = 10
 print('Integer:', my_integer_var) # Integer: 10
 ```
 
 * **Float**: A number with decimals:
 
-```
+```python
 my_float_var = 4.50
 print('Float:', my_float_var) # Float: 4.5
 ```
 
 * **String**: A sequence of characters wrapped in quotes:
 
-```
+```python
 my_string_var = 'hello'
 print('String:', my_string_var) # String: hello
 ```
 
 * **Boolean**: A value representing either `True` or `False`:
 
-```
+```python
 my_boolean_var = True
 print('Boolean:', my_boolean_var) # Boolean: True
 ```
 
 * **Set**: An unordered collection of unique elements:
 
-```
+```python
 my_set_var = {7, 5, 8}
 print('Set:', my_set_var) # Set: {7, 5, 8}
 ```
 
 * **Dictionary**: A collection of key-value pairs, enclosed in curly braces:
 
-```
+```python
 my_dictionary_var = {"name": "Alice", "age": 25}
 print('Dictionary:', my_dictionary_var) # Dictionary: {'name': 'Alice', 'age': 25}
 ```
 
 * **Tuple**: An immutable ordered collection, enclosed in parentheses:
 
-```
+```python
 my_tuple_var = (7, 5, 8)
 print('Tuple:', my_tuple_var) # Tuple: (7, 5, 8)
 ```
 
 * **Range**: A sequence of numbers, often used in loops:
 
-```
+```python
 my_range_var = range(5)
 print(my_range_var) # range(0, 5)
 ```
 
 * **List**: An ordered collection of elements that supports different data types:
 
-```
+```python
 my_list = [22, 'Hello world', 3.14, True]
 print(my_list) # [22, 'Hello world', 3.14, True]
 ```
 
 * **None**: A special value that represents the absence of a value:
 
-```
+```python
 my_none_var = None
 print('None:', my_none_var) # None: None
 ```
@@ -1102,7 +1102,7 @@ Immutable and Mutable Types
 * **Mutable Types**: These types can change once declared. You can add, remove, or update their items. They include collection types such as list, set, and dictionary.
 * **`type()` Function**: To see the type for a variable, you can use the `type()` function like this:
 
-```
+```python
 greeting = 'Hello there!'
 age = 21
 
@@ -1112,7 +1112,7 @@ print(type(age)) # <class 'int'>
 
 * **`isinstance()` Function**: This is used to check if a variable matches a specific data type:
 
-```
+```python
 greeting = 'Hello world'
 name = 'John Doe'
 
@@ -1125,14 +1125,14 @@ Working with Strings
 
 * **Definition**: As you recall from JavaScript, strings are immutable which means you can not change them after they have been created. In Python, you can use either single or double quotes. It is recommended to choose a rule and stick with it:
 
-```
+```python
 developer = 'Jessica'
 city = "Los Angeles"
 ```
 
 * **Accessing Characters from Strings**: You can access characters from strings by using bracket notation like this:
 
-```
+```python
 my_str = 'Hello world'
 
 print(my_str[0])  # H
@@ -1144,21 +1144,21 @@ print(my_str[-2]) # l
 
 * **Escaping Strings**: You can use a backslash (`\`) if your string contains quotes like this:
 
-```
+```python
 msg = 'It\'s a sunny day'
 quote = "She said, \"Hello!\""
 ```
 
 * **String Concatenation**: To concatenate strings, you can use the `+` operator like this:
 
-```
+```python
 developer = 'Jessica'
 print('My name is ' + developer + '.') # My name is Jessica.
 ```
 
 Another way to concatenate strings is by using the `+=` operator. This is used to perform concatenation and assignment in the same step like this:
 
-```
+```python
 greeting = 'My name is '
 developer = 'Jessica.'
 
@@ -1168,7 +1168,7 @@ print(greeting) # My name is Jessica.
 
 * **`f-strings`**: This is short for formatted string literals. It allows you to handle interpolation and also do some concatenation with a compact and readable syntax:
 
-```
+```python
 developer = 'Jessica'
 greeting = f'My name is {developer}.'
 print(greeting) # My name is Jessica.
@@ -1176,13 +1176,13 @@ print(greeting) # My name is Jessica.
 
 * **String Slicing**: This is when you can extract portions of a string. Here is the basic syntax:
 
-```
+```python
 str[start:stop:step]
 ```
 
 The start position represents the index where the extraction should begin. The stop position is where the slice should end. This position is non inclusive. The step position represents the interval to increment for the slicing. Here are some examples:
 
-```
+```python
 message = 'Python is fun!'
 
 print(message[0:6])  # Python
@@ -1192,7 +1192,7 @@ print(message[::2])  # Pto sfn
 
 * **Getting the Length of a String**: The `len()` function is used to return the number of the characters in the string:
 
-```
+```python
 developer = 'Jessica'
 
 print(len(developer)) # 7
@@ -1203,7 +1203,7 @@ Working with the `in` operator
 
 * **`in` Operator**: This returns a boolean that specifies whether the character or characters exist in the string or not:
 
-```
+```python
 my_str = 'Hello world'
 
 print('Hello' in my_str)  # True
@@ -1218,7 +1218,7 @@ Common String Methods
 
 * **`str.upper()`**: This returns a new string with all characters converted to uppercase:
 
-```
+```python
 developer = 'Jessica'
 
 print(developer.upper()) # JESSICA
@@ -1226,7 +1226,7 @@ print(developer.upper()) # JESSICA
 
 * **`str.lower()`**: This returns a new string with all characters converted to lowercase:
 
-```
+```python
 developer = 'Jessica'
 
 print(developer.lower()) # jessica
@@ -1234,7 +1234,7 @@ print(developer.lower()) # jessica
 
 * **`str.strip()`**: This returns a copy of the string with specified leading and trailing characters removed (if no argument is passed to the method, it removes leading and trailing whitespace).
 
-```
+```python
 greeting = '  hello world  '
 
 trimmed_my_str = greeting.strip()
@@ -1243,7 +1243,7 @@ print(trimmed_my_str)  # 'hello world'
 
 * **`replace()`**: This returns a new string with all occurrences of the old string replaced by a new one.
 
-```
+```python
 greeting = 'hello world'
 
 replaced_my_str = greeting.replace('hello', 'hi')
@@ -1252,7 +1252,7 @@ print(replaced_my_str)  # 'hi world'
 
 * **`split()`**: This is used to split a string into a list using a specified separator. A separator is a string specifying where the split should happen.
 
-```
+```python
 dashed_name = 'example-dashed-name'
 
 split_words = dashed_name.split('-')
@@ -1261,7 +1261,7 @@ print(split_words)  # ['example', 'dashed', 'name']
 
 * **`join()`**: This is used to join elements of an iterable into a string with a separator. An iterable is a collection of elements that can be looped over like a list, string or a tuple.
 
-```
+```python
 example_list = ['example', 'dashed', 'name']
 
 joined_str = ' '.join(example_list)
@@ -1270,7 +1270,7 @@ print(joined_str)  # example dashed name
 
 * **`str.startswith(prefix)`**: This returns a boolean indicating if a string starts with the specified prefix:
 
-```
+```python
 developer = 'Naomi'
 
 result = developer.startswith('N')
@@ -1279,7 +1279,7 @@ print(result)  # True
 
 * **`str.endswith(suffix)`**: This returns a boolean indicating if a string ends with the specified suffix:
 
-```
+```python
 developer = 'Naomi'
 
 result = developer.endswith('N')
@@ -1288,7 +1288,7 @@ print(result)  # False
 
 * **`str.find()`**: This returns the index for the first occurrence of a substring. If one is not found, then `-1` is returned:
 
-```
+```python
 developer = 'Naomi'
 
 result = developer.find('N')
@@ -1300,42 +1300,42 @@ print(city.find('New')) # -1
 
 * **`str.count(substring)`**: This counts how many times a substring appears in a string:
 
-```
+```python
 city = 'Los Angeles'
 print(city.count('e')) # 2
 ```
 
 * **`str.capitalize()`**: This returns a new string with the first character capitalized and the other characters lowercased:
 
-```
+```python
 dessert = 'chocolate cake'
 print(dessert.capitalize()) # Chocolate cake
 ```
 
 * **`str.isupper()`**: This returns `True` if all letters in the string are uppercase and `False` if otherwise:
 
-```
+```python
 dessert = 'chocolate cake'
 print(dessert.isupper()) # False
 ```
 
 * **`str.islower()`**: This returns `True` if all letters in the string are lowercase and `False` if otherwise:
 
-```
+```python
 dessert = 'chocolate cake'
 print(dessert.islower()) # True
 ```
 
 * **`str.title()`**: This returns a new string with the first letter of each word capitalized:
 
-```
+```python
 city = 'los angeles'
 print(city.title()) # Los Angeles
 ```
 
 * **`str.maketrans()`**: This method is used to create a table of 1 to 1 character mappings for translation. It is often used with the `translate()` method which applies that table to a string and return the translated result.
 
-```
+```python
 trans_table = str.maketrans('abc', '123')
 print(trans_table) # {97: 49, 98: 50, 99: 51}
 
@@ -1348,7 +1348,7 @@ Common Operations used with Integers and Floats
 
 * **Basic Math Operations**: In Python, you can do basic math operations with integers and floats including addition, subtraction, multiplication and division:
 
-```
+```python
 int_1 = 56
 int_2 = 12
 float_1 = 5.4
@@ -1377,7 +1377,7 @@ print('Float Division:', float_2 / float_1) # Float Division: 2.222222222222222
 
 When you add a float and an integer, the result will be converted to a float like this:
 
-```
+```python
 int_1 = 56
 float_1 = 5.4
 
@@ -1386,7 +1386,7 @@ print(int_1 + float_1) # 61.4
 
 * **Modulo Operator (`%`)**: This returns the remainder when a number is divided by another number:
 
-```
+```python
 int_1 = 56
 int_2 = 12
 
@@ -1395,7 +1395,7 @@ print(int_1 % int_2) # 8
 
 * **Floor Division (`//`)**: This operator is used to divide two numbers and round down the result to the nearest whole number:
 
-```
+```python
 int_1 = 56
 int_2 = 12
 
@@ -1404,7 +1404,7 @@ print(int_1 // int_2) # 4
 
 * **Exponentiation Operator (`**`)**: This operator is used to raise a number to the power of another:
 
-```
+```python
 int_1 = 4
 int_2 = 2
 
@@ -1413,7 +1413,7 @@ print(int_1 ** int_2) # 16
 
 * **`float()` Function**: You can use this function to convert an integer to float.
 
-```
+```python
 num = 4
 
 print(float(num)) # 4.0
@@ -1421,7 +1421,7 @@ print(float(num)) # 4.0
 
 * **`int()` Function**: You can use this function to convert an float to an integer.
 
-```
+```python
 num = 4.0
 
 print(int(num)) # 4
@@ -1429,7 +1429,7 @@ print(int(num)) # 4
 
 * **`round()` Function**: This is used to round a number to the nearest whole integer:
 
-```
+```python
 num_1 = 3.4
 num_2 = 7.7
 
@@ -1439,7 +1439,7 @@ print(round(num_2)) # 8
 
 * **`abs()` Function**: This is used to return the absolute value of a number:
 
-```
+```python
 num = -13
 
 print(abs(num)) # 13
@@ -1447,7 +1447,7 @@ print(abs(num)) # 13
 
 * **`pow()` Function**: This is used to raise a number to the power of another:
 
-```
+```python
 result = pow(2, 3) 
 print(result)  # 8
 ```
@@ -1457,7 +1457,7 @@ Augmented Assignments
 
 * **Definition**: Augmented assignment combines a binary operation with an assignment in one step. It takes a variable, applies an operation to it with another value, and stores the result back into the same variable.
 
-```
+```python
 # Addition assignment 
 my_var = 10
 my_var += 5
@@ -1508,7 +1508,7 @@ Working with Functions
 
 * **Definition**: Functions are reusable pieces of code that take inputs (arguments) and returns an output. To call a function, you need to reference the function name followed by a set of parenthesis:
 
-```
+```python
 # Defining a function
 
 def get_sum(num_1, num_2):
@@ -1520,7 +1520,7 @@ print(result) # 7
 
 If a function does not explicitly return a value, then the default return value is `None`:
 
-```
+```python
 def greet():
     print('hello') 
 
@@ -1530,7 +1530,7 @@ print(result) # None
 
 You can also supply default values to parameters like this:
 
-```
+```python
 def get_sum(num_1, num_2=2):
     return num_1 + num_2
 
@@ -1540,7 +1540,7 @@ print(result) # 5
 
 If you call the function without the correct number of arguments, you will get a `TypeError`:
 
-```
+```python
 def calculate_sum(a, b):
     print(a + b)
 
@@ -1554,14 +1554,14 @@ Common Built-in Functions
 
 * **`input()` Function**: This is used to prompt the user for some input:
 
-```
+```python
 name = input('What is your name?') # User types 'Kolade' and presses Enter  
 print('Hello', name) # Hello Kolade
 ```
 
 * **`int()` Function**: This is used to convert a number, boolean, or a numeric string into an integer:
 
-```
+```python
 print(int(3.14)) # 3
 print(int('42')) # 42
 print(int(True)) # 1
@@ -1573,7 +1573,7 @@ Scope in Python
 
 * **Local Scope**: This is when a variable declared inside a function or class can only be accessed within that function or class.
 
-```
+```python
 def my_func():
     num = 10
     print(num)
@@ -1581,7 +1581,7 @@ def my_func():
 
 * **Enclosing Scope**: This is when a function that's nested inside another function can access the variables of the function it's nested within.
 
-```
+```python
 def outer_func():
     msg = 'Hello there!'
     
@@ -1594,7 +1594,7 @@ print(outer_func()) # Hello there!
 
 * **Global Scope**: This refers to variables that are declared outside any functions or classes which can be accessed from anywhere in the program.
 
-```
+```python
 tax = 0.70 
 
 def get_total(subtotal):
@@ -1606,7 +1606,7 @@ print(get_total(100))  # 170.0
 
 * **Built-in Scope**: Reserved names in Python for predefined functions, modules, keywords, and objects.
 
-```
+```python
 print(str(45)) # '45'
 print(type(3.14)) # <class 'float'>
 print(isinstance(3, str)) # False
@@ -1617,37 +1617,37 @@ Comparison Operators
 
 * **Equal (`==`)**: Checks if two values are equal:
 
-```
+```python
 print(3 == 4) # False
 ```
 
 * **Not equal (`!=`)**: Checks if two values are not equal:
 
-```
+```python
 print(3 != 4) # True
 ```
 
 * **Strictly greater than (`>`)**: Checks if one value is greater than another:
 
-```
+```python
 print(3 > 4) # False
 ```
 
 * **Strictly less than (`<`)**: Checks if one value is less than another:
 
-```
+```python
 print(3 < 4) # True
 ```
 
 * **Greater than or equal(`>=`)**: Checks if one value is greater than or equal to another:
 
-```
+```python
 print(3 >= 4) # False
 ```
 
 * **Less than or equal(`<=`)**: Checks if one value is less than or equal to another:
 
-```
+```python
 print(3 <= 4) # True
 ```
 
@@ -1656,7 +1656,7 @@ Working with `if`, `elif` and `else` Statements
 
 * **`if` Statements**: These are conditions used to determine if something is true or not. If the condition evaluates to `True`, then that block of code will run.
 
-```
+```python
 age = 18
 
 if age >= 18:
@@ -1665,7 +1665,7 @@ if age >= 18:
 
 * **`elif` Clause**: These are conditions that come after an `if` statement. An `elif` clause runs only if all previous conditions evaluate to `False` and its own condition evaluates to `True`.
 
-```
+```python
 age = 16
 
 if age >= 18:
@@ -1676,7 +1676,7 @@ elif age >= 13:
 
 * **`else` Clause**: This will run if no other conditions evaluate to `True`.
 
-```
+```python
 age = 12
 
 if age >= 18:
@@ -1689,7 +1689,7 @@ else:
 
 You can also use nested `if` statements like this:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -1705,7 +1705,7 @@ Truthy and Falsy Values
 
 * **Definition**: In Python, every value has an inherent boolean value, or a built-in sense of whether it should be treated as `True` or `False` in a logical context. Many values are considered truthy, that is, they evaluate to `True` in a logical context. Others are falsy, meaning they evaluate to `False`. Here are some examples of falsy values:
 
-```
+```python
 None
 False
 Integer 0
@@ -1720,7 +1720,7 @@ Working with the `bool()` Function
 
 * **Definition**: If you want to check whether a value is truthy or falsy, you can use the built-in `bool()` function. It explicitly converts a value to its boolean equivalent and returns `True` for truthy values and `False` for falsy values. Here are a few examples:
 
-```
+```python
 print(bool(False)) # False
 print(bool(0))  # False
 print(bool('')) # False
@@ -1736,7 +1736,7 @@ Boolean Operators and Short-circuiting
 * **Definition**: These are special operators that allow you to combine multiple expressions to create more complex decision-making logic in your code. There are three Boolean operators in Python: `and`, `or`, and `not`.
 * **`and` Operator**: This operator takes two operands and returns the first operand if it is falsy, otherwise, it returns the second operand. Both operands must be truthy for an expression to result in a truthy value.
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -1745,7 +1745,7 @@ print(is_citizen and age) # 25
 
 You can also use the `and` operator in conditionals like this:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -1757,7 +1757,7 @@ else:
 
 * **`or` Operator**: This operator returns the first operand if it is truthy, otherwise, it returns the second operand. An `or` expression results in a truthy value if at least one operand is truthy. Here is an example:
 
-```
+```python
 age = 19
 is_employed = False
 
@@ -1766,7 +1766,7 @@ print(age or is_employed) # 19
 
 Just like with the `and` operator, you can use the `or` operator in conditionals like this:
 
-```
+```python
 age = 19
 is_student = True
 
@@ -1779,7 +1779,7 @@ else:
 * **Short-circuiting**: The `and` and `or` operators are known as a short-circuit operators. Short-circuiting means Python checks values from left to right and stops as soon as it determines the final result.
 * **`not` Operator**: This operator takes a single operand and inverts its boolean value. It converts truthy values to `False` and falsy values to `True`. Unlike the previous operators we looked at, `not` always returns `True` or `False`. Here are some examples:
 
-```
+```python
 print(not '') # True, because empty string is falsy
 print(not 'Hello') # False, because non-empty string is truthy
 print(not 0) # True, because 0 is falsy
@@ -1790,7 +1790,7 @@ print(not True) # False, because True is truthy
 
 Here is an example of the `not` operator in a conditional:
 
-```
+```python
 is_admin = False
 
 if not is_admin:
@@ -1824,7 +1824,7 @@ Here's a table with the comparison operators in Python:
 
 Here are some of those expressions that evaluate to `True` or `False`:
 
-```
+```python
 print(3 > 4) # False
 print(3 < 4) # True
 print(3 == 4) # False
@@ -1838,7 +1838,7 @@ These operators can be used in conditionals to compare values and run certain co
 
 In Python, the most basic conditional is the `if` statement. Here's the basic syntax:
 
-```
+```python
 if condition:
     pass # Code to execute if condition is True
 ```
@@ -1851,7 +1851,7 @@ In the example above, the body of the `if` statement contains a `pass` statement
 
 The code within the body of the `if` statement runs only when the condition evaluates to `True`. For example:
 
-```
+```python
 age = 18
 
 if age >= 18:
@@ -1862,7 +1862,7 @@ Notice the indentation before `print('You are an adult')`. While other programmi
 
 The following code would raise an `IndentationError`, which is Python's way to signal that indentation is required at a certain point of the code:
 
-```
+```python
 age = 18
 
 if age >= 18:
@@ -1875,7 +1875,7 @@ Blocks are also found in loops and functions, which you'll learn about in future
 
 Going back to our example, if `age` is anything less than `18`, nothing is printed in the terminal:
 
-```
+```python
 age = 12
 
 if age >= 18:
@@ -1884,7 +1884,7 @@ if age >= 18:
 
 But what if you also want to print something if `age` is less than `18`? That's where the `else` clause comes in. The `else` clause runs when the `if` condition is false. Here's the syntax for an `if…else` statement:
 
-```
+```python
 if condition:
    pass # Code to execute if condition is True
 else:
@@ -1893,7 +1893,7 @@ else:
 
 For example:
 
-```
+```python
 age = 12
 
 if age >= 18:
@@ -1904,7 +1904,7 @@ else:
 
 Note that you cannot place any statements between the `if` block and the `else` clause. The following code would raise a `SyntaxError`:
 
-```
+```python
 age = 12
 
 if age >= 18:
@@ -1918,7 +1918,7 @@ There might be situations in which you want to account for multiple conditions. 
 
 Here's the syntax:
 
-```
+```python
 if condition1:
    pass # Code to execute if condition1 is True
 elif condition2:
@@ -1929,7 +1929,7 @@ else:
 
 For example:
 
-```
+```python
 age = 12
 
 if age >= 18:
@@ -1942,7 +1942,7 @@ else:
 
 Note that you can use as many `elif` clauses as you want:
 
-```
+```python
 age = 2
 
 if age >= 65:
@@ -1969,7 +1969,7 @@ In the previous lesson, you learned how to use comparison operators and conditio
 
 While those are very powerful, you will often run into situations where you need to compare multiple values at once. This can lead to nested conditional statements, for example:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -2000,7 +2000,7 @@ Other values like non-zero numbers, and non-empty strings are truthy.
 
 If you want to check whether a value is truthy or falsy, you can use the built-in `bool()` function. It explicitly converts a value to its boolean equivalent and returns `True` for truthy values and `False` for falsy values. Here are a few examples:
 
-```
+```python
 print(bool(False)) # False
 print(bool(0))  # False
 print(bool('')) # False
@@ -2020,7 +2020,7 @@ The `and` operator takes two operands and returns the first operand if it is fal
 
 Here is an example:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -2031,7 +2031,7 @@ In the above example, the number 25 is printed to the terminal because the `and`
 
 You'll often use `and` within `if` statements to check if multiple conditions are met. Here’s how you can refactor the earlier example to use the `and` operator instead of nested `if` statements:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -2045,7 +2045,7 @@ In the example above, `is_citizen` is `True`, and `age >= 18` evaluates to `True
 
 Now let's take a look at the `or` operator. This operator returns the first operand if it is truthy, otherwise, it returns the second operand. An `or` expression results in a truthy value if at least one operand is truthy. The `or` operator is also known as a short-circuit operator. Here is an example:
 
-```
+```python
 age = 19
 is_employed = False
 
@@ -2056,7 +2056,7 @@ The following code will print the number 19 because the first operand `age` is t
 
 If you need to check if one or more expressions is `True`, then you can use the `or` operator in a conditional like this:
 
-```
+```python
 age = 19
 is_student = True
 
@@ -2072,7 +2072,7 @@ The last operator we will look at is the `not` operator which takes a single ope
 
 Here are a few examples:
 
-```
+```python
 print(not '') # True, because empty string is falsy
 print(not 'Hello') # False, because non-empty string is truthy
 print(not 0) # True, because 0 is falsy
@@ -2083,7 +2083,7 @@ print(not True) # False, because True is truthy
 
 It is common to use the `not` operator in conditionals to check if something is not `True` or `False`, like this:
 
-```
+```python
 is_admin = False
 
 if not is_admin:
@@ -2104,14 +2104,14 @@ Now that you understand truthy and falsy values, the `and`, `or`, and `not` oper
 
 A string is a sequence of characters surrounded by either single or double quotation marks. In some programming languages, characters surrounded by single quotes are treated differently than characters surrounded by double quotes, but in Python, they're treated equally. So, you can use either when working with strings. Here are some examples of strings:
 
-```
+```python
 my_str_1 = 'Hello'
 my_str_2 = "World"
 ```
 
 If you need a multi-line string, you can use triple double quotes or single quotes:
 
-```
+```python
 my_str_3 = """Multiline
 string"""
 my_str_4 = '''Another
@@ -2123,14 +2123,14 @@ If your string contains either single or double quotation marks, then you have t
 
 * Use the opposite kind of quotes. That is, if your string contains single quotes, use double quotes to wrap the string, and vice versa:
 
-```
+```python
 msg = "It's a sunny day"
 quote = 'She said, "Hello World!"'
 ```
 
 * Escape the single or double quotation mark in the string with a backslash (`\`). With this method, you can use either single or double quotation marks to wrap the string itself:
 
-```
+```python
 msg = 'It\'s a sunny day'
 quote = "She said, \"Hello!\""
 ```
@@ -2139,7 +2139,7 @@ Sometimes, you may need to check if a string contains one or more characters. Fo
 
 Here are some examples:
 
-```
+```python
 my_str = 'Hello world'
 
 print('Hello' in my_str)  # True
@@ -2151,14 +2151,14 @@ print('f' in my_str)  # False
 
 Now, let's look at how you can get the length of a string and work with the individual characters in a string, a process called **indexing**. To get the length of a string, you can use the built-in `len()` function. Here's an example:
 
-```
+```python
 my_str = 'Hello world'
 print(len(my_str))  # 11
 ```
 
 Each character in a string has a position called an index. The index is zero-based, meaning that the index of the first character of a string is `0`, the index of the second character is `1`, and so on. To access a character by its index, you use square brackets (`[]`) with the index of the character you want to access inside. Here are some examples:
 
-```
+```python
 my_str = "Hello world"
 
 print(my_str[0])  # H
@@ -2167,7 +2167,7 @@ print(my_str[6])  # w
 
 Negative indexing is also allowed, so you can get the last character of any string with `-1`, the second-to-last character with `-2`, and so on:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[-1])  # d
 print(my_str[-2]) # l
@@ -2179,7 +2179,7 @@ Immutable data types can't be modified or altered once they're declared. You can
 
 Strings are immutable data types in Python. This means that you can reassign a different string to a variable:
 
-```
+```python
 greeting = 'hi'
 greeting = 'hello'
 print(greeting) # hello
@@ -2187,7 +2187,7 @@ print(greeting) # hello
 
 But direct modification of a string isn't allowed:
 
-```
+```python
 greeting = 'hi'
 greeting[0] = 'H' # TypeError: 'str' object does not support item assignment
 ```
@@ -2200,7 +2200,7 @@ Examples of other immutable data types in Python are integer, float, boolean, tu
 
 In a previous lesson, you learned how each character in a string can be identified by its index (starting from zero), and accessed using the bracket notation:
 
-```
+```python
 my_str = "Hello world"
 
 print(my_str[0])  # H
@@ -2210,13 +2210,13 @@ print(my_str[-1]) # d
 
 **String slicing** lets you extract a portion of a string or work with only a specific part of it. Here's the basic syntax:
 
-```
+```python
 string[start:stop]
 ```
 
 If you want to extract characters from a certain index to another, you just separate the `start` and `stop` indices with a colon:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[1:4]) # ell
 ```
@@ -2225,14 +2225,14 @@ Note that the `stop` index is non-inclusive, so `[1:4]` just extracted the chara
 
 You can also omit the `start` and `stop` indices, and Python will default to `0` or the end of the string, respectively. For example, here's what happens if you omit the `start` index:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[:7])  # Hello w
 ```
 
 This extracts everything from index `0` up to (but not including), the character at index `7`. And here's what happens if you omit the `stop` index:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[8:])  # rld
 ```
@@ -2241,7 +2241,7 @@ This extracts everything from the character at index `8` until the end of the st
 
 Note that slicing a string does not modify the original string:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[8:])  # rld
 print(my_str)  # Hello world
@@ -2249,7 +2249,7 @@ print(my_str)  # Hello world
 
 You can also omit both the `start` and `stop` indices, which will extract the whole string:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[:])  # Hello world
 ```
@@ -2258,20 +2258,20 @@ Apart from the `start` and `stop` indices, there's also an optional `step` param
 
 Here's the syntax for that:
 
-```
+```python
 string[start:stop:step]
 ```
 
 In the example below, the slicing starts at index `0`, stops before `11`, and extracts every second character:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[0:11:2])  # Hlowrd
 ```
 
 A helpful trick you can do with the `step` parameter is to reverse a string by setting step to `-1`, and leaving `start` and `stop` blank:
 
-```
+```python
 my_str = 'Hello world'
 print(my_str[::-1]) # dlrow olleH
 ```
@@ -2284,7 +2284,7 @@ When working with strings, combining different pieces of text together is a comm
 
 In Python, you can combine multiple strings together with the plus (`+`) operator. This process is called **string concatenation**. Here's how to concatenate two strings with the plus operator:
 
-```
+```python
 my_str_1 = 'Hello'
 my_str_2 = "World"
 
@@ -2294,7 +2294,7 @@ print(str_plus_str) # Hello World
 
 But note that this only works with strings. If you try to concatenate a string with a number, you'll get a `TypeError`:
 
-```
+```python
 name = 'John Doe'
 age = 26
 
@@ -2304,7 +2304,7 @@ print(name_and_age) # TypeError: can only concatenate str (not "int") to str
 
 This happens because Python does not automatically convert other data types like integers into strings when you concatenate them. Python requires all elements to be strings before it can concatenate them. To fix that, you can convert the number into a string with the built-in `str()` function, which returns the string representation of the given object without modifying the original object:
 
-```
+```python
 name = 'John Doe'
 age = 26
 
@@ -2314,7 +2314,7 @@ print(name_and_age) # John Doe26
 
 You can also use the augmented assignment operator for concatenation. This is represented by a plus and equals sign (`+=`), and performs both concatenation and assignment in one step. Here's it in action:
 
-```
+```python
 name = 'John Doe'
 age = 26
 
@@ -2328,7 +2328,7 @@ The process of inserting variables and expressions into a string is called **str
 
 F-strings start with `f` (either lowercase or uppercase) before the quotes, and allow you to embed variables or expressions inside replacement fields indicated by curly braces (`{}`). Here's an example:
 
-```
+```python
 name = 'John Doe'
 age = 26
 name_and_age = f'My name is {name} and I am {age} years old'
@@ -2349,7 +2349,7 @@ Python provides a number of built-in methods that make working with strings a br
 
 * `upper()`: Returns a new string with all characters converted to uppercase.
 
-```
+```python
 my_str = 'hello world'
 
 uppercase_my_str = my_str.upper()
@@ -2358,7 +2358,7 @@ print(uppercase_my_str)  # HELLO WORLD
 
 * `lower()`: Returns a new string with all characters converted to lowercase.
 
-```
+```python
 my_str = 'Hello World'
 
 lowercase_my_str = my_str.lower()
@@ -2367,7 +2367,7 @@ print(lowercase_my_str)  # hello world
 
 * `strip()`: Returns a new string with the specified leading and trailing characters removed. If no argument is passed it removes leading and trailing whitespace.
 
-```
+```python
 my_str = '  hello world  '
 
 trimmed_my_str = my_str.strip()
@@ -2376,7 +2376,7 @@ print(trimmed_my_str)  # "hello world"
 
 * `replace(old, new)`: Returns a new string with all occurrences of `old` replaced by `new`.
 
-```
+```python
 my_str = 'hello world'
 
 replaced_my_str = my_str.replace('hello', 'hi')
@@ -2385,7 +2385,7 @@ print(replaced_my_str)  # hi world
 
 * `split(separator)`: Splits a string on a specified separator into a list of strings. If no separator is specified, it splits on whitespace.
 
-```
+```python
 my_str = 'hello world'
 
 split_words = my_str.split()
@@ -2394,7 +2394,7 @@ print(split_words)  # ['hello', 'world']
 
 * `join(iterable)`: Joins elements of an iterable into a string with a separator.
 
-```
+```python
 my_list = ['hello', 'world']
 
 joined_my_str = ' '.join(my_list)
@@ -2403,7 +2403,7 @@ print(joined_my_str)  # hello world
 
 * `startswith(prefix)`: Returns a boolean indicating if a string starts with the specified prefix.
 
-```
+```python
 my_str = 'hello world'
 
 starts_with_hello = my_str.startswith('hello')
@@ -2412,7 +2412,7 @@ print(starts_with_hello)  # True
 
 * `endswith(suffix)`: Returns a boolean indicating if a string ends with the specified suffix.
 
-```
+```python
 my_str = 'hello world'
 
 ends_with_world = my_str.endswith('world')
@@ -2421,7 +2421,7 @@ print(ends_with_world)  # True
 
 * `find(substring)`: Returns the index of the first occurrence of `substring`, or `-1` if it doesn't find one.
 
-```
+```python
 my_str = 'hello world'
 
 world_index = my_str.find('world')
@@ -2430,7 +2430,7 @@ print(world_index)  # 6
 
 * `count(substring)`: Returns the number of times a substring appears in a string.
 
-```
+```python
 my_str = 'hello world'
 
 o_count = my_str.count('o')
@@ -2439,7 +2439,7 @@ print(o_count)  # 2
 
 * `capitalize()`: Returns a new string with the first character capitalized and the other characters lowercased.
 
-```
+```python
 my_str = 'hello world'
 
 capitalized_my_str = my_str.capitalize()
@@ -2448,7 +2448,7 @@ print(capitalized_my_str)  # Hello world
 
 * `isupper()`: Returns `True` if all letters in the string are uppercase and `False` if not.
 
-```
+```python
 my_str = 'hello world'
 
 is_all_upper = my_str.isupper()
@@ -2457,7 +2457,7 @@ print(is_all_upper)  # False
 
 * `islower()`: Returns `True` if all letters in the string are lowercase and `False` if not.
 
-```
+```python
 my_str = 'hello world'
 
 is_all_lower = my_str.islower()
@@ -2466,7 +2466,7 @@ print(is_all_lower)  # True
 
 * `title()`: Returns a new string with the first letter of each word capitalized.
 
-```
+```python
 my_str = 'hello world'
 
 title_case_my_str = my_str.title()
@@ -2483,14 +2483,14 @@ Functions are reusable pieces of code that run when you call them. Many programm
 
 Another helpful built-in function is `input()`, which lets you prompt the user for input:
 
-```
+```python
 name = input('What is your name?') # User types "Kolade" and presses Enter  
 print('Hello', name) # Output: Hello Kolade
 ```
 
 On the other hand, `int()` converts a number, boolean, and a numeric string into an integer:
 
-```
+```python
 print(int(3.14)) # 3
 print(int('42')) # 42
 print(int(True)) # 1
@@ -2501,14 +2501,14 @@ You can also write your own custom functions. To do that, you use the `def` keyw
 
 Here's an example of a custom function named `hello` that prints the string `Hello World` to the terminal:
 
-```
+```python
 def hello():
     print('Hello World')
 ```
 
 To run the function, you need to call it with its name followed by a pair of parentheses:
 
-```
+```python
 hello() # Hello World
 ```
 
@@ -2516,7 +2516,7 @@ Notice the indentation before `print('Hello World')`. As you may recall from pre
 
 Here's another simple function that prints the sum of two numbers to the terminal:
 
-```
+```python
 def calculate_sum(a, b):
     print(a + b)
 ```
@@ -2527,13 +2527,13 @@ To use the parameters, you have to pass in "arguments". Arguments are the values
 
 Here's how to call the `calculate_sum` function to sum together the numbers `3` and `1`:
 
-```
+```python
 calculate_sum(3, 1) # 4
 ```
 
 If you call the function without the correct number of arguments, you'll get a `TypeError`:
 
-```
+```python
 calculate_sum()
 
 # TypeError: calculate_sum() missing 2 required positional arguments: 'a' and 'b'
@@ -2543,7 +2543,7 @@ Functions also use a special `return` keyword to exit the function and return a 
 
 Here's an example:
 
-```
+```python
 def calculate_sum(a, b):
     print(a + b)
 
@@ -2553,7 +2553,7 @@ print(my_sum) # None
 
 You can see that the `calculate_sum` function prints the sum of `a` and `b`, but it doesn't return anything explicitly. So when we assign its result to `my_sum`, the value is actually `None`. To fix that, you can use the `return` keyword to send back the result:
 
-```
+```python
 def calculate_sum(a, b):
     return a + b
 
@@ -2582,7 +2582,7 @@ Python uses the LEGB rule to resolve the scope of the variables in your program.
 
 Here's an example:
 
-```
+```python
 def my_func():
     my_var = 10
     print(my_var)
@@ -2590,7 +2590,7 @@ def my_func():
 
 In this case, the `my_func` function has its own scope which cannot be accessed from outside the function. Calling `my_func` will output `10`, but printing `my_var` outside the function will lead to a `NameError`:
 
-```
+```python
 def my_func():
     my_var = 10 # Locally scoped to my_func
     print(my_var)
@@ -2604,7 +2604,7 @@ print(my_var) # NameError: name 'my_var' is not defined
 
 For example:
 
-```
+```python
 def outer_func():
     msg = 'Hello there!'
 
@@ -2618,7 +2618,7 @@ outer_func() # Hello there!
 
 In this example, the inner function, `inner_func`, can freely access the `msg` variable defined in the outer function, `outer_func`. However, note that outer functions cannot access variables defined within any nested functions:
 
-```
+```python
 def outer_func():
     msg = 'Hello there!'
     print(res)
@@ -2636,7 +2636,7 @@ That's because `res` is locally scoped to `inner_func`. Also, notice that `outer
 
 One solution is to initialize `res` as an empty string in the enclosing scope, which is within `outer_func`. Then within `inner_func`, make `res` a non-local variable with the `nonlocal` keyword:
 
-```
+```python
 def outer_func():
     msg = 'Hello there!'
     res = ""  # Declare res in the enclosing scope
@@ -2658,7 +2658,7 @@ outer_func()
 
 **Global scope** refers to variables that are declared outside any functions or classes which can be accessed from anywhere in the program. Here, `my_var` can be accessed anywhere, even inside a function it's not defined in:
 
-```
+```python
 my_var = 100
 
 def show_var():
@@ -2670,7 +2670,7 @@ print(my_var) # 100
 
 And if you want to make a locally scoped variable defined inside a function globally accessible, you can use the `global` keyword:
 
-```
+```python
 my_var_1 = 7
 
 def show_vars():
@@ -2687,7 +2687,7 @@ print(my_var_2) # 10
 
 You can also use the `global` keyword to modify a global variable:
 
-```
+```python
 my_var = 10  # A global variable
 
 def change_var():
@@ -2701,7 +2701,7 @@ print(my_var)  # my_var is now modified globally to 20
 
 Finally, **built-in scope** refers to all of Python's built-in functions, modules, and keywords, and are available anywhere in your program:
 
-```
+```python
 print(str(45)) # '45'
 print(type(3.14)) # <class 'float'>
 print(isinstance(3, str)) # False
@@ -2713,7 +2713,7 @@ print(isinstance(3, str)) # False
 
 Throughout the previous lessons, you have been used to defining functions by using the `def` keyword like this:
 
-```
+```python
 def square(num):
     return num ** 2
 
@@ -2724,13 +2724,13 @@ But when it comes to working with high order functions like `map()` and `filter(
 
 Here's what the `square()` function looks like when refactored into a lambda function:
 
-```
+```python
 lambda num: num ** 2
 ```
 
 As mentioned earlier, lambda functions are anonymous, so this function no longer has the name `square` associated with it. Lambda functions are great when you need to use them in higher order functions like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
@@ -2741,7 +2741,7 @@ In this example, we have a list of numbers and want to create a new list of even
 
 When working with lambda functions it is important to be aware of best practices. For example, it is not a good practice to assign a lambda function to a variable like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 
 square = lambda x: x ** 2
@@ -2751,7 +2751,7 @@ print(squared_numbers) # [1, 4, 9, 16, 25]
 
 This defeats the purpose of using anonymous functions. In this case, you should use a regular function, like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 
 def square(num):
@@ -2763,14 +2763,14 @@ print(squared_numbers) # [1, 4, 9, 16, 25]
 
 Also, you should avoid creating lambda functions that are difficult to read or unnecessarily complicated, like this:
 
-```
+```python
 result = (lambda x: (x**2 + 2*x - 1) if x > 0 else (x**3 - x + 4))(3)
 print(result)  # 14
 ```
 
 While this function runs fine and produces the correct result of `14`, it is not easy to read or look at. In this case, it would be better to create a separate function with an `if/else` statement, and then call that function:
 
-```
+```python
 def calculate_expression(x):
     if x > 0:
         return x**2 + 2*x - 1
@@ -2815,25 +2815,25 @@ But how can you access the variables, constants, functions, and classes defined 
 
 You use an import statement. These statements let you import modules into your Python script. Import statements are generally written at the top of the file. Also, you can customize them based on your needs. First, you use the `import` statement, followed by the name of the module:
 
-```
+```python
 import module_name
 ```
 
 Let's say that you want to import the `math` module. In that case, you would write this at the top of your file:
 
-```
+```python
 import math
 ```
 
 Then, if you need to call a function from that module in your Python script, you would use dot notation, with the name of the module followed by the name of the function:
 
-```
+```python
 module_name.function_name()
 ```
 
 For example, to get the square root of 36, you would write `math` followed by a dot and then `sqrt`, an abbreviation of square root, and within parentheses, you would pass any necessary arguments. In this case, we only need to pass in the number we want the square root of:
 
-```
+```python
 math.sqrt(36)
 ```
 
@@ -2841,7 +2841,7 @@ This is the most basic version of an import statement, but there are other alter
 
 If you need to import the module with a different name (also known as an "alias"), you can use this syntax, with `as` followed by the alias at the end of the import statement:
 
-```
+```python
 import module_name as module_alias
 ```
 
@@ -2849,13 +2849,13 @@ This is often used to shorten long module names, or to avoid naming conflicts.
 
 For example, to refer to the `math` module as `m` in your code, you can assign an alias to it, like this:
 
-```
+```python
 import math as m
 ```
 
 Then, you can access the elements of the module using the alias:
 
-```
+```python
 m.sqrt(36)
 ```
 
@@ -2863,7 +2863,7 @@ But sometimes you don't need to import everything from a module. Perhaps you onl
 
 Now the import statement starts with `from`, followed by the name of the module, and then the `import` keyword followed by the name of the elements that you want to import:
 
-```
+```python
 from module_name import name1, name2
 ```
 
@@ -2871,13 +2871,13 @@ Then, you can use these names without the module prefix in your Python script.
 
 If you want to assign aliases to these names, you can do that by using the `as` keyword after each, followed by the alias you want to use:
 
-```
+```python
 from module_name import name1 as alias1, name2 as alias2
 ```
 
 Let's say that you only want to import the radians, sine, and cosine functions from the `math` module. You would write:
 
-```
+```python
 from math import radians, sin, cos
 ```
 
@@ -2887,7 +2887,7 @@ Here we have a more detailed example:
 
 To find the sine and cosine of a specific angle initially expressed in degrees, we can call the `radians` function to convert it to radians, and then call the sine and cosine functions, passing the angle in radians:
 
-```
+```python
 from math import radians, sin, cos
 
 angle_degrees = 40
@@ -2906,13 +2906,13 @@ This is helpful, but it can result in naming conflicts if you already have funct
 
 And finally, we find this import statement that ends with an asterisk. The asterisk is telling Python that you want to import everything in that module, but you want to import it so that you don't need to use the name of the module as a prefix:
 
-```
+```python
 from module_name import *
 ```
 
 For example, if you do this while importing the `math` module, you'll be able to call any function defined in that module without specifying the name of the module as a prefix. Here are some examples:
 
-```
+```python
 from math import *
 print(sqrt(36))  # 6.0
 print(pow(5, 2)) # 25.0
@@ -2925,14 +2925,14 @@ Import statements work exactly the same for functions, classes, constants, varia
 
 Here is an example of a constant from the `math` module, the number `pi`:
 
-```
+```python
 import math
 print(math.pi)
 ```
 
 And here is an example of a class from the `datetime` module. We create a date object that represents July 15, 1959. Then, we assign that `date` object to a variable and access the day, month, and year individually using dot notation:
 
-```
+```python
 import datetime
 birthday = datetime.date(1959, 7, 15)
 print(birthday.day)    # 15
@@ -2944,7 +2944,7 @@ You can find more information about the content of the module in the official Py
 
 Great. Now that you know more about modules, you should also know about this very important idiom in Python scripts, because they are very closely related:
 
-```
+```python
 if __name__ == '__main__': 
     # Code
 ```
@@ -2957,7 +2957,7 @@ But if the Python file is imported as a module into another Python script, the v
 
 This is why you'll often find this conditional in Python scripts. It contains the code that you want to run **only if** the Python script is running as the main program:
 
-```
+```python
 if __name__ == '__main__': 
     # Code
 ```
@@ -2976,7 +2976,7 @@ As you learned in earlier modules, loops are used to repeat a block of code for 
 
 The first loop we will go over is the `for` loop. Here is an example of using a `for` loop to iterate through a list and print each item to the console:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 
 for language in programming_languages:
@@ -2985,7 +2985,7 @@ for language in programming_languages:
 
 The result would be:
 
-```
+```python
 Rust
 Java
 Python
@@ -2994,7 +2994,7 @@ C++
 
 Notice that the `print(language)` is indented inside of the loop. Without that indentation, you would get an `IndentationError`:
 
-```
+```python
 """
 Traceback (most recent call last):
   File "<stdin>", line 4, in <module>
@@ -3004,14 +3004,14 @@ IndentationError: expected an indented block after 'for' statement on line 3
 
 You can also use a `for` loop to iterate through other iterables like a string. Here is an example of using a `for` loop to loop through the string `code` and print out each character:
 
-```
+```python
 for char in 'code':
     print(char)
 ```
 
 The result would be:
 
-```
+```python
 c
 o
 d
@@ -3020,7 +3020,7 @@ e
 
 Just like in JavaScript, you can also nest `for` loops in Python. Here is an example of using a nested `for` loop:
 
-```
+```python
 categories = ['Fruit', 'Vegetable']
 foods = ['Apple', 'Carrot', 'Banana']
 
@@ -3031,7 +3031,7 @@ for category in categories:
 
 The outer loop will iterate through each `category` in the `categories` list. For each `category`, the inner loop will iterate through each `food` in the `foods` list. Here is the result that will be printed to the console:
 
-```
+```python
 Fruit Apple
 Fruit Carrot
 Fruit Banana
@@ -3042,7 +3042,7 @@ Vegetable Banana
 
 Another type of loop you can use in Python is the `while` loop. This type of loop will repeat a block of code until the condition is `False`. Here is an example of using a `while` loop for a guessing game:
 
-```
+```python
 secret_number = 3
 guess = 0
 
@@ -3058,7 +3058,7 @@ In this example we have a `secret_number` variable with the value of `3` and an 
 
 Here's an example result:
 
-```
+```python
 Guess the number (1-5): 2
 Wrong! Try again.
 Guess the number (1-5): 1
@@ -3071,7 +3071,7 @@ Just like in JavaScript, Python supports the `break` and `continue` statements.
 
 The `break` statement is used to stop the execution of a loop. Here is an example of using the `break` statement for a list of `developer_names`:
 
-```
+```python
 developer_names = ['Jess', 'Naomi', 'Tom']
 
 for developer in developer_names:
@@ -3084,7 +3084,7 @@ In this example, we iterate through a list of `developer_names` and print each n
 
 The `continue` statement is used to skip the current iteration of a loop and move onto the next iteration. Let's modify the example from earlier to use the `continue` statement instead of `break`:
 
-```
+```python
 developer_names = ['Jess', 'Naomi', 'Tom']
 
 for developer in developer_names:
@@ -3097,7 +3097,7 @@ Now the result in the console will be different. The names `Jess` and `Tom` are 
 
 Both `for` and `while` loops can be combined with an `else` clause, which is executed only when the loop is not terminated by a `break` statement. Here is an example of using multiple `for` loops:
 
-```
+```python
 words = ['sky', 'apple', 'rhythm', 'fly', 'orange']
 
 for word in words:
@@ -3113,7 +3113,7 @@ In this example we have a list of random words, and a `for` loop is used to loop
 
 Here is what the result looks like in the console:
 
-```
+```python
 'sky' has no vowels
 'apple' contains the vowel 'a'
 'rhythm' has no vowels
@@ -3129,13 +3129,13 @@ Loops are very common in Python, so it's important to get comfortable with them.
 
 The `range()` function is used to generate a sequence of integers. Here is the basic syntax for the `range()` function:
 
-```
+```python
 range(start, stop, step)
 ```
 
 The required `stop` argument is an integer that represents the end point for the sequence of numbers being generated. Here is an example of using the `range()` function:
 
-```
+```python
 for num in range(3):
     print(num)
 ```
@@ -3144,21 +3144,21 @@ The following code generates a sequence of numbers between `0` and `2`. The inte
 
 If a `start` argument is not specified, then the default is `0`. Otherwise, you can use the optional `start` argument to start the sequence of integers at a integer other than `0`. Here is an example of generating a sequence of integers between `1` and `4`:
 
-```
+```python
 for num in range(1, 5):
     print(num)
 ```
 
 By default the sequence of integers will increment by `1`. But if you want to change that default, then you can use the optional `step` argument. Here is an example of generating a sequence of even integers between `2` and `10`:
 
-```
+```python
 for num in range(2, 11, 2):
     print(num)
 ```
 
 As mentioned earlier, there is only one required argument for the `range()` function. If you don't provide any arguments to `range()`, then you'll get a `TypeError`:
 
-```
+```python
 ERROR!
 Traceback (most recent call last):
   File "<main.py>", line 1, in <module>
@@ -3167,7 +3167,7 @@ TypeError: range expected at least 1 argument, got 0
 
 It is important to note that the `range()` function only accepts integers as arguments, not floats. Remember that floats are numbers with decimal points like `3.4`. If you try to pass floats as arguments, you'll get a `TypeError`:
 
-```
+```python
 ERROR!
 Traceback (most recent call last):
   File "<main.py>", line 1, in <module>
@@ -3176,7 +3176,7 @@ TypeError: 'float' object cannot be interpreted as an integer
 
 If you want to generate a sequence of integers in decrementing order, then you can use a negative integer for the `step` argument, like this:
 
-```
+```python
 for num in range(40, 0, -10):
     print(num)
 ```
@@ -3185,7 +3185,7 @@ The following code prints the numbers `40`, `30`, `20`, and `10` in that order t
 
 Another thing you can do with the `range()` function is create a list of integers by using it with the `list` constructor. The `list` constructor is used to convert an iterable into a list. Here is an example of generating a list of even integers between `2` and `10`:
 
-```
+```python
 numbers = list(range(2, 11, 2))
 print(numbers) # [2, 4, 6, 8, 10]
 ```
@@ -3202,27 +3202,27 @@ The list data type is an ordered sequence of elements that can be comprised of s
 
 Here is the basic syntax for a list:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 ```
 
 To access an element from the `cities` list, you can reference its index number in the sequence. Here is an example of accessing the first element of the `cities` list:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 cities[0] # 'Los Angeles'
 ```
 
 Negative indexing is used to access elements starting from the end of the list instead of the beginning at index `0`. To access the last element of any list, you can use `-1` like this:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 cities[-1] # 'Tokyo'
 ```
 
 Another way to create a list is to use the `list()` constructor. The `list()` constructor is used to convert an iterable into a list like this:
 
-```
+```python
 developer = 'Jessica'
 list(developer) # ['J', 'e', 's', 's', 'i', 'c', 'a']
 ```
@@ -3231,14 +3231,14 @@ An iterable is a special type of object that can be looped over one item at a ti
 
 To get the total number of elements in a list, you can use the `len()` function like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 len(numbers) # 5
 ```
 
 If you wanted to update a value at a particular index, you can do something like this:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[0] = 'JavaScript'
 print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
@@ -3246,7 +3246,7 @@ print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
 
 Since lists are mutable, you can update any element in the list as long as you pass in a valid index number. If you pass in an index (either positive or negative) that is out of bounds for the list, then you will receive an `IndexError`:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[10] = 'JavaScript'
 
@@ -3259,7 +3259,7 @@ IndexError: list assignment index out of range
 
 If you want to remove an element from a list you can use the `del` keyword like this:
 
-```
+```python
 developer = ['Jane Doe', 23, 'Python Developer']
 del developer[1]
 print(developer) # ['Jane Doe', 'Python Developer']
@@ -3267,7 +3267,7 @@ print(developer) # ['Jane Doe', 'Python Developer']
 
 Sometimes it is helpful to check if an element is inside the list. To do that, you can use the `in` keyword like this:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 
 'Rust' in programming_languages # True
@@ -3276,20 +3276,20 @@ programming_languages = ['Python', 'Java', 'C++', 'Rust']
 
 Sometimes it is common to have lists nested inside of other lists like this:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 ```
 
 In this example, we have one nested list containing three popular programming languages. To access the nested list, you will need to access it using index `2` since lists are zero based indexed:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 developer[2] # ['Python', 'Rust', 'C++']
 ```
 
 Then to access the second language from that nested list, you will need to access it using index `1` like this:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 developer[2][1] # 'Rust'
 ```
@@ -3298,7 +3298,7 @@ Another common technique used with lists is unpacking values.
 
 Unpacking values from a list is a technique used to assign values from a list to new variables. Here is an example of unpacking a `developer` list into new variables called `name`, `age` and `job`.
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, age, job = developer
 
@@ -3311,7 +3311,7 @@ Here, `name` has the value `'Alice'`, `age` has the value `34`, and `job` has th
 
 If you need to collect any remaining elements from a list, you can use the asterisk (`*`) operator like this:
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, *rest = developer
 
@@ -3323,7 +3323,7 @@ In this example, `name` will still have the value `'Alice'`, and `rest` is a lis
 
 If the numbers of variables on the left side of the assignment operator doesn't match the total numbers of items in the list, then you will receive a `ValueError`:
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, age, job, city = developer
 
@@ -3336,7 +3336,7 @@ ValueError: not enough values to unpack (expected 4, got 3)
 
 The last concept we will look at is the slice operator (`:`). Similar to strings, you can access portions of a list by using the slice operator like this:
 
-```
+```python
 desserts = ['Cake', 'Cookies', 'Ice Cream', 'Pie', 'Brownies']
 desserts[1:4] # ['Cookies', 'Ice Cream', 'Pie']
 ```
@@ -3345,13 +3345,13 @@ In this example, the start index is `1` since that points to the second item in 
 
 Another thing you can do with the slice operator `:` is specify a step interval which determines how much to increment between the indices. Let's say you had a list of numbers like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5, 6]
 ```
 
 If you wanted to extract a list of just even numbers, you can use the slicing operator like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5, 6]
 numbers[1::2] # [2, 4, 6]
 ```
@@ -3368,7 +3368,7 @@ In the previous lesson, you were introduced to the list data type and learned ho
 
 The first method we will look at is the `append()` method. This is used to add an item to the end of the list. Here is an example of using the `append()` method to add the number `6` to list of numbers:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.append(6)
 print(numbers) # [1, 2, 3, 4, 5, 6]
@@ -3376,7 +3376,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 If you want to add one list at the end of another, you can also use the `append()` method like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 
@@ -3390,7 +3390,7 @@ But if you want to add all of the individual numbers from the `even_numbers` lis
 
 The `extend()` method is similar to the `append()` method, but with `extend()` you can add multiple elements from one list to another. Here's an example of adding the numbers `6`, `8`, and `10` from one list to the end of the `numbers` list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 
@@ -3404,7 +3404,7 @@ To insert an element at a specific index in a list, you can use the `insert()` m
 
 Here is an example of using the `insert()` method:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.insert(2, 2.5)
 
@@ -3415,7 +3415,7 @@ The following code will insert the number `2.5` at index `2` in the `numbers` li
 
 If you want to remove an element from a list, you can use the `remove()` method. The `remove()` method takes the value of the element to remove as an argument:
 
-```
+```python
 numbers = [10, 20, 30, 40, 50, 50]
 numbers.remove(50)
 
@@ -3424,7 +3424,7 @@ print(numbers) # [10, 20, 30, 40, 50]
 
 It is important to note that this method will only remove the first occurrence of an item. Not all of them:
 
-```
+```python
 numbers = [10, 20, 30, 40, 50, 50, 50]
 numbers.remove(50)
 
@@ -3433,21 +3433,21 @@ print(numbers) # [10, 20, 30, 40, 50, 50]
 
 To remove an element at a specific index in the list, you can use the `pop()` method like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.pop(1) # The number 2 is returned
 ```
 
 If you don't specify an element for the `pop` method, then the last element is removed.
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.pop() # The number 5 is returned
 ```
 
 If you need to empty the list, then you can use the `clear()` method like this:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.clear()
 
@@ -3456,7 +3456,7 @@ print(numbers) # []
 
 The next method we will take a look at is the `sort()` method. This method is used to sort the elements in place. Here is an example of sorting a random list of numbers in place:
 
-```
+```python
 numbers = [19, 2, 35, 1, 67, 41]
 numbers.sort()
 
@@ -3465,7 +3465,7 @@ print(numbers) # [1, 2, 19, 35, 41, 67]
 
 In contrast to the `sort()` method, there is the `sorted()` function which works for any iterable and returns a new sorted list instead of modifying the original list. For example:
 
-```
+```python
 numbers = [19, 2, 35, 1, 67, 41]
 sorted_numbers = sorted(numbers)
 
@@ -3479,7 +3479,7 @@ Both the `sort()` method and `sorted()` function accept optional `key` and `reve
 
 The next method we will take a look at is the `reverse()` method. This method, will reverse a list of elements in place like this:
 
-```
+```python
 numbers = [6, 5, 4, 3, 2, 1]
 numbers.reverse()
 
@@ -3488,14 +3488,14 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 The last method we will take a look at is the `index` method. This is used to find the first index where an element can be found in a list. Here is an example of using the `index` method to find the language `'Java'` in a `programming_languages` list:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 programming_languages.index('Java') # 1
 ```
 
 If the element cannot be found, then Python throws a `ValueError`:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 programming_languages.index('JavaScript')
 
@@ -3514,7 +3514,7 @@ There are a few more methods for Python lists, but this initial list of methods 
 
 For the past few lessons, you have been getting comfortable working with loops like this:
 
-```
+```python
 even_numbers = []
 
 for num in range(21):
@@ -3530,7 +3530,7 @@ While this code works, there is a more concise way to write this that uses list 
 
 Here is the refactored example from earlier using square brackets:
 
-```
+```python
 even_numbers = [num for num in range(21) if num % 2 == 0]
 print(even_numbers)
 ```
@@ -3539,7 +3539,7 @@ In this refactored example, the `even_numbers` list is created using a single li
 
 Let's take a look at another example so we can better understand how list comprehension works:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 result = [(num, 'Even') if num % 2 == 0 else (num, 'Odd') for num in numbers]
 print(result)
@@ -3549,13 +3549,13 @@ In this example, we have a list of numbers and want to create a new list of tupl
 
 Here is what the result looks like printed in the console:
 
-```
+```python
 [(1, 'Odd'), (2, 'Even'), (3, 'Odd'), (4, 'Even'), (5, 'Odd')]
 ```
 
 Another way to create a list starting from an existing iterable is the `filter()` function. Here is an example of creating a new list of just words longer than four characters:
 
-```
+```python
 words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
 
 def is_long_word(word):
@@ -3569,7 +3569,7 @@ The `filter()` function is used to select elements from an iterable that meet a 
 
 Aside from the `filter()` function, there are a few more functions that are helpful when working with lists. Another function to be aware of is the `map()` function, which takes an iterable and applies a function to each of its elements. Here is an example of using the `map()` function to convert a list of temperatures from Celsius to Fahrenheit:
 
-```
+```python
 celsius = [0, 10, 20, 30, 40]
 
 def to_fahrenheit(temp):
@@ -3583,7 +3583,7 @@ Just like the `filter()` function, `map()` accepts a function and an iterable fo
 
 The last function we will look at is the `sum()` function. This function is used to get the sum from an iterable like a list or tuple. Here is an example of using the `sum()` function:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers)
 print(total) # Result: 50
@@ -3591,7 +3591,7 @@ print(total) # Result: 50
 
 You can also pass in an optional `start` argument which sets the initial value for the summation. Here is an updated example using the `start` argument as a positional argument:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers, 10) # positional argument
 print(total) # 60
@@ -3599,7 +3599,7 @@ print(total) # 60
 
 You can also choose to use the `start` argument as a keyword argument like this instead:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers, start=10) # keyword argument
 print(total) # 60
@@ -3615,7 +3615,7 @@ List comprehension as well as other functions like `map()`, `filter()`, and `sum
 
 A tuple is a Python data type used to create an ordered sequence of values. Tuples can contain a mixed set of data types like this:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 ```
 
@@ -3623,7 +3623,7 @@ Tuples are similar to lists, but while lists are a mutable data type, tuples are
 
 If you try to update one of the items in the tuple, you will get a `TypeError`:
 
-```
+```python
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 programming_languages[0] = 'JavaScript'
 
@@ -3636,21 +3636,21 @@ TypeError: 'tuple' object does not support item assignment
 
 To access an element from a tuple, you can use bracket notation and the index number:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 developer[1] # 34
 ```
 
 If you need to access elements starting from the end of a tuple, then you can use negative indexing. Here is an example of using a negative index to access the second to last element in a tuple:
 
-```
+```python
 numbers = (1, 2, 3, 4, 5)
 numbers[-2] # 4
 ```
 
 If you try to pass in an index number that exceeds or equals the length of the tuple, then you will receive an `IndexError` like this:
 
-```
+```python
 numbers = (1, 2, 3, 4, 5)
 numbers[7]
 
@@ -3663,7 +3663,7 @@ IndexError: list index out of range
 
 Another way to create a tuple is by using the `tuple()` constructor like this:
 
-```
+```python
 developer = 'Jessica'
 tuple(developer) # ('J', 'e', 's', 's', 'i', 'c', 'a')
 ```
@@ -3672,7 +3672,7 @@ For the `tuple()` constructor, you can pass in different iterables like strings,
 
 To check if an item is in a tuple, you can use the `in` keyword like this:
 
-```
+```python
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 
 'Rust' in programming_languages # True
@@ -3681,7 +3681,7 @@ programming_languages = ('Python', 'Java', 'C++', 'Rust')
 
 You can also unpack items from a tuple just like you did with lists:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 name, age, job = developer
 
@@ -3694,7 +3694,7 @@ In this example, `name` has the value `'Alice'`, `age` has the value `34`, and `
 
 If you need to collect any remaining elements from a tuple, you can use the asterisk (`*`) operator like this:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 name, *rest = developer
 
@@ -3706,7 +3706,7 @@ Here, `name` has the value `'Alice'`, and `rest` is a list comprised of the numb
 
 Just like with a list, you can use the slice operator on a tuple to extract a portion of it. Here is an example of extracting the items `'pie'` and `'cookies'` into a separate tuple:
 
-```
+```python
 desserts = ('cake', 'pie', 'cookies', 'ice cream')
 desserts[1:3] # ('pie', 'cookies')
 ```
@@ -3715,7 +3715,7 @@ Remember that the first number represents the starting index for the extraction 
 
 If you need to remove an item from a tuple, that isn't possible because tuples are immutable. So this example, will produce an error:
 
-```
+```python
 developer = ('Jane Doe', 23, 'Python Developer')
 del developer[1]
 
@@ -3740,21 +3740,21 @@ In the previous lesson, you learned how to work with the tuple data type. In thi
 
 The first method we will cover is `count()`. This method is used to determine how many times an item appears in a tuple. Here is an example of checking how many times the string `Rust` appears in a tuple named `programming_languages`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count('Rust') # 2
 ```
 
 Since `Rust` appears twice in the tuple, the `count()` method returns the number `2`. If the specified item in the `count()` function is not present at all in the tuple, then the return value is `0`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count('JavaScript') # 0
 ```
 
 If no arguments are passed into the `count()` function, then Python raises a `TypeError`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count()
 
@@ -3767,14 +3767,14 @@ TypeError: tuple.count() takes exactly one argument (0 given)
 
 The next method we will look at is the `index()` method. This method is used to find the index where a particular item is present in a tuple. Here is an example of using the `index()` method to find the index for the string `Java`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.index('Java') # 1
 ```
 
 If the specified item cannot be found, then Python raises a `ValueError`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.index('JavaScript')
 
@@ -3787,7 +3787,7 @@ ValueError: tuple.index(x): x not in tuple
 
 Another thing you can do with the `index()` method is to pass in optional start and stop index arguments. Here is an example of passing in an optional start index:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 programming_languages.index('Python', 3) # 5
 ```
@@ -3796,7 +3796,7 @@ In this example, we are specifying where to start searching for the string `Pyth
 
 You can also pass in an optional stop index. Here is a modified example of specifying a start and stop index:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python', 'JavaScript', 'Python')
 programming_languages.index('Python', 2, 5) # 2
 ```
@@ -3807,7 +3807,7 @@ Another commonly used function used with tuples is the `sorted()` function. In a
 
 Here is an example of creating a new list of numbers using the `sorted()` function:
 
-```
+```python
 numbers = (13, 2, 78, 3, 45, 67, 18, 7)
 sorted(numbers) # [2, 3, 7, 13, 18, 45, 67, 78]
 ```
@@ -3816,7 +3816,7 @@ The `sorted()` function will always create a new list of the sorted values. This
 
 If you need to customize the sorting behavior for an iterable, you can use the optional `reverse` and `key` arguments. Here is an example of using `key` argument to sort items in a tuple by length:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 sorted(programming_languages, key=len)
 
@@ -3826,7 +3826,7 @@ sorted(programming_languages, key=len)
 
 If you want to create a new list of values in reverse order, then you can use the `reverse` argument like this:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 
 print(sorted(programming_languages, reverse=True))
@@ -3843,7 +3843,7 @@ Tuples are a common data type in Python. Understanding how to work with them, al
 
 In previous lessons you learned how to work with the `for` loop, which is used to repeat a block of code a set number of times. Here is an example of using a `for` loop to print each language from the `languages` list to the console:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 for language in languages:
@@ -3852,7 +3852,7 @@ for language in languages:
 
 But what if you wanted to keep track of the index for each element? Well, one option is to create an `index` variable and increment it by `1` for each iteration of the loop, like this:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 index = 0
@@ -3866,7 +3866,7 @@ While that works, an easier way to do that is by using the `enumerate()` functio
 
 If we pass the `languages` list to the `enumerate()` function and convert its returned value into a list with the `list()` function, it looks like this:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 list(enumerate(languages))
@@ -3877,7 +3877,7 @@ Each entry in the enumerate object (now a list) is a tuple containing a count, f
 
 Now, let's refactor the example from earlier to use the `enumerate()` function:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 for index, language in enumerate(languages):
@@ -3886,7 +3886,7 @@ for index, language in enumerate(languages):
 
 We unpack the count and value for each tuple in the enumerate object into variables named `index` and `language`, respectively. Finally, both those variables are used in an f-string that's printed to the console in each iteration of the loop.
 
-```
+```python
 Index 0 and language Spanish
 Index 1 and language English
 Index 2 and language Russian
@@ -3897,7 +3897,7 @@ This removes the need for manually creating and updating an `index` variable.
 
 The `enumerate()` function also accepts an optional `start` argument that specifies the starting value for the count. If this argument is omitted, then the count will begin at `0`. Here is an example of using the optional `start` argument:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 for index, language in enumerate(languages, 1):
@@ -3906,7 +3906,7 @@ for index, language in enumerate(languages, 1):
 
 And here is what the result will look like in the console:
 
-```
+```python
 Index 1 and language Spanish
 Index 2 and language English
 Index 3 and language Russian
@@ -3917,7 +3917,7 @@ So far we've only been iterating over one list. But what if you need to iterate 
 
 If we pass a list of `developers` and `ids` to the `zip()` function and convert its returned value into a list with the `list()` function, here's what it looks like:
 
-```
+```python
 developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
 ids = [1, 2, 3, 4]
 
@@ -3927,7 +3927,7 @@ list(zip(developers, ids))
 
 And here's an example of using the `zip()` function with a `for` loop to iterate over `developers` and `ids`:
 
-```
+```python
 developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
 ids = [1, 2, 3, 4]
 
@@ -3938,7 +3938,7 @@ for name, id in zip(developers, ids):
 
 In this example, `zip()` combines the two lists into pairs of elements and returns an iterator of tuples. The `for` loop then unpacks each tuple into `name` and `id`. Finally, for each print statement, we are printing each `name` and `id` from the `ids` and `developers` lists respectively. Here is what the result looks like in the console:
 
-```
+```python
 Name: Naomi
 ID: 1
 Name: Dario
@@ -3962,20 +3962,20 @@ Python Lists
 
 * **Introduction**: In Python, the list data type is an ordered sequence of elements that can be composed of strings, numbers or even other lists. Lists are mutable and zero based indexed.
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 ```
 
 * **Accessing Elements in a List**: To access an element from the `cities` list, you can reference its index number in the sequence:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 cities[0] # Los Angeles
 ```
 
 * **Accessing Elements Using Negative Indexing**: To access the last element of any list, you can use `-1` as the index number:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 cities[-1] # Tokyo
 ```
@@ -3983,7 +3983,7 @@ cities[-1] # Tokyo
 * Negative indexing is used to access elements starting from the end of the list instead of the beginning at index `0`.
 * **Creating Lists Using the `list()` constructor**: Lists can also be created using the `list()` constructor. The `list()` constructor is used to convert an iterable into a list:
 
-```
+```python
 developer = 'Jessica'
 
 print(list(developer)) 
@@ -3992,14 +3992,14 @@ print(list(developer))
 
 * **Finding the Length of a List**: You can use the `len()` function to get the length of a list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 len(numbers) # 5
 ```
 
 * **List Mutability**: Lists are mutable, meaning you can update any element in the list as long as you pass in a valid index number. To update lists at a particular index, you can assign a new value to that index:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[0] = 'JavaScript'
 print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
@@ -4007,7 +4007,7 @@ print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
 
 * **Index Out of Range Error**: If you pass in an index (either positive or negative) that is out of bounds for the list, then you will receive an `IndexError`:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[10] = 'JavaScript'
 
@@ -4020,7 +4020,7 @@ IndexError: list assignment index out of range
 
 * **Removing Elements from a List**: Elements can be removed from a list using the `del` keyword:
 
-```
+```python
 developer = ['Jane Doe', 23, 'Python Developer']
 del developer[1]
 print(developer) # ['Jane Doe', 'Python Developer']
@@ -4028,7 +4028,7 @@ print(developer) # ['Jane Doe', 'Python Developer']
 
 * **Checking if an Element Exists in a List**: The `in` keyword can be used to check if an element exists in a list:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 
 'Rust' in programming_languages # True
@@ -4037,27 +4037,27 @@ programming_languages = ['Python', 'Java', 'C++', 'Rust']
 
 * **Nesting Lists**: Lists can be nested inside other lists:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 ```
 
 * To access the nested list, you will need to access it using index `2` since lists are zero-based indexed.
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 developer[2] # ['Python', 'Rust', 'C++']
 ```
 
 * To further access the second language from that nested list, you will need to access it using index `1`:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 developer[2][1] # Rust
 ```
 
 * **Unpacking Values from a List:** Unpacking values from a list is a technique used to assign values from a list to new variables. Here is an example to unpack the `developer` list into new variables called `name`, `age` and `job` like this:
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, age, job = developer
 ```
@@ -4065,21 +4065,21 @@ name, age, job = developer
 * If the number of variables on the left side of the assignment operator doesn't match the total number of items in the list, then you will receive a `ValueError`.
 * **Collecting Remaining Items From a List**: To collect any remaining elements from a list, you can use the asterisk (`*`) operator like this:
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, *rest = developer
 ```
 
 * **Slicing Lists**: Slicing is the concept of accessing a portion of a list by using the slice operator `:`. To slice a list that starts at index `1` and ends before index `3`, you can use the following syntax:
 
-```
+```python
 desserts = ['Cake', 'Cookies', 'Ice Cream', 'Pie']
 desserts[1:3] # ['Cookies', 'Ice Cream']
 ```
 
 * **Step Intervals**: It is also possible to specify a step interval which determines how much to increment between the indices. Here is an example if you want to extract a list of just even numbers using slicing:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5, 6]
 numbers[1::2] # [2, 4, 6]
 ```
@@ -4089,7 +4089,7 @@ List Methods
 
 * **append()**: Used to add an item to the end of the list. Here is an example of using the `append()` method to add the number `6` to this `numbers` list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.append(6)
 print(numbers) # [1, 2, 3, 4, 5, 6]
@@ -4097,7 +4097,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 * **Appending lists**: The `append()` method can also be used to add one list at the end of another:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 
@@ -4107,7 +4107,7 @@ print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
 
 * **extend()**: Used to add multiple items to the end of a list. Here is an example of adding the numbers `6`, `8`, and `10` to the end of the `numbers` list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 
@@ -4117,7 +4117,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10]
 
 * **insert()**: Used to insert an item at a specific index in the list. Here is an example of using the `insert()` method:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.insert(2, 2.5)
 
@@ -4126,7 +4126,7 @@ print(numbers) # [1, 2, 2.5, 3, 4, 5]
 
 * **remove():** Used to remove an item from the list. The `remove()` method will only remove the first occurrence of an item in the list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5, 5, 5]
 numbers.remove(5)
 
@@ -4135,21 +4135,21 @@ print(numbers) # [1, 2, 3, 4, 5, 5]
 
 * **pop()**: Used to remove a specific item from the list and return it:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.pop(1) # The number 2 is returned
 ```
 
 * If you don't specify an element for the `pop` method, then the last element is removed.
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.pop() # The number 5 is returned
 ```
 
 * **clear()**: Used to remove all items from the list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.clear()
 
@@ -4158,7 +4158,7 @@ print(numbers) # []
 
 * **sort()**: The `sort()` method is used to sort the elements in place. Here is an example of sorting a random list of `numbers` in place:
 
-```
+```python
 numbers = [19, 2, 35, 1, 67, 41]
 numbers.sort()
 
@@ -4167,7 +4167,7 @@ print(numbers) # [1, 2, 19, 35, 41, 67]
 
 * **sorted()**: A built-in function that returns a new sorted list instead of modifying the original list:
 
-```
+```python
 numbers = [19, 2, 35, 1, 67, 41]
 sorted_numbers = sorted(numbers)
 
@@ -4177,7 +4177,7 @@ print(numbers) # [19, 2, 35, 1, 67, 41]
 
 * **reverse()**: Used to reverse the order of the elements in a list:
 
-```
+```python
 numbers = [6, 5, 4, 3, 2, 1]
 numbers.reverse()
 
@@ -4186,7 +4186,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 * **index()**: Used to find the first index where an element can be found in a list:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 programming_languages.index('Java') # 1
 ```
@@ -4198,13 +4198,13 @@ Tuples in Python
 
 * **Definition**: A tuple is a Python data type used to create an ordered sequence of values. Tuples can contain a mixed set of data types:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 ```
 
 * Tuples are immutable, meaning the elements in the tuple cannot be changed once created. If you try to update one of the items in the tuple, you will get a `TypeError`:
 
-```
+```python
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 programming_languages[0] = 'JavaScript'
 
@@ -4217,21 +4217,21 @@ TypeError: "tuple" object does not support item assignment
 
 * **Accessing Elements from a Tuple**: To access an element from a tuple, use bracket notation and the index number:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 developer[1] # 34
 ```
 
 * Negative indexing can be used to access elements starting from the end of the tuple:
 
-```
+```python
 numbers = (1, 2, 3, 4, 5)
 numbers[-2] # 4
 ```
 
 * If you try to pass in an index number that exceeds or equals the length of the tuple, then you will receive an `IndexError`:
 
-```
+```python
 numbers = (1, 2, 3, 4, 5)
 numbers[7]
 
@@ -4244,7 +4244,7 @@ IndexError: tuple index out of range
 
 * A tuple can also be created using the `tuple()` constructor. Within the constructor, you can pass in different iterables like strings, lists and even other tuples.
 
-```
+```python
 developer = 'Jessica'
 
 print(tuple(developer)) 
@@ -4253,7 +4253,7 @@ print(tuple(developer))
 
 * **Verifying Items in a Tuple**: To check if an item is in a tuple, you can use the `in` keyword like this:
 
-```
+```python
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 
 'Rust' in programming_languages # True
@@ -4262,28 +4262,28 @@ programming_languages = ('Python', 'Java', 'C++', 'Rust')
 
 * **Unpacking Tuples**: Items can be unpacked from a tuple like this:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 name, age, job = developer
 ```
 
 * If you need to collect any remaining elements from a tuple, you can use the asterisk (`*`) operator like this:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 name, *rest = developer
 ```
 
 * **Slicing Tuples**: Slicing can be used to extract a portion of a tuple. For example, the items `pie` and `cookies` can be sliced into a separate tuple:
 
-```
+```python
 desserts = ('cake', 'pie', 'cookies', 'ice cream')
 desserts[1:3] # ('pie', 'cookies')
 ```
 
 * **Removing Items from Tuples**: Removing an item from a tuple will raise a `TypeError` as tuples are immutable:
 
-```
+```python
 developer = ('Jane Doe', 23, 'Python Developer')
 del developer[1]
 
@@ -4301,14 +4301,14 @@ Common Tuple Methods
 
 * **`count()`**: Used to determine how many times an item appears in a tuple. For example, you can check how many times the language `'Rust'` appears in the tuple:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count('Rust') # 2
 ```
 
 * If the specified item in the `count()` method is not present at all in the tuple, then the return value will be `0`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count('JavaScript') # 0
 ```
@@ -4316,7 +4316,7 @@ programming_languages.count('JavaScript') # 0
 * If no arguments are passed to the `count()` method, then Python will return a `TypeError`.
 * **index()**: Used to find the index where a particular item is present in the tuple. Here is an example of using the `index()` method to find the index for the language `'Java'`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.index('Java') # 1
 ```
@@ -4324,28 +4324,28 @@ programming_languages.index('Java') # 1
 * If the specified item cannot be found, then Python will return a `ValueError`.
 * You can pass an optional start index to the `index()` method to specify where to start searching for the item in the tuple:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 programming_languages.index('Python', 3) # 5
 ```
 
 * You can also pass in an optional end index to the `index()` method to specify where to stop searching for the item in the tuple:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python', 'JavaScript', 'Python')
 programming_languages.index('Python', 2, 5) # 2
 ```
 
 * **`sorted()`**: Used to sort the elements in any iterable and return a new sorted list. Here is an example of creating a new list of numbers using the `sorted()` function:
 
-```
+```python
 numbers = (13, 2, 78, 3, 45, 67, 18, 7)
 sorted(numbers) # [2, 3, 7, 13, 18, 45, 67, 78]
 ```
 
 * **Modifying Sorting Behavior**: You can customize the sorting behavior for an iterable using the optional `reverse` and `key` arguments. Here is an example of using the `key` argument to sort items in a tuple by length:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 sorted(programming_languages, key=len)
 
@@ -4355,7 +4355,7 @@ sorted(programming_languages, key=len)
 
 * You can create a new list of values in reverse order, using the `reverse` argument like this:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 
 print(sorted(programming_languages, reverse=True))
@@ -4370,7 +4370,7 @@ Loops in Python
 * **Definition**: Loops are used to repeat a block of code for a set number of times.
 * **`for` loop**: Used to iterate over a sequence (like a list, tuple or string) and execute a block of code for each item in that sequence. Here is an example of using a `for` loop to iterate through a list and print each language to the console:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 
 for language in programming_languages:
@@ -4388,7 +4388,7 @@ C++
 
 * Here is an example of using a `for` loop to loop through the string `code` and print out each character:
 
-```
+```python
 for char in 'code':
     print(char)
 
@@ -4404,7 +4404,7 @@ e
 
 * `for` loops can be nested. Here is an example of using a nested `for` loop:
 
-```
+```python
 categories = ['Fruit', 'Vegetable']
 foods = ['Apple', 'Carrot', 'Banana']
 
@@ -4426,7 +4426,7 @@ Vegetable Banana
 
 * **`while` loop**: Repeats a block of code until the condition is `False`. Here is an example of using a `while` loop for a guessing game:
 
-```
+```python
 secret_number = 3
 guess = 0
 
@@ -4452,7 +4452,7 @@ You got it!
 * **`break` and `continue` statements**: Used in loops to modify the execution of a loop.
 * The `break` statement is used to exit the loop immediately when a certain condition is met. Here is an example of using the `break` statement for a list of `developer_names`:
 
-```
+```python
 developer_names = ['Jess', 'Naomi', 'Tom']
 
 for developer in developer_names:
@@ -4463,7 +4463,7 @@ for developer in developer_names:
 
 * The `continue` statement is used to skip that current iteration and move onto the next iteration of the loop. Here is an example to use the `continue` statement instead of a `break` statement:
 
-```
+```python
 developer_names = ['Jess', 'Naomi', 'Tom']
 
 for developer in developer_names:
@@ -4474,7 +4474,7 @@ for developer in developer_names:
 
 * Both `for` and `while` loops can be combined with an `else` clause, which is executed only when the loop was not terminated by a `break`:
 
-```
+```python
 words = ['sky', 'apple', 'rhythm', 'fly', 'orange']
 
 for word in words:
@@ -4491,20 +4491,20 @@ Ranges and Their Use in Loops
 
 * **The `range()` function**: Used to generate a sequence of integers.
 
-```
+```python
 range(start, stop, step)
 ```
 
 * The required `stop` argument is an integer(non-inclusive) that represents the end point for the sequence of numbers being generated. Here is an example of using the `range()` function:
 
-```
+```python
 for num in range(3):
     print(num)
 ```
 
 * If a `start` argument is not specified, then the default will be `0`. By default the sequence of integers will increment by `1`. You can use the optional `step` argument to change the default increment value. Here is an example of generating a sequence of even integers from 2 up to but not including 11 (i.e., includes 10)
 
-```
+```python
 for num in range(2, 11, 2):
     print(num)
 ```
@@ -4512,7 +4512,7 @@ for num in range(2, 11, 2):
 * If you don't provide any arguments to the `range()` function, then you will get a `TypeError`.
 * The `range()` function only accepts integers for arguments and not floats. Using floats will also result in a `TypeError`:
 
-```
+```python
 ERROR!
 Traceback (most recent call last):
   File "<main.py>", line 1, in <module>
@@ -4521,14 +4521,14 @@ TypeError: 'float' object cannot be interpreted as an integer
 
 * You can use a negative integer for the `step` argument to generate a sequence of integers in decrementing order:
 
-```
+```python
 for num in range(40, 0, -10):
     print(num)
 ```
 
 * The `range()` function can also be used to create a list of integers by using it with the `list` constructor. The `list` constructor is used to convert an iterable into a list. Here is an example of generating a list of even integers between 2 and 10 inclusive:
 
-```
+```python
 numbers = list(range(2, 11, 2))
 print(numbers) # [2, 4, 6, 8, 10]
 ```
@@ -4538,7 +4538,7 @@ print(numbers) # [2, 4, 6, 8, 10]
 
 * **`enumerate()`**: used to iterate over a sequence and keep track of the index for each item in that sequence. The `enumerate()` function takes an iterable as an argument and returns an `enumerate` object that consist of the index and value of each item in the iterable.
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 for index, language in enumerate(languages):
@@ -4553,7 +4553,7 @@ for index, language in enumerate(languages):
 
 * The `enumerate()` function can also be used outside of a `for` loop:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 print(list(enumerate(languages)))
@@ -4563,7 +4563,7 @@ print(list(enumerate(languages)))
 * The `enumerate()` function also accepts an optional `start` argument that specifies the starting value for the count. If this argument is omitted, then the count will begin at `0`.
 * **`zip()`** : Used to iterate over multiple iterables in parallel. Here's an example using the `zip()` function to iterate over `developers` and `ids`:
 
-```
+```python
 developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
 ids = [1, 2, 3, 4]
 
@@ -4591,7 +4591,7 @@ List comprehensions in Python
 
 * **Definition**: List comprehension allows you to create a new list in a single line by combining the loop and the condition directly within square brackets. This makes the code shorter and often easier to read.
 
-```
+```python
 even_numbers = [num for num in range(21) if num % 2 == 0]
 print(even_numbers)
 ```
@@ -4601,7 +4601,7 @@ Iterable methods
 
 * **`filter()`**: Used to filter elements from an iterable based on a condition. It returns an iterator that contains only the elements that satisfy the condition. Here is an example of creating a new list of just words longer than four characters:
 
-```
+```python
 words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
 
 def is_long_word(word):
@@ -4613,7 +4613,7 @@ print(long_words) # ['mountain', 'river', 'cloud']
 
 * **`map()`**: Used to apply a function to each item in an iterable and return a new iterable with the results. Here is an example of using the `map()` function to convert a list of celsius temperatures to fahrenheit:
 
-```
+```python
 celsius = [0, 10, 20, 30, 40]
 
 def to_fahrenheit(temp):
@@ -4625,7 +4625,7 @@ print(fahrenheit) # [32.0, 50.0, 68.0, 86.0, 104.0]
 
 * **`sum()`**: Used to get the sum from an iterable like a list or tuple. Here is an example of using the `sum()` function:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers)
 print(total) # Result: 50
@@ -4633,7 +4633,7 @@ print(total) # Result: 50
 
 * You can also pass in an optional `start` argument which sets the initial value for the summation. Here is an updated example using the `start` argument as a positional argument:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers, 10) # positional argument
 print(total) # 60
@@ -4641,7 +4641,7 @@ print(total) # 60
 
 * You can also choose to use the `start` argument as a keyword argument like this instead:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers, start=10) # keyword argument
 print(total) # 60
@@ -4653,7 +4653,7 @@ Lambda functions
 * **Definition**: A lambda function in Python is a concise way to create a function without a name (an anonymous function).
 * Lambda functions are often used as an argument to another function. Here is an example of a lambda function:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
@@ -4674,7 +4674,7 @@ With Python dictionaries, you use a key to find its corresponding value. You sho
 
 This is the general syntax of a Python dictionary:
 
-```
+```python
 dictionary = {
     key1: value1,
     key2: value2
@@ -4689,7 +4689,7 @@ Each key is associated with a value, so you can use the key to access that value
 
 Here we have an example of a dictionary that stores information about a Margherita pizza recipe:
 
-```
+```python
 pizza = {
     'name': 'Margherita Pizza',
     'price': 8.9,
@@ -4704,25 +4704,25 @@ Another alternative would be using the `dict()` constructor, which builds the di
 
 This would be the equivalent syntax for our pizza example. We pass a list of tuples as argument to the `dict()` constructor. These tuples contain the key as the first element and the value as the second element.
 
-```
+```python
 pizza = dict([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250), ('toppings', ['mozzarella', 'basil'])])
 ```
 
 To access the value of a key-value pair, you can use this syntax, known as bracket notation. It's the name of the variable that holds the dictionary, followed by square brackets, and the key you want to access within the square brackets:
 
-```
+```python
 dictionary[key]
 ```
 
 In our pizza example, if you want to access the value of `name`, you would write the name of the variable, `pizza`, followed by square brackets, and the key, `name`, within quotes:
 
-```
+```python
 pizza['name']
 ```
 
 This will evaluate to:
 
-```
+```python
 'Margherita Pizza'
 ```
 
@@ -4730,13 +4730,13 @@ To update a value, you just need to add the assignment operator, followed by the
 
 If the key doesn't exist in the dictionary, a new key-value pair will be created. In recent versions of Python, dictionaries preserve the order of insertion. This is helpful when you need to iterate over the dictionary:
 
-```
+```python
 pizza['name'] = 'Margherita'
 ```
 
 Now the value of the key `name` is `'Margherita'`:
 
-```
+```python
 print(pizza['name']) # 'Margherita'
 ```
 
@@ -4744,19 +4744,19 @@ Dictionaries also have helpful methods to perform common operations.
 
 The `.get()` method retrieves the value associated with a key. It's similar to the bracket notation that we just used, but its advantage is that you can set a default value, so you won't get an error if the key doesn't exist:
 
-```
+```python
 dictionary.get(key, default)
 ```
 
 In this example, if the `toppings` key doesn't exist, it will return an empty list, which is the default value that we are passing here as the second argument. But if `toppings` does exist, it will return that value:
 
-```
+```python
 pizza.get('toppings', []) # ['mozzarella', 'basil']
 ```
 
 The `.keys()` and `.values()` methods return a view object with all the keys and values in the dictionary, respectively:
 
-```
+```python
 pizza.keys()
 # dict_keys(['name', 'price', 'calories_per_slice'])
 
@@ -4768,27 +4768,27 @@ A view object is just a way to see the content of a dictionary without creating 
 
 The `.items()` method returns a view object with all the key-value pairs in the dictionary, including both the keys and the values:
 
-```
+```python
 pizza.items()
 # dict_items([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250)])
 ```
 
 The `.clear()` method removes all the key-value pairs from the dictionary:
 
-```
+```python
 pizza.clear()
 ```
 
 The `.pop()` method removes the key-value pair with the key that you specify as the first argument and returns its value. If the key doesn't exist, it returns the default value that you specify as the second argument. If the key doesn't exist and you don't pass a default value, a `KeyError` is raised:
 
-```
+```python
 pizza.pop('price', 10)
 pizza.pop('total_price') # KeyError
 ```
 
 In Python 3.7 and more recent versions, the `.popitem()` method removes the last inserted item:
 
-```
+```python
 pizza.popitem()
 ```
 
@@ -4798,13 +4798,13 @@ In this example, we are updating the `pizza` dictionary. The `price` key exists 
 
 But `total_time` is new, so it will be added to the `pizza` dictionary as a new key-value pair:
 
-```
+```python
 pizza.update({ 'price': 15, 'total_time': 25 })
 ```
 
 This is the new dictionary with the updated `price` and the new `total_time`. Notice how the price is now `15` and `total_time` is a new key-value pair:
 
-```
+```python
 {
     'name': 'Margherita Pizza', 
     'price': 15, 
@@ -4826,7 +4826,7 @@ Let's take a look at some of the techniques you can use.
 
 Let's say that we have a `products` dictionary that associates every product with its price:
 
-```
+```python
 products = {
     'Laptop': 990,
     'Smartphone': 600,
@@ -4847,14 +4847,14 @@ You write `for`, the loop variable (`price` in this case), `products.values()` t
 
 The loop variable will take each one of the values, one per iteration:
 
-```
+```python
 for price in products.values():
     print(price)
 ```
 
 And here is the output. As you can see, each value is printed to the console, one by one:
 
-```
+```python
 990
 600
 250
@@ -4863,7 +4863,7 @@ And here is the output. As you can see, each value is printed to the console, on
 
 This works exactly the same for `.keys()` if you need to iterate over the keys of a dictionary. You just need to iterate over `products.keys()` or `products` directly, and assign a descriptive name for the loop variable:
 
-```
+```python
 for product in products.keys():
     print(product)
 
@@ -4875,7 +4875,7 @@ for product in products:
 
 This is the output. Each key is printed to the console, one at a time:
 
-```
+```python
 Laptop
 Smartphone
 Tablet
@@ -4884,14 +4884,14 @@ Headphones
 
 And this works exactly the same for key-value pairs if you need to iterate over the keys and their corresponding values simultaneously. You just need to iterate over `products.items()`:
 
-```
+```python
 for product in products.items():
     print(product)
 ```
 
 This is the output. Now you get individual tuples with the keys and their corresponding values:
 
-```
+```python
 ('Laptop', 990)
 ('Smartphone', 600)
 ('Tablet', 250)
@@ -4902,14 +4902,14 @@ If you want to store the key and the value in separate loop variables, you just 
 
 Here, we are defining a `product` loop variable and a `price` loop variable. Each one will hold its corresponding value. It's important to define them in order – the key first, and then the value:
 
-```
+```python
 for product, price in products.items():
     print(product, price)
 ```
 
 This is the output. We are printing them side by side, but you can use these values as you need them in your code.
 
-```
+```python
 Laptop 990
 Smartphone 600
 Tablet 250
@@ -4920,7 +4920,7 @@ Now that you know more about this, we can go back to our initial example. If we 
 
 We could also round the result down if we want to work with integers:
 
-```
+```python
 products = {
     'Laptop': 990,
     'Smartphone': 600,
@@ -4936,7 +4936,7 @@ print(products)
 
 Then, if we print the dictionary, we would get these key-value pairs with the discounted prices:
 
-```
+```python
 {
     'Laptop': 792, 
     'Smartphone': 480, 
@@ -4951,7 +4951,7 @@ The function returns an `enumerate` object, which assigns an integer to each key
 
 Here, we are iterating over the keys of the `products` dictionary:
 
-```
+```python
 for product in enumerate(products):
     print(product)
 ```
@@ -4960,7 +4960,7 @@ But the `enumerate()` function also assigns an integer to each key, so we get tu
 
 Here is the output:
 
-```
+```python
 (0, 'Laptop')
 (1, 'Smartphone')
 (2, 'Tablet')
@@ -4969,21 +4969,21 @@ Here is the output:
 
 If you need to, you can assign these values to separate loop variables. Here, we have two loop variables (`index` and `product`). This is what you will commonly see and use when you work with `enumerate()`:
 
-```
+```python
 for index, product in enumerate(products):
     print(index, product)
 ```
 
 If you need to iterate over the values, you can replace `products` by `products.values()`:
 
-```
+```python
 for price in enumerate(products.values()):
     print(price)
 ```
 
 The output will have the index and the price in each tuple:
 
-```
+```python
 (0, 990)
 (1, 600)
 (2, 250)
@@ -4992,14 +4992,14 @@ The output will have the index and the price in each tuple:
 
 You can assign them to separate loop variables as well:
 
-```
+```python
 for index, price in enumerate(products.values()):
     print(index, price)
 ```
 
 This will be the output. You can use them as you need to in your code:
 
-```
+```python
 0 990
 1 600
 2 250
@@ -5008,14 +5008,14 @@ This will be the output. You can use them as you need to in your code:
 
 And with `products.items()`, you can get the entire key-value pair in addition to the "index" or "counter":
 
-```
+```python
 for index, product in enumerate(products.items()):
     print(index, product)
 ```
 
 In this example, we get the index followed by a tuple that contains the key and the value of the corresponding key-value pair:
 
-```
+```python
 0 ('Laptop', 990)
 1 ('Smartphone', 600)
 2 ('Tablet', 250)
@@ -5024,14 +5024,14 @@ In this example, we get the index followed by a tuple that contains the key and 
 
 To customize the initial value of the count, you can pass a second argument to `enumerate()`. For example, here we are starting the count from 1:
 
-```
+```python
 for index, product in enumerate(products.items(), 1):
     print(index, product)
 ```
 
 You can see this change in the output. Now the first integer is 1 instead of 0:
 
-```
+```python
 1 ('Laptop', 990)
 2 ('Smartphone', 600)
 3 ('Tablet', 250)
@@ -5052,38 +5052,38 @@ Sets are mutable and unordered, which means that their elements are not stored i
 
 To define a set, you just need to write its elements within curly braces and separate them with commas. This is an example of a set of numbers:
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 ```
 
 One quirk of working with sets is that, if you ever need to define an empty set, you must use the `set()` function. If you just write empty curly braces, like `{}`, Python will automatically create a dictionary.
 
-```
+```python
 set() # Set
 {}    # Dictionary
 ```
 
 You can add an element to a set with the `.add()` method, and pass in the new element as argument:
 
-```
+```python
 my_set.add(6)
 ```
 
 In our example, the new set would be:
 
-```
+```python
 {1, 2, 3, 4, 5, 6}
 ```
 
 If you try to add an element that is already in the set, only one will be kept. In this case, we already have the number 5 in the set:
 
-```
+```python
 my_set.add(5)
 ```
 
 So the set will not change:
 
-```
+```python
 {1, 2, 3, 4, 5, 6}
 ```
 
@@ -5091,14 +5091,14 @@ To remove an element from the set, you have two options. You can either use the 
 
 The `.remove()` method will raise a `KeyError` if the element is not found, while the `.discard()` method will not:
 
-```
+```python
 my_set.remove(4)
 my_set.discard(4)
 ```
 
 The `.clear()` method removes all the elements from the set:
 
-```
+```python
 my_set.clear()
 ```
 
@@ -5110,7 +5110,7 @@ Here, we are checking if `your_set` is a subset of `my_set`, which is `False` be
 
 We are also checking if `my_set` is a superset of `your_set`. This is also `False` because `my_set` does not have all the elements of `your_set`:
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -5120,55 +5120,55 @@ print(my_set.issuperset(your_set)) # False
 
 The `.isdisjoint()` method checks if two sets are disjoint, which means they don't have any elements in common. In this case, that's `False` because `my_set` and `your_set` do have common elements – 2, 3, and 4:
 
-```
+```python
 print(my_set.isdisjoint(your_set)) # False
 ```
 
 The union operator `|` returns a new set with all the elements from both sets:
 
-```
+```python
 my_set | your_set # {1, 2, 3, 4, 5, 6}
 ```
 
 The intersection operator `&` returns a new set with only the elements that the sets have in common:
 
-```
+```python
 my_set & your_set # {2, 3, 4}
 ```
 
 The difference operator `-` returns a new set with the elements of the first set that are not in the other sets. In this example, the numbers 1 and 5 are in `my_set` but NOT in `your_set`:
 
-```
+```python
 my_set - your_set # {1, 5}
 ```
 
 The symmetric difference operator `^` returns a new set with the elements that are either in the first or the second set, but not both. In this case, 1 and 5 are in `my_set` but not in `your_set`, so they are included. And the number 6 is in `your_set` but not in `my_set`, so it's included as well:
 
-```
+```python
 my_set ^ your_set # {1, 5, 6}
 ```
 
 Each one of these operators also has its corresponding compound assignment operator if you add the equal sign next to it. These operators automatically assign the resulting set to the first set in the expression:
 
-```
+```python
 |= &= -= ^=
 ```
 
 For example, the `-=` operator finds the difference between the sets and updates the first set with that result:
 
-```
+```python
 my_set -= your_set
 ```
 
 After this, `my_set` will be updated to `{1, 5}`:
 
-```
+```python
 print(my_set) # {1, 5}
 ```
 
 You can check if an element is in a set or not with the `in` operator. Here, we are checking if 5 is in `my_set`. The result will be a boolean value `True` or `False`:
 
-```
+```python
 print(5 in my_set)
 ```
 
@@ -5185,7 +5185,7 @@ Dictionaries
 
 * **Dictionaries**: Dictionaries are built-in data structures that store collections of key-value pairs. Keys need to be immutable data types. This is the general syntax of a Python dictionary:
 
-```
+```python
 dictionary = {
     key1: value1,
     key2: value2
@@ -5194,13 +5194,13 @@ dictionary = {
 
 * **`dict()` Constructor**: The `dict()` constructor is an alternative way to build the dictionary. You pass a list of tuples as an argument to the `dict()` constructor. These tuples contain the key as the first element and the value as the second element.
 
-```
+```python
 pizza = dict([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250), ('toppings', ['mozzarella', 'basil'])])
 ```
 
 * **Bracket Notation**: To access the value of a key-value pair, you can use the syntax known as bracket notation.
 
-```
+```python
 dictionary[key]
 ```
 
@@ -5209,13 +5209,13 @@ Common Dictionary Methods
 
 * **`get()` Method**: The `get()` method retrieves the value associated with a key. It's similar to the bracket notation, but it lets you set a default value, preventing errors if the key doesn't exist.
 
-```
+```python
 dictionary.get(key, default)
 ```
 
 * **`keys()` and `values()` Methods**: The `keys()` and `values()` methods return a view object with all the keys and values in the dictionary, respectively. A view object is a way to see the content of a dictionary without creating a separate copy of the data.
 
-```
+```python
 pizza = {
     'name': 'Margherita Pizza',
     'price': 8.9,
@@ -5231,33 +5231,33 @@ pizza.values()
 
 * **`items()` Method**: The `items()` method returns a view object with all the key-value pairs in the dictionary, including both the keys and the values.
 
-```
+```python
 pizza.items()
 # dict_items([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250)])
 ```
 
 * **`clear()` Method**: The `clear()` method removes all the key-value pairs from the dictionary.
 
-```
+```python
 pizza.clear()
 ```
 
 * **`pop()` Method**: The `pop()` method removes the key-value pair with the key specified as the first argument and returns its value. If the key doesn't exist, it returns the default value specified as the second argument. If the key doesn't exist and the default value is not specified, a `KeyError` is raised.
 
-```
+```python
 pizza.pop('price', 10)
 pizza.pop('total_price') # KeyError
 ```
 
 * **`popitem()` Method**: In Python 3.7 and above, the `popitem()` method removes the last inserted item.
 
-```
+```python
 pizza.popitem()
 ```
 
 * **`update()` Method**: The `update()` method updates the key-value pairs with the key-value pairs of another dictionary. If they have keys in common, their values are overwritten. New keys will be added to the dictionary as new key-value pairs.
 
-```
+```python
 pizza.update({ 'price': 15, 'total_time': 25 })
 ```
 
@@ -5266,7 +5266,7 @@ Looping Over a Dictionary
 
 * **Iterating Over Values**: If you need to iterate over the values in a dictionary, you can write a `for` loop with `values()` to get all the values of a dictionary.
 
-```
+```python
 products = {
     'Laptop': 990,
     'Smartphone': 600,
@@ -5280,7 +5280,7 @@ for price in products.values():
 
 Output:
 
-```
+```python
 990
 600
 250
@@ -5289,7 +5289,7 @@ Output:
 
 * **Iterating Over Keys**: If you need to iterate over the keys in the `products` dictionary above, you can write `products.keys()` or `products` directly.
 
-```
+```python
 for product in products.keys():
     print(product)
 
@@ -5301,7 +5301,7 @@ for product in products:
 
 Output:
 
-```
+```python
 Laptop
 Smartphone
 Tablet
@@ -5310,14 +5310,14 @@ Headphones
 
 * **Iterating Over Key-Value Pairs**: If you need to iterate over the keys and their corresponding values simultaneously, you can iterate over `products.items()`. You get individual tuples with the keys and their corresponding values.
 
-```
+```python
 for product in products.items():
     print(product)
 ```
 
 Output:
 
-```
+```python
 ('Laptop', 990)
 ('Smartphone', 600)
 ('Tablet', 250)
@@ -5326,14 +5326,14 @@ Output:
 
 To store the key and value in separate loop variables, you need to separate them with a comma. The first variable stores the key, and the second stores the value.
 
-```
+```python
 for product, price in products.items():
     print(product, price)
 ```
 
 Output:
 
-```
+```python
 Laptop 990
 Smartphone 600
 Tablet 250
@@ -5344,14 +5344,14 @@ Headphones 70
 
 Assigning the index and item to separate loop variables is the common way to use `enumerate()`. For example, with `products.items()`, you can get the entire key-value pair in addition to the index:
 
-```
+```python
 for index, product in enumerate(products.items()):
     print(index, product)
 ```
 
 Output:
 
-```
+```python
 0 ('Laptop', 990)
 1 ('Smartphone', 600)
 2 ('Tablet', 250)
@@ -5360,14 +5360,14 @@ Output:
 
 To customize the initial value of the count, you can pass a second argument to `enumerate()`. For example, here we are starting the count from 1.
 
-```
+```python
 for index, product in enumerate(products.items(), 1):
     print(index, product)
 ```
 
 Output:
 
-```
+```python
 1 ('Laptop', 990)
 2 ('Smartphone', 600)
 3 ('Tablet', 250)
@@ -5380,13 +5380,13 @@ Sets
 * **Sets**: Sets are built-in data structures in Python that do not allow duplicate values. Sets are mutable and unordered, which means that their elements are not stored in any specific order, so you cannot use indices or keys to access them. Also, sets can only contain values of immutable data types, like numbers, strings, and tuples.
 * **Defining a Set**: To define a set, you need to write its elements within curly brackets and separate them with commas.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 ```
 
 * **Defining an Empty Set**: If you need to define an empty set, you must use the `set()` function. Only writing empty curly braces will automatically create a dictionary.
 
-```
+```python
 set() # Set
 {}    # Dictionary
 ```
@@ -5396,20 +5396,20 @@ Common Set Methods
 
 * **`add()` Method**: You can add an element to a set with the `add()` method, passing the new element as an argument.
 
-```
+```python
 my_set.add(6)
 ```
 
 * **`remove()` and `discard()` Methods**: To remove an element from a set, you can either use the `remove()` method or the `discard()` method, passing the element you want to remove as an argument. The `remove()` method will raise a `KeyError` if the element is not found while the `discard()` method will not.
 
-```
+```python
 my_set.remove(4)
 my_set.discard(4)
 ```
 
 * **`clear()` method**: The `clear()` method removes all the elements from the set.
 
-```
+```python
 my_set.clear()
 ```
 
@@ -5418,7 +5418,7 @@ Mathematical Set Operations
 
 * **`issubset()` and `issuperset()` Methods**: The `issubset()` and the `issuperset()` methods check if a set is a subset or superset of another set, respectively.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 5}
 
@@ -5428,7 +5428,7 @@ print(my_set.issuperset(your_set)) # True
 
 * **`isdisjoint()` Method**: The `isdisjoint()` method checks if two sets are disjoint, if they don't have elements in common.
 
-```
+```python
 my_set = {1, 2, 3}
 your_set = {4, 5, 6}
 
@@ -5437,7 +5437,7 @@ print(my_set.isdisjoint(your_set)) # True
 
 * **Union Operator (`|`)**: The union operator `|` returns a new set with all the elements from both sets.
 
-```
+```python
 my_set = {1, 2, 3}
 your_set = {4, 5, 6}
 
@@ -5446,7 +5446,7 @@ my_set | your_set # {1, 2, 3, 4, 5, 6}
 
 * **Intersection Operator (`&`)**: The intersection operator `&` returns a new set with only the elements that the sets have in common.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -5455,7 +5455,7 @@ my_set & your_set # {2, 3, 4}
 
 * **Difference Operator (`-`)**: The difference operator `-` returns a new set with the elements of the first set that are not in the other sets.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -5464,7 +5464,7 @@ my_set - your_set # {1, 5}
 
 * **Symmetric Difference Operator (`^`)**: The symmetric difference operator `^` returns a new set with the elements that are either in the first or the second set, but not both.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -5473,7 +5473,7 @@ my_set ^ your_set # {1, 5, 6}
 
 * **`in` Operator**: You can check if an element is in a set or not with the `in` operator.
 
-```
+```python
 print(5 in my_set) # True
 ```
 
@@ -5488,19 +5488,19 @@ Import Statement
 * **Import Statement**: To access the elements defined in built-in modules, you use an import statement. Import statements are generally written at the top of the file. Import statements work the same for functions, classes, constants, variables, and any other elements defined in the module.
 * **Basic Import Statement**: You can use the `import` keyword followed by the name of the module:
 
-```
+```python
 import module_name
 ```
 
 Then, if you need to call a function from that module, you would use dot notation, with the name of the module followed by the name of the function.
 
-```
+```python
 module_name.function_name()
 ```
 
 For example, you would write the following in your code to import the `math` module and get the square root of 36:
 
-```
+```python
 import math
 
 math.sqrt(36)
@@ -5508,31 +5508,31 @@ math.sqrt(36)
 
 * **Importing a Module with a Different Name**: If you need to import the module with a different name (also known as an "alias"), you can use `as` followed by the alias at the end of the import statement. This is often used for long module names or to avoid naming conflicts.
 
-```
+```python
 import module_name as module_alias
 ```
 
 For example, to refer to the `math` module as `m` in your code, you can assign an alias like this:
 
-```
+```python
 import math as m
 ```
 
 Then, you can access the elements of the module using the alias:
 
-```
+```python
 m.sqrt(36)
 ```
 
 * **Importing Specific Elements**: If you don't need everything from a module, you can import specific elements using `from`. In this case, the import statement starts with `from`, followed by the module name, then the `import` keyword, and finally the names of the elements you want to import.
 
-```
+```python
 from module_name import name1, name2
 ```
 
 Then, you can use these names without the module prefix in your Python script. For example:
 
-```
+```python
 from math import radians, sin, cos
 
 angle_degrees = 40
@@ -5549,19 +5549,19 @@ This is helpful, but it can result in naming conflicts if you already have funct
 
 If you need to assign aliases to these names, you can do so as well, using the `as` keyword followed by the alias.
 
-```
+```python
 from module_name import name1 as alias1, name2 as alias2
 ```
 
 * **Import Statement with Asterisk (`*`)**: The asterisk tells Python that you want to import everything in that module, but you want to import it so that you don't need to use the name of the module as a prefix.
 
-```
+```python
 from module_name import *
 ```
 
 For example, if you use this to import the `math` module, you'll be able to call any function defined in that module without specifying the name of the module as a prefix.
 
-```
+```python
 from math import *
 print(sqrt(36))  # 6.0
 ```
@@ -5575,7 +5575,7 @@ However, this is generally discouraged because it can lead to namespace collisio
 
 This is why you'll often find this conditional in Python scripts. It contains the code that you only want to run **only** if the Python script is running as the main program.
 
-```
+```python
 if __name__ == '__main__': 
     # Code
 ```
@@ -5592,7 +5592,7 @@ Exception handling is the process of catching and managing errors that occur dur
 
 Python provides the `try`, `except`, `else`, and `finally` blocks to gracefully handle errors. Here's a basic example:
 
-```
+```python
 try:
     x = 10 / 0
 except ZeroDivisionError:
@@ -5605,7 +5605,7 @@ except ZeroDivisionError:
 
 And here's an example also showing how to use the `else` and `finally` blocks:
 
-```
+```python
 try:
     x = 10 / 2
 except ZeroDivisionError:
@@ -5621,7 +5621,7 @@ finally:
 
 You can also catch multiple exceptions with separate `except` blocks:
 
-```
+```python
 try:
     number = int('abc')
     result = 10 / number
@@ -5635,7 +5635,7 @@ By using separate `except` clauses, you can make your error responses more speci
 
 You can also use the exception object, which is typically aliased to another name with the `as` keyword. Here we're using `e` as an alias for the error object:
 
-```
+```python
 try:
     x = 1 / 0
 except ZeroDivisionError as e:
@@ -5646,7 +5646,7 @@ Using `e` lets you access the actual error message or object for logging or debu
 
 You can also catch multiple exceptions in a single `except` clause by specifying the exceptions as a tuple:
 
-```
+```python
 try:
     number = int(input('Enter a number: '))
     result = 10 / number
@@ -5666,7 +5666,7 @@ Common Python errors include `SyntaxError`, `NameError`, `TypeError`, `IndexErro
 
 Here is an example of a `SyntaxError`:
 
-```
+```python
 print("Hello, world!"
 # SyntaxError: unexpected EOF while parsing
 ```
@@ -5675,7 +5675,7 @@ This line is missing a closing parenthesis. Python raises a `SyntaxError` becaus
 
 Here is an example of a `NameError`:
 
-```
+```python
 print(name)
 # NameError: name 'name' is not defined
 ```
@@ -5684,7 +5684,7 @@ You're trying to print a variable that hasn't been defined yet. Python raises a 
 
 Here is an example of a `TypeError`:
 
-```
+```python
 5 + "5"
 # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
@@ -5693,7 +5693,7 @@ You can't add an integer and a string together. Python raises a `TypeError` when
 
 Here is an example of an `IndexError`:
 
-```
+```python
 my_list = [1, 2, 3]
 print(my_list[5])
 # IndexError: list index out of range
@@ -5703,7 +5703,7 @@ You're trying to access an index that doesn't exist in the list. Python raises a
 
 Here is an example of an `AttributeError`:
 
-```
+```python
 num = 42
 num.append(5)
 # AttributeError: 'int' object has no attribute 'append'
@@ -5723,7 +5723,7 @@ The `raise` statement is used to explicitly throw an exception at any point in y
 
 Python's `raise` statement can be used in several ways to trigger exceptions. At its most basic, you can raise built-in exceptions or create custom error messages. Here's a simple example:
 
-```
+```python
 def check_age(age):
     if age < 0:
         raise ValueError('Age cannot be negative')
@@ -5741,7 +5741,7 @@ In this example, we're raising a `ValueError` with a custom message when an inva
 
 The `raise` statement can also be used to re-raise the current exception, which is particularly useful in exception handling:
 
-```
+```python
 def process_data(data):
     try:
         result = int(data)
@@ -5762,7 +5762,7 @@ This allows you to log or perform cleanup while still propagating the error up t
 
 You can create and raise custom exceptions by defining your own exception classes:
 
-```
+```python
 class InsufficientFundsError(Exception):
     def __init__(self, balance, amount):
         self.balance = balance
@@ -5786,7 +5786,7 @@ You'll learn more about classes and inheritance in future lessons. For now, know
 
 The `raise` statement can also be used with the `from` keyword to chain exceptions, showing the relationship between different errors:
 
-```
+```python
 def parse_config(filename):
     try:
         with open(filename, 'r') as file:
@@ -5802,7 +5802,7 @@ config = parse_config('config.txt')
 
 Here you can see that `raise ... from None`, suppresses the original exception context:
 
-```
+```python
 Traceback (most recent call last):
   File "main.py", line 12, in <module>
     config = parse_config('config.txt')
@@ -5814,7 +5814,7 @@ ValueError: Configuration file is missing
 
 And `raise ... from e`, chains the new exception to the original one, preserving the error trail.
 
-```
+```python
 Traceback (most recent call last):
   File "main.py", line 5, in parse_config
     return int(data)
@@ -5834,7 +5834,7 @@ ValueError: Invalid configuration format
 
 You can also raise exceptions conditionally using `assert` statements, which are essentially shorthand for `raise` with `AssertionError`:
 
-```
+```python
 def calculate_square_root(number):
     assert number >= 0, 'Cannot calculate square root of negative number'
     return number ** 0.5
@@ -5862,7 +5862,7 @@ Using the `print()` function and f-strings
 
 First, using the `print()` function and f-strings at various points in your code can help you understand the flow and state of variables. For example:
 
-```
+```python
 def add(a, b):
     result = a + b
     print(f'Adding {a} and {b} gives {result}')
@@ -5876,7 +5876,7 @@ Interactive debugging with the `pdb` module
 
 Next, you can utilize Python's built-in `pdb` module for interactive debugging:
 
-```
+```python
 import pdb
 
 def divide(a, b):
@@ -5890,7 +5890,7 @@ By setting a trace with the `set_trace()` function, you can step through the cod
 
 If you run the code above, you'll see some output showing the location of the file you're running, the line where you called the `set_trace()` function and the code immediately after it, and an interactive `pdb` prompt:
 
-```
+```python
 > /Users/fcc/Desktop/debugging.py(5)divide()
 -> return a / b
 (Pdb)
@@ -5898,7 +5898,7 @@ If you run the code above, you'll see some output showing the location of the fi
 
 If you enter `help` into the prompt, you'll see a list of commands you can use:
 
-```
+```python
 (Pdb) help
 
 Documented commands (type help <topic>):
@@ -5920,7 +5920,7 @@ Then you can use the commands to debug your code.
 
 For example, if you want to look at the type of elements throughout your code at that moment, you can use the `whatis` command:
 
-```
+```python
 (Pdb) whatis a
 <class 'int'>
 (Pdb) whatis divide
@@ -5931,7 +5931,7 @@ As you can see, by the time you run `.set_trace()`, the type of the parameter `a
 
 Then to continue execution of your code, you can use the `continue` command, or one of its aliases, `cont` or `c`:
 
-```
+```python
 (Pdb) continue
 5.0
 ```
@@ -5950,7 +5950,7 @@ If you use VS Code, you can set breakpoints in your code and run the debugger to
 
 Create a file called `main.py` with the following content:
 
-```
+```python
 def divide(a, b):
     result = a / b
     return result
@@ -6072,7 +6072,7 @@ Exception Signaling
 
 The `raise` statement is also useful when you create your own custom exceptions, as you can use it to throw an exception with a custom message. Here's an example of that:
 
-```
+```python
 class InvalidCredentialsError(Exception):
     def __init__(self, message="Invalid username or password"):
         self.message = message
@@ -6090,7 +6090,7 @@ def login(username, password):
 
 Here's a how you can use the `login` function with the `InvalidCredentialsError` exception:
 
-```
+```python
 # failed login attempt
 try:
     message = login("user", "wrongpassword")
@@ -6112,7 +6112,7 @@ else:
 
 The `raise` statement can also be used with the `from` keyword to chain exceptions, showing the relationship between different errors:
 
-```
+```python
 def parse_config(filename):
   try:
       with open(filename, 'r') as file:
@@ -6144,7 +6144,7 @@ Attributes are like variables within a class, and are used to store data. Method
 
 Here's the basic syntax of a class:
 
-```
+```python
 class ClassName:
     def __init__(self, name, age):
         self.name = name
@@ -6164,7 +6164,7 @@ class ClassName:
 
 If that all sounds like a lot, don't worry. Let's take a look at a similar example of a `Dog` class, and how you can create objects from that:
 
-```
+```python
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -6176,21 +6176,21 @@ class Dog:
 
 With this `Dog` class, you can create an object. Here's the basic syntax for creating objects from a class:
 
-```
+```python
 object_1 = ClassName(attribute_1, attribute_2)
 object_2 = ClassName(attribute_1, attribute_2)
 ```
 
 You can also call any of the methods defined in the class from each object:
 
-```
+```python
 object_1.method_name()
 object_2.method_name()
 ```
 
 Now let's create two dogs by using the `Dog` class as the blueprint:
 
-```
+```python
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -6233,7 +6233,7 @@ To access an attribute, you use dot notation.
 
 Here are examples of both instance and class attributes, and how to access them from objects:
 
-```
+```python
 class Dog:
     species = "French Bulldog" # Class attribute
 
@@ -6255,7 +6255,7 @@ Note that you can access class attributes directly from the class itself, but yo
 
 Cars are another good example, since all cars have a model and color:
 
-```
+```python
 class Car:
     def __init__(self, color, model):
         self.color = color
@@ -6275,7 +6275,7 @@ Methods are functions defined inside a class. With them, any object defined from
 
 For example, dogs can bark. So we can have a `bark` method in the `Dog` class like you saw in a previous lesson:
 
-```
+```python
 class Dog:
    species = "French Bulldog"
 
@@ -6294,7 +6294,7 @@ print(jill.bark()) # Jill says woof woof!
 
 A `Car` class can also have a `describe` method:
 
-```
+```python
 class Car:
     def __init__(self, color, model):
         self.color = color  # Instance attribute
@@ -6337,7 +6337,7 @@ This is where special methods come in — they let you customize Python's built-
 
 Let's say you want to get the number of pages in book objects created with the class below, or compare them and get a readable string of the objects. Here's what happens without special methods:
 
-```
+```python
 class Book:
    def __init__(self, title, pages):
        self.title = title
@@ -6359,7 +6359,7 @@ In the example:
 
 Here's how you can define your own `__len__()`, `__str__()`, and `__eq__()` special methods to make working with objects created from the `Book` class easier:
 
-```
+```python
 class Book:
    def __init__(self, title, pages):
        self.title = title
@@ -6402,7 +6402,7 @@ While you might have a method that adds items to the cart and removes certain it
 
 Here's an example of a `Cart` class with these user-defined methods and special methods:
 
-```
+```python
 class Cart:
    def __init__(self):
        self.items = []
@@ -6434,7 +6434,7 @@ class Cart:
 
 And here's how you can use them:
 
-```
+```python
 cart = Cart()
 cart.add('Laptop')
 cart.add('Wireless mouse')
@@ -6467,7 +6467,7 @@ In a previous lesson, you learned about attributes being the variables that belo
 
 For example, a car would normally have a brand and model. The brand and model could make attributes for a `Car` class:
 
-```
+```python
 class Car: 
     def __init__(self, brand, model): 
         self.brand = brand 
@@ -6490,13 +6490,13 @@ They let you access, create, check, and remove attributes using variable names. 
 
 To use it, you pass in the object, attribute name, and an optional default value:
 
-```
+```python
 getattr(object, attribute_name, default_value)
 ```
 
 Here's an example:
 
-```
+```python
 class Person: 
     def __init__(self, name, age): 
         self.name = name 
@@ -6515,7 +6515,7 @@ As we said earlier, the real power of `getattr()` is apparent when the attribute
 
 In that case, you can't use the regular `object.attribute_name` syntax because the attribute name is not fixed.
 
-```
+```python
 class Person: 
     def __init__(self, name, age): 
         self.name = name 
@@ -6533,7 +6533,7 @@ This is exactly where dynamic attribute handling shines. It lets your code respo
 
 In addition, you might want to look through all the attributes an object has, not just the ones you already know. The built-in `dir()` function lets you do that. It returns a list of all attribute names on the object. Here's how to use it:
 
-```
+```python
 class Person: 
     def __init__(self, name, age): 
         self.name = name 
@@ -6557,13 +6557,13 @@ In the loop above, `callable()` is a built-in function that returns `True` if th
 
 The `setattr()` function lets you create a new attribute or update an existing one dynamically. The syntax looks like this:
 
-```
+```python
 setattr(object, attribute_name, value)
 ```
 
 Here's an example that sets config attributes based on data from some config or environment variable file:
 
-```
+```python
 class Configuration:
     pass
 
@@ -6588,13 +6588,13 @@ There is also `hasattr()`. Before you do something with an attribute or delete i
 
 Here's the basic syntax:
 
-```
+```python
 hasattr(object, attribute_name)
 ```
 
 And here's an example that dynamically checks for the existence of attributes in a `Product` class instance:
 
-```
+```python
 class Product:
     def __init__(self, name, price):
         self.name = name
@@ -6621,13 +6621,13 @@ The ERROR output occurred because `inventory_id` is missing from the `Product` c
 
 Lastly, `delattr()` lets you remove an attribute dynamically:
 
-```
+```python
 delattr(object, attribute_name)
 ```
 
 For example, imagine an object has been fully processed, then you decide to clean up any sensitive or temporary attributes that might exist before saving the final version. After that, you can use `dir()` to loop through the remaining attributes:
 
-```
+```python
 class UserSession:
     def __init__(self, user_id, token):
         self.user_id = user_id
@@ -6673,7 +6673,7 @@ A class is like a blueprint for creating objects. Every single object created fr
 
 In a previous lesson, you learned how to create classes. Here's a reminder of the syntax:
 
-```
+```python
 class ClassName:
    def __init__(self, parameters):
        attribute = value
@@ -6684,7 +6684,7 @@ class ClassName:
 
 Here's an example of a class that uses the `__init__` special method to initialize the brand and color attributes whenever an object is created using the class:
 
-```
+```python
 class Car:
    def __init__(self, brand, color):
        self.brand = brand
@@ -6713,7 +6713,7 @@ Let's say you want to track a wallet balance. You want to allow people to deposi
 
 In that case, you can make `deposit()` and `withdraw()` public methods, and you hide the balance under the `_balance` attribute:
 
-```
+```python
 class Wallet:
    def __init__(self, balance):
        self._balance = balance # For internal use by convention
@@ -6731,7 +6731,7 @@ By convention, prefixing attribute and methods with a single underscore means th
 
 While a single underscore prefix is just a convention, prefixing attributes and methods with a double underscore effectively prevents them to be accessed from the outside of their class, making those attributes and methods private.
 
-```
+```python
 class Wallet:
    def __init__(self, balance):
        self.__balance = balance # Private attribute
@@ -6750,7 +6750,7 @@ print(account.__balance) # AttributeError: 'Wallet' object has no attribute '__b
 
 To get the current value of `__balance`, you can define a `get_balance` method. For example:
 
-```
+```python
 class Wallet:
    def __init__(self, balance):
        self.__balance = balance
@@ -6781,7 +6781,7 @@ print(acct_two.get_balance()) # 572
 
 You can also define a private `__validate` method to check if every deposit or withdrawal amount is a positive number:
 
-```
+```python
 class Wallet:
    def __init__(self):
        self.__balance = 0
@@ -6845,7 +6845,7 @@ While it is possible to create custom decorators, this is beyond the scope of th
 
 That takes us to getters. Here's how to create one with the `@property` decorator:
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self._radius = radius
@@ -6872,7 +6872,7 @@ To make a setter to create the radius, for example, you have to define another m
 
 Using `self.radius` inside `__init__` ensures the setter runs during object creation, so invalid radius values are caught immediately.
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self.radius = radius # Calling the setter
@@ -6898,7 +6898,7 @@ In this example, the radius setter is not just setting the radius for the circle
 
 Once you define getters and setters, Python automatically calls them under the hood whenever you use normal attribute syntax:
 
-```
+```python
 my_circle.radius # This will call the getter
 my_circle.radius = 4 # This will call the setter
 ```
@@ -6909,7 +6909,7 @@ Just like you can control how an attribute is accessed through getter and how it
 
 A deleter runs custom logic when you use the del statement on a property. To create one, you use the `@<property_name>.deleter` decorator:
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self.radius = radius
@@ -6935,7 +6935,7 @@ class Circle:
 
 Here's how the deleter can be put to use:
 
-```
+```python
 # Create circle object with a radius
 my_circle = Circle(33)
 print("Initial radius:", my_circle.radius)  # 33
@@ -6971,7 +6971,7 @@ With inheritance, a subclass (or child class) can use the attributes and methods
 
 Here's the basic syntax for inheritance:
 
-```
+```python
 class Parent:
     # Parent attributes and methods
 
@@ -6985,7 +6985,7 @@ This style is called single inheritance, since a child class inherits from exact
 
 Here's an example:
 
-```
+```python
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -7005,7 +7005,7 @@ You can see that we're able to reuse the `self.name` attribute and the `sound()`
 
 Let's override the `sound()` method from the parent `Animal` class in the child `Dog` class so we can have `sound()` use the `bark` class variable:
 
-```
+```python
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -7026,7 +7026,7 @@ print(jack.sound())  # Jack barks woof! woof!! woof!!!
 
 If you want to keep the return value of `sound()` and add the bark class variable later, you can extend `sound()` by using the `super()` function:
 
-```
+```python
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -7052,7 +7052,7 @@ There's also multiple inheritance, where a child class can inherit from more tha
 
 Here's the basic syntax of multiple inheritance:
 
-```
+```python
 class Parent:
     # Attributes and methods for Parent
 
@@ -7066,7 +7066,7 @@ class GrandChild(Parent, Child):
 
 A simple way to demonstrate multiple inheritance is with a frog, which can both walk on land and swim in water:
 
-```
+```python
 class Walker:
     def walk(self):
         return 'I can walk on land'
@@ -7098,7 +7098,7 @@ To remind you of the difference between them, a single underscore is a conventio
 
 Here's an example that demonstrates how the two work:
 
-```
+```python
 class Example:
     def __init__(self):
         self._internal = 'I can be accessed from outside the class, but should not'
@@ -7114,7 +7114,7 @@ Prefixing an attribute with a double underscore triggers Python's name mangling 
 
 To see this in action, you create an instance of the class and use the `__dict__` special attribute of that instance, which is a dictionary containing the object's attributes:
 
-```
+```python
 class Example:
     def __init__(self, internal, private):
         self._internal = internal
@@ -7130,7 +7130,7 @@ print(example1.__dict__)
 
 The result would be:
 
-```
+```python
 {
   '_internal': 'I can be accessed from outside the class, but should not',
   '_Example__private': 'I cannot be accessed directly from outside the class'
@@ -7139,7 +7139,7 @@ The result would be:
 
 As you can see, the `__private` attribute is stored as `_Example__private`. This means you can still access that attribute outside the class this way:
 
-```
+```python
 class Example:
     def __init__(self, internal, private):
         self._internal = internal
@@ -7162,7 +7162,7 @@ So, why does Python do name mangling?
 
 The main purpose of name mangling is to prevent accidental attribute and method overriding when you use inheritance. Here's an example that makes that clear:
 
-```
+```python
 class Parent:
     def __init__(self):
         self.__data = 'Parent data'
@@ -7180,7 +7180,7 @@ You can see that both the `Parent` class and the `Child` that inherits from it h
 
 Here's what would have happened without allowing Python to do the name mangling, that is if you don't prefix the attributes in both classes with double underscore:
 
-```
+```python
 class Parent:
    def __init__(self):
        self.data = 'Parent data'
@@ -7212,7 +7212,7 @@ Polymorphism allows methods in different classes to share the same name but perf
 
 Here's the basic example of polymorphism:
 
-```
+```python
 class A:
    def action(self): ...
 
@@ -7227,7 +7227,7 @@ Class().method()  # Works for A, B, or C
 
 Here's an example using different animal sounds to depict polymorphism:
 
-```
+```python
 class Cat:
    def speak(self):
        return "A cat meow"
@@ -7254,7 +7254,7 @@ When you pass in a `Cat`, `Bird`, or `Monkey`, it calls the `speak()` method of 
 
 Here's another example, this time with instances and an attribute:
 
-```
+```python
 class Twitter:
    def __init__(self, content):
        self.content = content
@@ -7296,7 +7296,7 @@ In inheritance-based polymorphism, a parent class defines a method, and multiple
 
 Here's an example:
 
-```
+```python
 class Animal:
    def speak(self):
        return 'Some generic sound'
@@ -7323,7 +7323,7 @@ You can see that each child class of the parent `Animal` class overrides the `sp
 
 You can also take things further and do the calling in a list, then loop through the list to display what the `speak()` method returns for each:
 
-```
+```python
 animals = [Cat(), Dog(), Monkey()]
 
 for animal in animals:
@@ -7346,7 +7346,7 @@ Python Classes and Objects
 
 * **Class Definition**: A class is a blueprint for creating objects. It defines the behavior an object will have through its attributes and methods. Here is a basic example of a class definition in Python:
 
-```
+```python
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -7358,7 +7358,7 @@ class Dog:
 
 * **Creating Objects**: Objects are instances of a class. They are created by calling the class with the necessary arguments.
 
-```
+```python
 dog1 = Dog('Jack', 3)
 dog2 = Dog('Thatcher', 5)
 
@@ -7368,7 +7368,7 @@ dog2.bark()  # THATCHER says woof woof!
 
 * **Calling Methods on Objects**: You can call methods on objects to perform actions or retrieve information.
 
-```
+```python
 object_name1.method_name()
 object_name2.method_name()
 ```
@@ -7381,7 +7381,7 @@ Attributes
 * **Instance Attributes**: Defined in `__init__()` using `self`, and unique to each object.
 * **Class Attributes**: Defined directly inside the class and shared by all instances.
 
-```
+```python
 class Dog:
     species = 'French Bulldog'  # Class attribute
 
@@ -7400,7 +7400,7 @@ Methods
 
 * **Methods**: Functions defined inside a class that operate on the object's attributes.
 
-```
+```python
 class Car:
     def __init__(self, color, model):
         self.color = color
@@ -7415,7 +7415,7 @@ print(my_car_1.describe())  # This car is a red Tesla Model S
 
 * **Accessing Methods**: Call methods on objects using the dot notation. Here is an example of calling the `describe` method on two different car objects:
 
-```
+```python
 class Car:
     def __init__(self, color, model):
         self.color = color  
@@ -7437,7 +7437,7 @@ Dunder (Magic) Methods
 
 * **Definition**: Special methods that start and end with a double underscore (e.g., `__init__`, `__len__`, `__str__`, `__eq__`). Python uses them internally for built-in operations.
 
-```
+```python
 class Book:
     def __init__(self, title, pages):
         self.title = title
@@ -7469,7 +7469,7 @@ Real World Example: Shopping Cart
 
 * **Cart Class with Dunder Methods**: Allows adding, removing, iterating, and checking contents with built-in behavior.
 
-```
+```python
 class Cart:
     def __init__(self):
         self.items = []
@@ -7520,7 +7520,7 @@ What is Encapsulation?
 * **Encapsulation**: The bundling of the attributes and methods of an object into a single unit. It lets you hide the internal state of the object behind a simple set of public methods and attributes that act like doors. Behind those doors are private attributes and methods that control how the data changes and who can see it.
 * **Example of Encapsulation**: If you want to track a wallet balance, you will allow deposit and withdrawal, but you won't want anyone to tamper with the wallet balance itself:
 
-```
+```python
 class Wallet:
    def __init__(self, balance):
        self.__balance = balance # Private attribute
@@ -7547,7 +7547,7 @@ What Are Getters and Setters?
 * **Why Properties Instead of Methods**: Properties are used instead of methods for better readability and cleaner code. They let you access values with dot notation, like regular attributes, without parentheses.
 * **Creating a Getter**: To create a getter, you use the `@property` decorator. Here's a getter that gets the radius of a circle:
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self._radius = radius
@@ -7568,7 +7568,7 @@ print(my_circle.area) # 28.26
 
 * **Creating a Setter**: To create the setter that will set the radius, you have to define another method with the same name and use `@<property_name>.setter` above it:
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self._radius = radius
@@ -7592,7 +7592,7 @@ print('After modifying the radius:', my_circle.radius) # After modifying the rad
 
 * **How Python Handles Getters and Setters**: Once you define getters and setters, Python automatically calls them under the hood whenever you use normal attribute syntax this way:
 
-```
+```python
 my_circle.radius # This will call the getter
 my_circle.radius = 4 # This will call the setter
 ```
@@ -7601,7 +7601,7 @@ When setting a value, you should not assign to the property name itself because 
 
 * **Deleter**: After setting and getting a value with setter and getter, you can control how it is deleted with a `deleter`. A deleter runs custom logic when you use the `del` statement on a property. To create a deleter, you use the `@<property_name>.deleter` decorator.
 
-```
+```python
   # Deleter
     @radius.deleter
     def radius(self):
@@ -7614,7 +7614,7 @@ What Is Inheritance and How Does It Promote Code Reuse?
 
 * **Inheritance**: The process by which a child class uses the attributes and methods of a parent class. Inheritance promotes code reuse, provides clear hierarchies, and customizes behavior without rewriting everything. To implement inheritance, a child class takes in the name of a parent class:
 
-```
+```python
 class Parent:
     # Parent attributes and methods
 
@@ -7624,7 +7624,7 @@ class Child(Parent):
 
 * **Single and Multiple Inheritance**: When a child class inherits properties and methods from a single parent, as you can see above, the process is called **single inheritance**. When a child class inherits properties and methods from more than one parent, that is **multiple inheritance**. Here's the syntax for that:
 
-```
+```python
 class Parent:
     # Attributes and methods for Parent
 
@@ -7643,7 +7643,7 @@ What Is Polymorphism and How Does It Promote Code Reuse?
 
 * **Polymorphism**: The OOP principle that lets different classes use the same method name, but each class implements it differently when called. Here's the syntax for it:
 
-```
+```python
 class A:
    def action(self): ...
 
@@ -7664,7 +7664,7 @@ What is Name Mangling and How Does it Work?
 * **Name Mangling**: A process in which Python internally renames an attribute prefixed with a double underscore by adding an underscore and the class name as a prefix, turning `__attribute` into `_ClassName__attribute`.
 * **The Purpose of Name Mangling**: The main purpose of name mangling is to prevent accidental attribute and method overriding when you use inheritance. Here's a code that makes that more understandable:
 
-```
+```python
 class Parent:
     def __init__(self):
         self.__data = 'Parent data'
@@ -7686,7 +7686,7 @@ What Is Abstraction and How Does It Help Keep Complex Systems Organized?
 * **How Python Implements Abstraction**: Python implements abstraction through the `abc` module. The module provides the `ABC` class (abstract base class) and the `@abstractmethod` decorator. An abstract base class (ABC) defines the common methods and properties subclasses must implement. It can't be instantiated.
 * **How Abstract Method is Defined**: An abstract method is defined with `@abstractmethod` and must be overridden in subclasses, even if it has a default implementation. The basic syntax of abstraction looks like this:
 
-```
+```python
 from abc import ABC, abstractmethod
 
 # Define an abstract base class
@@ -7781,7 +7781,7 @@ Let's learn about some of the most common ones.
 
 For example, checking if a number is even or odd will always take the same amount of time, regardless of the number itself.
 
-```
+```python
 def check_even_or_odd(number):
     if number % 2 == 0:
         return 'Even'
@@ -7797,7 +7797,7 @@ For example, a popular search algorithm called Binary Search has `O(log n)` wors
 
 For example, a `for` loop that iterates over all the elements of a list will perform more iterations as the number of list elements increases. If the list is doubled in size, the number of operations will approximately double as well.
 
-```
+```python
 for grade in grades:  # grades is a list.
     print(grade)
 ```
@@ -7808,7 +7808,7 @@ for grade in grades:  # grades is a list.
 
 Nested loops are a common example of quadratic time complexity. The inner loop will perform `n` iterations for each one of the `n` iterations of the outer loop, resulting in `n` squared iterations.
 
-```
+```python
 for i in range(n):
     for j in range(n):
         print("Hello, World!")
@@ -7888,7 +7888,7 @@ Pseudocode is usually a mixture of a common written language, like English, with
 
 This is an example of pseudocode that you may write to solve the "Reverse a String" challenge.
 
-```
+```python
 GET original_string
 
 SET reversed_string = ""
@@ -7978,7 +7978,7 @@ On the other hand, an abstract method is a method declared in an Abstract Base C
 
 Here's the basic syntax of abstract class in Python:
 
-```
+```python
 from abc import ABC, abstractmethod
 
 # Define an abstract base class
@@ -8000,7 +8000,7 @@ class ConcreteClassTwo(AbstractClass):
 
 Here's a basic example:
 
-```
+```python
 from abc import ABC, abstractmethod
 
 class Animal(ABC): # Inherits from abstract base class
@@ -8045,7 +8045,7 @@ In this example:
 
 Remember that you cannot create an instance of the Animal class. Here's what happens if you try to do that:
 
-```
+```python
 dog = Animal() 
 # TypeError: Can't instantiate abstract class Animal 
 # without an implementation for abstract method 'make_sound'
@@ -8053,7 +8053,7 @@ dog = Animal()
 
 The same rule applies to subclasses that don't provide an implementation for the abstract method. Even if you define a subclass of Animal, you can't instantiate it until it overrides make\_sound. Here's an example showing that:
 
-```
+```python
 class Bird(Animal):
     pass
 
@@ -8064,7 +8064,7 @@ bird = Bird()
 
 Here's another example, this time with an instance attribute you can pass to the instances of the concrete methods:
 
-```
+```python
 from abc import ABC, abstractmethod
 
 # The blueprint for any toy that can speak
@@ -8144,7 +8144,7 @@ Python does not include traditional static arrays as built-in data structures.
 
 But other programming languages, like Java, do support them. This is an example of a static array in Java that can store three integers:
 
-```
+```python
 int[] numbers = new int[3];
 ```
 
@@ -8164,7 +8164,7 @@ You should use dynamic arrays when you don't know in advance the number of value
 
 Python's built-in `list` data structure works as a dynamic array. You can create a list by writing the elements within square brackets, separated by commas.
 
-```
+```python
 numbers = [3, 4, 5, 6]
 ```
 
@@ -8172,7 +8172,7 @@ You can access an element by writing the name of the variable that holds the lis
 
 Indices start from 0 for the first element and are incremented by 1 for each subsequent element:
 
-```
+```python
 numbers[0]  # 3
 numbers[1]  # 4
 numbers[2]  # 5
@@ -8181,25 +8181,25 @@ numbers[3]  # 6
 
 To update a value, you just need to reassign it:
 
-```
+```python
 numbers[2] = 16
 ```
 
 You can append elements to the list with the `.append()` method:
 
-```
+```python
 numbers.append(7)
 ```
 
 You can insert elements at a specific index with the `.insert()` method, passing the index as the first argument and the element itself as the second argument.
 
-```
+```python
 numbers.insert(3, 15)
 ```
 
 You can remove an element at a specific index with the `.pop()` method:
 
-```
+```python
 numbers.pop(2)
 ```
 
@@ -8463,7 +8463,7 @@ Python's **dictionaries** are implemented as hash maps behind the scenes.
 
 To create a Python dictionary, you just need to write the key-value pairs within curly brackets and separate them with a comma. Each key should be separated from its corresponding value with a colon.
 
-```
+```python
 my_dictionary = {
   'A': 1,
   'B': 2, 
@@ -8473,43 +8473,43 @@ my_dictionary = {
 
 In this code, `'A'` is the key and `1` is the value:
 
-```
+```python
 'A': 1
 ```
 
 Alternatively, you can use `dict()`:
 
-```
+```python
 my_dictionary = dict(A=1, B=2, C=3)
 ```
 
 You can get the value through its corresponding key:
 
-```
+```python
 my_dictionary['A']  # 1
 ```
 
 You can also update the value associated with a key:
 
-```
+```python
 my_dictionary['A'] = 4
 ```
 
 And you can remove a key-value pair:
 
-```
+```python
 del my_dictionary['A']
 ```
 
 You can also check if a key is in the dictionary (or not):
 
-```
+```python
 'C' in my_dictionary
 ```
 
 And you can call these methods to get the keys, values, and items of the dictionary, respectively.
 
-```
+```python
 my_dictionary.keys()
 my_dictionary.values()
 my_dictionary.items()
@@ -8544,13 +8544,13 @@ Sets can only store objects of immutable data types because their hash values al
 
 To define a set in Python, you just need to surround the elements with curly brackets and separate them with commas:
 
-```
+```python
 numbers = {1, 2, 3, 4}
 ```
 
 To create an empty set, you can call `set()`:
 
-```
+```python
 numbers = set()
 ```
 
@@ -8558,13 +8558,13 @@ Note that if you use empty curly brackets, this will automatically create a Pyth
 
 You can add an element to a set with the `.add()` method:
 
-```
+```python
 numbers.add(5)
 ```
 
 You can also remove elements from the set with the `.remove()` method:
 
-```
+```python
 numbers.remove(5)
 ```
 
@@ -8574,13 +8574,13 @@ The `.pop()` method returns an arbitrary element from the set, while the `.clear
 
 You can test if an element is in a set with the `in` operator:
 
-```
+```python
 5 in numbers
 ```
 
 Python also support set operations, including union, difference, symmetric difference, and intersection, which you can perform with these methods:
 
-```
+```python
 set_a = {1, 2, 3, 4}
 set_b = {2, 3, 4, 5, 6}
 
@@ -8592,7 +8592,7 @@ set_a.difference(set_b)
 
 Or with their equivalent operators:
 
-```
+```python
 set_a | set_b
 set_a & set_b
 set_a ^ set_b
@@ -8605,7 +8605,7 @@ The worst case time complexity for these operations is "Linear Time" `O(n)` beca
 
 You can also check if a set is a subset or superset of another one:
 
-```
+```python
 set_a.issubset(set_b)
 set_a.issuperset(set_b)
 ```
@@ -8630,7 +8630,7 @@ Algorithms and Big O Notation
 
 * **O(1) - Constant Time**: Algorithm takes the same amount of time regardless of input size.
 
-```
+```python
 def check_even_or_odd(number):
     if number % 2 == 0:
         return 'Even'
@@ -8641,7 +8641,7 @@ def check_even_or_odd(number):
 * **O(log n) - Logarithmic Time**: Time increases slowly as input grows. Common in algorithms that repeatedly reduce problem size by a fraction (like Binary Search).
 * **O(n) - Linear Time**: Running time increases proportionally to input size.
 
-```
+```python
 for grade in grades:
     print(grade)
 ```
@@ -8649,7 +8649,7 @@ for grade in grades:
 * **O(n log n) - Log-Linear Time**: Common time complexity of efficient sorting algorithms like Merge Sort and Quick Sort.
 * **O(n²) - Quadratic Time**: Running time increases quadratically. Often seen in nested loops.
 
-```
+```python
 for i in range(n):
     for j in range(n):
         print("Hello, World!")
@@ -8667,7 +8667,7 @@ Problem-Solving Techniques
 * **Understanding the Problem**: Read the problem statement multiple times. Identify the input, expected output, and how to transform input to output.
 * **Pseudocode**: High-level description of algorithm logic that is language-independent. Uses common written language mixed with programming constructs like `IF`, `ELSE`, `FOR`, `WHILE`.
 
-```
+```python
 GET original_string
 SET reversed_string = ""
 FOR EACH character IN original_string:
@@ -8685,7 +8685,7 @@ Arrays
 
 ### Python Lists (Dynamic Arrays)
 
-```
+```python
 numbers = [3, 4, 5, 6]
 
 # Access elements
@@ -8717,7 +8717,7 @@ Stacks
 * **Push Operation**: Adding an element to the top of the stack. Time complexity: O(1).
 * **Pop Operation**: Removing an element from the top of the stack. Time complexity: O(1).
 
-```
+```python
 # Using Python list as stack
 stack = []
 
@@ -8737,7 +8737,7 @@ Queues
 * **Enqueue Operation**: Adding an element to the back of the queue. Time complexity: O(1).
 * **Dequeue Operation**: Removing an element from the front of the queue. Time complexity: O(1).
 
-```
+```python
 from collections import deque
 
 # Using deque for efficient queue operations
@@ -8789,7 +8789,7 @@ Hash Maps and Sets
 
 ### Python Dictionaries (Hash Maps)
 
-```
+```python
 # Creating dictionaries
 my_dictionary = {
     "A": 1,
@@ -8824,7 +8824,7 @@ my_dictionary.items()
 * **Sets**: Unordered collections of unique elements. No duplicates allowed, no specific order maintained.
 * **Immutable Elements Only**: Sets can only contain immutable data types (numbers, strings, tuples) because hash values must remain constant.
 
-```
+```python
 # Creating sets
 numbers = {1, 2, 3, 4}
 empty_set = set()  # Must use set(), not {}
@@ -8891,7 +8891,7 @@ If the target value is found, the index where it's located in the list is return
 
 Here is what the code looks like for linear search:
 
-```
+```python
 def linear_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
@@ -8917,7 +8917,7 @@ It continues to divide the remaining parts of the list into halves until the tar
 
 Here is what the code looks like for binary search:
 
-```
+```python
 def binary_search(arr, target):
     low = 0
     high = len(arr) - 1
@@ -8961,37 +8961,37 @@ The divide and conquer paradigm in computer science is a technique for recursive
 
 Let's say we had this list of numbers:
 
-```
+```python
 42 37 53 17
 ```
 
 The goal is to sort that list from smallest to largest using the merge sort algorithm. The first step is to divide that list in half:
 
-```
+```python
 42 37 | 53 17
 ```
 
 Then we need to look at the left side of the list:
 
-```
+```python
 42 37
 ```
 
 We take that sub list and divide in half again until each sub list has only one item in it:
 
-```
+```python
 42 | 37
 ```
 
 A list with only one item in it is sorted by default. Next we need to merge each of those one element sub lists into a sorted list:
 
-```
+```python
 37 42
 ```
 
 Then we follow the same process for the right side of the original list:
 
-```
+```python
 # right side of original list
 53 17
 
@@ -9004,13 +9004,13 @@ Then we follow the same process for the right side of the original list:
 
 Now that both halves of the original list are sorted, we merge those two halves together and sort the elements:
 
-```
+```python
 17 37 42 53
 ```
 
 Here is what the algorithm looks like in code:
 
-```
+```python
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -9244,25 +9244,25 @@ It works by operating directly on Python lists, following specific steps that wo
 
 To use this module, you just need to import it:
 
-```
+```python
 import heapq
 ```
 
 Then, you need to define an empty list. This will be the underlying data structure for the heap:
 
-```
+```python
 my_heap = []
 ```
 
 To add elements to the heap, you would call `heappush()`, passing the name of the heap and the element that you want to add as arguments. This will automatically add the element to the list where it should be, to preserve the heap property:
 
-```
+```python
 heapq.heappush(my_heap, 9)
 ```
 
 To get the element with the highest priority (in this case, the smallest value), you would call `heappop()`:
 
-```
+```python
 heapq.heappop(my_heap)
 ```
 
@@ -9270,13 +9270,13 @@ heapq.heappop(my_heap)
 
 This is more efficient than calling them in a sequence separately, especially when the heap is large, since it only performs one "heapify" operation to reorder the list as a heap:
 
-```
+```python
 heapq.heappushpop(my_heap, 15)
 ```
 
 If you already have a list and you want to transform it into a heap, you could call `heapify()`, passing the list as argument:
 
-```
+```python
 heapq.heapify(my_heap)
 ```
 
@@ -9290,7 +9290,7 @@ Since tuples are compared element by element from left to right, the priorities 
 
 Please note that, in this case, lower values will represent higher priorities. This means that a tuple with priority of 1 will have a **higher** priority than a tuple with priority of 3:
 
-```
+```python
 my_heap = []
 
 heapq.heappush(my_heap, (3, "A"))
@@ -9504,7 +9504,7 @@ This is a visual representation of the adjacency matrix to show you how the rows
 
 For example, the first row is `[0, 1, 1, 1]` because node A has edges connecting it to nodes B, C, and D:
 
-```
+```python
 #      A  B  C  D
 # A   [0, 1, 1, 1],
 # B   [1, 0, 0, 1],
@@ -9514,7 +9514,7 @@ For example, the first row is `[0, 1, 1, 1]` because node A has edges connecting
 
 And this is the same adjacency matrix, but implemented in Python code:
 
-```
+```python
 adjacency_matrix = [
     [0, 1, 1, 1],  # The neighbors of A are B, C, and D
     [1, 0, 0, 1],  # The neighbors of B are A and D
@@ -9551,7 +9551,7 @@ Here is an example of an adjacency list for this graph:
 
 This adjacency list is implemented as a dictionary. Every key in the dictionary represents a node, and the value associated to that key is a list with all the neighbors of the corresponding node:
 
-```
+```python
 adjacency_list = {
     'A': ['B', 'C', 'D'],
     'B': ['A', 'D'],
@@ -9562,7 +9562,7 @@ adjacency_list = {
 
 Alternatively, we could implement it as a 2D list, where each index represents a node. For example, index 0 represents node A, index 1 represents node B, and so on:
 
-```
+```python
 adjacency_list = [
     ['B', 'C', 'D'],  # Neighbors of A (index 0)
     ['A', 'D'],       # Neighbors of B (index 1)
@@ -9909,7 +9909,7 @@ The heap property determines the relationship between parent and child nodes. Th
 
 ### Python `heapq` module example
 
-```
+```python
 import heapq
 
 # Create empty heap
@@ -9936,7 +9936,7 @@ heapq.heapify(nums)
 
 ### Using Priorities
 
-```
+```python
 my_heap = []
 heapq.heappush(my_heap, (3, "A"))
 heapq.heappush(my_heap, (2, "B"))
@@ -9969,7 +9969,7 @@ The Problem with Naive Recursion
 
 Consider the climbing stairs problem: you're climbing a staircase with `n` steps and can climb either 1 or 2 steps at a time. How many distinct ways can you reach the top?
 
-```
+```python
 def climb_stairs_recursive(n):
     """Recursive approach"""
     if n <= 2:
@@ -9997,7 +9997,7 @@ Dynamic programming eliminates this redundant computation through two main appro
 
 Memoization stores the results of expensive function calls and returns the cached result when the same inputs occur again:
 
-```
+```python
 def climb_stairs_memo(n, memo={}):
     """Dynamic programming with memoization"""
     # Check if we've already calculated this value
@@ -10017,7 +10017,7 @@ Memoization is so much more efficient because each unique value from `1` to `n` 
 
 Let's trace through the execution of `climb_stairs(5)` with the top-down approach to see how memoization eliminates redundant work:
 
-```
+```python
 Call: climb_stairs_memo(5)
   memo = {} (empty)
   
@@ -10056,7 +10056,7 @@ Call: climb_stairs_memo(5)
 
 Tabulation builds the solution from the ground up, filling a table with solutions to subproblems:
 
-```
+```python
 def climb_stairs_tabulation(n):
     """Dynamic programming with tabulation"""
     if n <= 2:
@@ -10079,7 +10079,7 @@ Tabulation eliminates recursion entirely by building the solution iteratively fr
 
 Let's see the bottom-up approach in action to see how we build the solution systematically. Here's the iterative construction for `climb_stairs(5)`:
 
-```
+```python
 Initial state:
 dp = [0, 1, 2, 0, 0, 0]
      [0, 1, 2, 3, 4, 5] ← indices (step numbers)
@@ -10108,7 +10108,7 @@ Final result: dp[5] = 8
 * **Cache-friendly**: Sequential array access optimizes memory usage.
 * **Easy to optimize**: Can reduce space complexity to `O(1)` since we only need the last two values.
 
-```
+```python
 def climb_stairs_optimized(n):
     if n <= 2:
         return n
@@ -10149,7 +10149,7 @@ The coin change problem asks, "What's the minimum number of coins needed to make
 
 Here's one solution using dynamic programming:
 
-```
+```python
 def min_coins(amount, coins):
     """Find minimum number of coins needed to make the given amount"""
     # Initialize dp array with "infinity" - represents impossible to make
@@ -10175,7 +10175,7 @@ def min_coins(amount, coins):
 
 And here's how the dynamic programming coin change algorithm works step by step for `coins = [1, 3, 4]`, `amount = 6`:
 
-```
+```python
 Initial state:
 dp = [0, ∞, ∞, ∞, ∞, ∞, ∞]
      [0, 1, 2, 3, 4, 5, 6] ← amounts
@@ -10257,7 +10257,7 @@ Dynamic Programming Solutions
 
 * **Memoization (Top-Down Approach)**: Memoization stores the results of expensive function calls and returns the cached result when the same inputs occur again.
 
-```
+```python
 def climb_stairs_memo(n, memo={}):
     """Dynamic programming with memoization"""
     # Check if we've already calculated this value
@@ -10275,7 +10275,7 @@ def climb_stairs_memo(n, memo={}):
 
 * **Tabulation (Bottom-Up Approach)**: Tabulation builds the solution from the ground up, filling a table with solutions to subproblems.
 
-```
+```python
 def climb_stairs_tabulation(n):
     """Dynamic programming with tabulation"""
     if n <= 2:
@@ -10335,19 +10335,19 @@ Python in Your Local Environment
 
 Another option is to open a terminal and manually run the program. Here is an example to run a program called `main.py`:
 
-```
+```python
 python main.py
 ```
 
 You must run this command from the folder where `main.py` is saved. For example, if `main.py` is inside a folder called `python-projects`, first use the following in the terminal:
 
-```
+```python
 cd python-projects
 ```
 
 Then run:
 
-```
+```python
 python main.py
 ```
 
@@ -10356,20 +10356,20 @@ Using the Python Interactive Shell
 
 * **Definition**: An interactive shell is a program that lets you type commands one at a time and see the results. Open up a terminal app and type in `python` and press `Enter`. This will start a Python interactive shell. The `>>>` symbol means Python is waiting for you to type a command. Try printing `"Hello, world!"` to the terminal:
 
-```
+```python
 print("Hello, world!")
 ```
 
 You should see the text appear like this:
 
-```
+```python
 >>> print("Hello, world!")
 Hello, world!
 ```
 
 After the text is printed, Python goes back to the following:
 
-```
+```python
 >>>
 ```
 
@@ -10382,7 +10382,7 @@ Variables
 
 * **Declaring Variables**: To declare a variable, you start with the variable name followed by the assignment operator (`=`) and then the value. This can be a number, string, boolean, etc. Here are some examples:
 
-```
+```python
 name = 'John Doe'
 age = 25
 ```
@@ -10400,13 +10400,13 @@ Comments
 
 * **Single Line Comments**: These types of comments should be used for short notes you wish to leave in your code.
 
-```
+```python
 # This is a single line comment
 ```
 
 * **Multi-line Strings**: These types of strings can be used to leave larger notes or to comment out sections of code.
 
-```
+```python
 """
 This is a multi-line string.
 Here is some code commented out.
@@ -10418,7 +10418,7 @@ age = 25
 
 * **`print()` Function**: To print data to the console, you can use the `print()` function like this:
 
-```
+```python
 print('Hello world!') # Hello world!
 ```
 
@@ -10428,70 +10428,70 @@ Common Data Types in Python
 * **Introduction**: Python is a dynamically-typed language like JavaScript, meaning you don't need to explicitly declare types for variables. The language knows what the type of a variable is based on what you assign to the variable.
 * **Integer**: A whole number without decimals:
 
-```
+```python
 my_integer_var = 10
 print('Integer:', my_integer_var) # Integer: 10
 ```
 
 * **Float**: A number with decimals:
 
-```
+```python
 my_float_var = 4.50
 print('Float:', my_float_var) # Float: 4.5
 ```
 
 * **String**: A sequence of characters wrapped in quotes:
 
-```
+```python
 my_string_var = 'hello'
 print('String:', my_string_var) # String: hello
 ```
 
 * **Boolean**: A value representing either `True` or `False`:
 
-```
+```python
 my_boolean_var = True
 print('Boolean:', my_boolean_var) # Boolean: True
 ```
 
 * **Set**: An unordered collection of unique elements:
 
-```
+```python
 my_set_var = {7, 5, 8}
 print('Set:', my_set_var) # Set: {7, 5, 8}
 ```
 
 * **Dictionary**: A collection of key-value pairs, enclosed in curly braces:
 
-```
+```python
 my_dictionary_var = {"name": "Alice", "age": 25}
 print('Dictionary:', my_dictionary_var) # Dictionary: {'name': 'Alice', 'age': 25}
 ```
 
 * **Tuple**: An immutable ordered collection, enclosed in parentheses:
 
-```
+```python
 my_tuple_var = (7, 5, 8)
 print('Tuple:', my_tuple_var) # Tuple: (7, 5, 8)
 ```
 
 * **Range**: A sequence of numbers, often used in loops:
 
-```
+```python
 my_range_var = range(5)
 print(my_range_var) # range(0, 5)
 ```
 
 * **List**: An ordered collection of elements that supports different data types:
 
-```
+```python
 my_list = [22, 'Hello world', 3.14, True]
 print(my_list) # [22, 'Hello world', 3.14, True]
 ```
 
 * **None**: A special value that represents the absence of a value:
 
-```
+```python
 my_none_var = None
 print('None:', my_none_var) # None: None
 ```
@@ -10503,7 +10503,7 @@ Immutable and Mutable Types
 * **Mutable Types**: These types can change once declared. You can add, remove, or update their items. They include collection types such as list, set, and dictionary.
 * **`type()` Function**: To see the type for a variable, you can use the `type()` function like this:
 
-```
+```python
 greeting = 'Hello there!'
 age = 21
 
@@ -10513,7 +10513,7 @@ print(type(age)) # <class 'int'>
 
 * **`isinstance()` Function**: This is used to check if a variable matches a specific data type:
 
-```
+```python
 greeting = 'Hello world'
 name = 'John Doe'
 
@@ -10526,14 +10526,14 @@ Working with Strings
 
 * **Definition**: As you recall from JavaScript, strings are immutable which means you cannot change them after they have been created. In Python, you can use either single or double quotes. It is recommended to choose a rule and stick with it:
 
-```
+```python
 developer = 'Jessica'
 city = "Los Angeles"
 ```
 
 * **Accessing Characters from Strings**: You can access characters from strings by using bracket notation like this:
 
-```
+```python
 my_str = 'Hello world'
 
 print(my_str[0])  # H
@@ -10545,21 +10545,21 @@ print(my_str[-2]) # l
 
 * **Escaping Strings**: You can use a backslash (`\`) if your string contains quotes like this:
 
-```
+```python
 msg = 'It\'s a sunny day'
 quote = "She said, \"Hello!\""
 ```
 
 * **String Concatenation**: To concatenate strings, you can use the `+` operator like this:
 
-```
+```python
 developer = 'Jessica'
 print('My name is ' + developer + '.') # My name is Jessica.
 ```
 
 Another way to concatenate strings is by using the `+=` operator. This is used to perform concatenation and assignment in the same step like this:
 
-```
+```python
 greeting = 'My name is '
 developer = 'Jessica.'
 
@@ -10569,7 +10569,7 @@ print(greeting) # My name is Jessica.
 
 * **`f-strings`**: This is short for formatted string literals. It allows you to handle interpolation and also do some concatenation with a compact and readable syntax:
 
-```
+```python
 developer = 'Jessica'
 greeting = f'My name is {developer}.'
 print(greeting) # My name is Jessica.
@@ -10577,13 +10577,13 @@ print(greeting) # My name is Jessica.
 
 * **String Slicing**: This is when you can extract portions of a string. Here is the basic syntax:
 
-```
+```python
 str[start:stop:step]
 ```
 
 The start position represents the index where the extraction should begin. The stop position is where the slice should end. This position is non-inclusive. The step position represents the interval to increment for the slicing. Here are some examples:
 
-```
+```python
 message = 'Python is fun!'
 
 print(message[0:6])  # Python
@@ -10593,7 +10593,7 @@ print(message[::2])  # Pto sfn
 
 * **Getting the Length of a String**: The `len()` function is used to return the number of the characters in the string:
 
-```
+```python
 developer = 'Jessica'
 
 print(len(developer)) # 7
@@ -10604,7 +10604,7 @@ Working with the `in` operator
 
 * **`in` Operator**: This returns a boolean that specifies whether the character or characters exist in the string or not:
 
-```
+```python
 my_str = 'Hello world'
 
 print('Hello' in my_str)  # True
@@ -10619,7 +10619,7 @@ Common String Methods
 
 * **`upper()`**: This string method returns a new string with all characters converted to uppercase:
 
-```
+```python
 developer = 'Jessica'
 
 print(developer.upper()) # JESSICA
@@ -10627,7 +10627,7 @@ print(developer.upper()) # JESSICA
 
 * **`lower()`**: This string method returns a new string with all characters converted to lowercase:
 
-```
+```python
 developer = 'Jessica'
 
 print(developer.lower()) # jessica
@@ -10635,7 +10635,7 @@ print(developer.lower()) # jessica
 
 * **`strip()`**: This string method returns a copy of the string with specified leading and trailing characters removed (if no argument is passed to the method, it removes leading and trailing whitespace).
 
-```
+```python
 greeting = '  hello world  '
 
 trimmed_my_str = greeting.strip()
@@ -10644,7 +10644,7 @@ print(trimmed_my_str)  # 'hello world'
 
 * **`replace()`**: This returns a new string with all occurrences of the old string replaced by a new one.
 
-```
+```python
 greeting = 'hello world'
 
 replaced_my_str = greeting.replace('hello', 'hi')
@@ -10653,7 +10653,7 @@ print(replaced_my_str)  # 'hi world'
 
 * **`split()`**: This is used to split a string into a list using a specified separator. A separator is a string specifying where the split should happen.
 
-```
+```python
 dashed_name = 'example-dashed-name'
 
 split_words = dashed_name.split('-')
@@ -10662,7 +10662,7 @@ print(split_words)  # ['example', 'dashed', 'name']
 
 * **`join()`**: This is used to join elements of an iterable into a string with a separator. An iterable is a collection of elements that can be looped over like a list, string or a tuple.
 
-```
+```python
 example_list = ['example', 'dashed', 'name']
 
 joined_str = ' '.join(example_list)
@@ -10671,7 +10671,7 @@ print(joined_str)  # example dashed name
 
 * **`startswith(prefix)`**: This string method returns a boolean indicating if a string starts with the specified prefix:
 
-```
+```python
 developer = 'Naomi'
 
 result = developer.startswith('N')
@@ -10680,7 +10680,7 @@ print(result)  # True
 
 * **`endswith(suffix)`**: This string method returns a boolean indicating if a string ends with the specified suffix:
 
-```
+```python
 developer = 'Naomi'
 
 result = developer.endswith('N')
@@ -10689,7 +10689,7 @@ print(result)  # False
 
 * **`find()`**: This string method returns the index for the first occurrence of a substring. If one is not found, then `-1` is returned:
 
-```
+```python
 developer = 'Naomi'
 
 result = developer.find('N')
@@ -10701,42 +10701,42 @@ print(city.find('New')) # -1
 
 * **`count(substring)`**: This string method counts how many times a substring appears in a string:
 
-```
+```python
 city = 'Los Angeles'
 print(city.count('e')) # 2
 ```
 
 * **`capitalize()`**: This string method returns a new string with the first character capitalized and the other characters lowercased:
 
-```
+```python
 dessert = 'chocolate cake'
 print(dessert.capitalize()) # Chocolate cake
 ```
 
 * **`isupper()`**: This string method returns `True` if all letters in the string are uppercase and `False` if otherwise:
 
-```
+```python
 dessert = 'chocolate cake'
 print(dessert.isupper()) # False
 ```
 
 * **`islower()`**: This string method returns `True` if all letters in the string are lowercase and `False` if otherwise:
 
-```
+```python
 dessert = 'chocolate cake'
 print(dessert.islower()) # True
 ```
 
 * **`title()`**: This string method returns a new string with the first letter of each word capitalized:
 
-```
+```python
 city = 'los angeles'
 print(city.title()) # Los Angeles
 ```
 
 * **`maketrans()`**: This string method is used to create a table of 1 to 1 character mappings for translation. It is often used with the `translate()` method which applies that table to a string and return the translated result.
 
-```
+```python
 trans_table = str.maketrans('abc', '123')
 print(trans_table) # {97: 49, 98: 50, 99: 51}
 
@@ -10749,7 +10749,7 @@ Common Operations used with Integers and Floats
 
 * **Basic Math Operations**: In Python, you can do basic math operations with integers and floats including addition, subtraction, multiplication and division:
 
-```
+```python
 int_1 = 56
 int_2 = 12
 float_1 = 5.4
@@ -10778,7 +10778,7 @@ print('Float Division:', float_2 / float_1) # Float Division: 2.222222222222222
 
 When you add a float and an integer, the result will be converted to a float like this:
 
-```
+```python
 int_1 = 56
 float_1 = 5.4
 
@@ -10787,7 +10787,7 @@ print(int_1 + float_1) # 61.4
 
 * **Modulo Operator (`%`)**: This returns the remainder when a number is divided by another number:
 
-```
+```python
 int_1 = 56
 int_2 = 12
 
@@ -10796,7 +10796,7 @@ print(int_1 % int_2) # 8
 
 * **Floor Division (`//`)**: This operator is used to divide two numbers and round down the result to the nearest whole number:
 
-```
+```python
 int_1 = 56
 int_2 = 12
 
@@ -10805,7 +10805,7 @@ print(int_1 // int_2) # 4
 
 * **Exponentiation Operator (`**`)**: This operator is used to raise a number to the power of another:
 
-```
+```python
 int_1 = 4
 int_2 = 2
 
@@ -10814,7 +10814,7 @@ print(int_1 ** int_2) # 16
 
 * **`float()` Function**: You can use this function to convert an integer to a float.
 
-```
+```python
 num = 4
 
 print(float(num)) # 4.0
@@ -10822,7 +10822,7 @@ print(float(num)) # 4.0
 
 * **`int()` Function**: You can use this function to convert a float to an integer.
 
-```
+```python
 num = 4.0
 
 print(int(num)) # 4
@@ -10830,7 +10830,7 @@ print(int(num)) # 4
 
 * **`round()` Function**: This is used to round a number to the nearest whole integer:
 
-```
+```python
 num_1 = 3.4
 num_2 = 7.7
 
@@ -10840,7 +10840,7 @@ print(round(num_2)) # 8
 
 * **`abs()` Function**: This is used to return the absolute value of a number:
 
-```
+```python
 num = -13
 
 print(abs(num)) # 13
@@ -10848,7 +10848,7 @@ print(abs(num)) # 13
 
 * **`pow()` Function**: This is used to raise a number to the power of another:
 
-```
+```python
 result = pow(2, 3) 
 print(result)  # 8
 ```
@@ -10858,7 +10858,7 @@ Augmented Assignments
 
 * **Definition**: Augmented assignment combines a binary operation with an assignment in one step. It takes a variable, applies an operation to it with another value, and stores the result back into the same variable.
 
-```
+```python
 # Addition assignment 
 my_var = 10
 my_var += 5
@@ -10909,7 +10909,7 @@ Working with Functions
 
 * **Definition**: Functions are reusable pieces of code that take inputs (arguments) and return an output. To call a function, you need to reference the function name followed by a set of parenthesis:
 
-```
+```python
 # Defining a function
 
 def get_sum(num_1, num_2):
@@ -10921,7 +10921,7 @@ print(result) # 7
 
 If a function does not explicitly return a value, then the default return value is `None`:
 
-```
+```python
 def greet():
     print('hello') 
 
@@ -10931,7 +10931,7 @@ print(result) # None
 
 You can also supply default values to parameters like this:
 
-```
+```python
 def get_sum(num_1, num_2=2):
     return num_1 + num_2
 
@@ -10941,7 +10941,7 @@ print(result) # 5
 
 If you call the function without the correct number of arguments, you will get a `TypeError`:
 
-```
+```python
 def calculate_sum(a, b):
     print(a + b)
 
@@ -10955,14 +10955,14 @@ Common Built-in Functions
 
 * **`input()` Function**: This is used to prompt the user for some input:
 
-```
+```python
 name = input('What is your name?') # User types 'Kolade' and presses Enter  
 print('Hello', name) # Hello Kolade
 ```
 
 * **`int()` Function**: This is used to convert a number, boolean, or a numeric string into an integer:
 
-```
+```python
 print(int(3.14)) # 3
 print(int('42')) # 42
 print(int(True)) # 1
@@ -10974,7 +10974,7 @@ Scope in Python
 
 * **Local Scope**: This is when a variable declared inside a function or class can only be accessed within that function or class.
 
-```
+```python
 def my_func():
     num = 10
     print(num)
@@ -10982,7 +10982,7 @@ def my_func():
 
 * **Enclosing Scope**: This is when a function that's nested inside another function can access the variables of the function it's nested within.
 
-```
+```python
 def outer_func():
     msg = 'Hello there!'
     
@@ -10995,7 +10995,7 @@ print(outer_func()) # Hello there!
 
 * **Global Scope**: This refers to variables that are declared outside any functions or classes which can be accessed from anywhere in the program.
 
-```
+```python
 tax = 0.70 
 
 def get_total(subtotal):
@@ -11007,7 +11007,7 @@ print(get_total(100))  # 170.0
 
 * **Built-in Scope**: Reserved names in Python for predefined functions, modules, keywords, and objects.
 
-```
+```python
 print(str(45)) # '45'
 print(type(3.14)) # <class 'float'>
 print(isinstance(3, str)) # False
@@ -11018,37 +11018,37 @@ Comparison Operators
 
 * **Equal (`==`)**: Checks if two values are equal:
 
-```
+```python
 print(3 == 4) # False
 ```
 
 * **Not equal (`!=`)**: Checks if two values are not equal:
 
-```
+```python
 print(3 != 4) # True
 ```
 
 * **Strictly greater than (`>`)**: Checks if one value is greater than another:
 
-```
+```python
 print(3 > 4) # False
 ```
 
 * **Strictly less than (`<`)**: Checks if one value is less than another:
 
-```
+```python
 print(3 < 4) # True
 ```
 
 * **Greater than or equal(`>=`)**: Checks if one value is greater than or equal to another:
 
-```
+```python
 print(3 >= 4) # False
 ```
 
 * **Less than or equal(`<=`)**: Checks if one value is less than or equal to another:
 
-```
+```python
 print(3 <= 4) # True
 ```
 
@@ -11057,7 +11057,7 @@ Working with `if`, `elif` and `else` Statements
 
 * **`if` Statements**: These are conditions used to determine if something is true or not. If the condition evaluates to `True`, then that block of code will run.
 
-```
+```python
 age = 18
 
 if age >= 18:
@@ -11066,7 +11066,7 @@ if age >= 18:
 
 * **`elif` Clause**: These are conditions that come after an `if` statement. If the `elif` condition evaluates to `True`, then that block of code will run.
 
-```
+```python
 age = 16
 
 if age >= 18:
@@ -11077,7 +11077,7 @@ elif age >= 13:
 
 * **`else` Clause**: This will run if no other conditions evaluate to `True`.
 
-```
+```python
 age = 12
 
 if age >= 18:
@@ -11090,7 +11090,7 @@ else:
 
 You can also use nested `if` statements like this:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -11106,7 +11106,7 @@ Truthy and Falsy Values
 
 * **Definition**: In Python, every value has an inherent boolean value, or a built-in sense of whether it should be treated as `True` or `False` in a logical context. Many values are considered truthy, that is, they evaluate to `True` in a logical context. Others are falsy, meaning they evaluate to `False`. Here are some examples of falsy values:
 
-```
+```python
 None
 False
 Integer 0
@@ -11121,7 +11121,7 @@ Working with the `bool()` Function
 
 * **Definition**: If you want to check whether a value is truthy or falsy, you can use the built-in `bool()` function. It explicitly converts a value to its boolean equivalent and returns `True` for truthy values and `False` for falsy values. Here are a few examples:
 
-```
+```python
 print(bool(False)) # False
 print(bool(0))  # False
 print(bool('')) # False
@@ -11137,7 +11137,7 @@ Boolean Operators and Short-circuiting
 * **Definition**: These are special operators that allow you to combine multiple expressions to create more complex decision-making logic in your code. There are three Boolean operators in Python: `and`, `or`, and `not`.
 * **`and` Operator**: This operator takes two operands and returns the first operand if it is falsy, otherwise, it returns the second operand. Both operands must be truthy for an expression to result in a truthy value.
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -11146,7 +11146,7 @@ print(is_citizen and age) # 25
 
 You can also use the `and` operator in conditionals like this:
 
-```
+```python
 is_citizen = True
 age = 25
 
@@ -11158,7 +11158,7 @@ else:
 
 * **`or` Operator**: This operator returns the first operand if it is truthy, otherwise, it returns the second operand. An `or` expression results in a truthy value if at least one operand is truthy. Here is an example:
 
-```
+```python
 age = 19
 is_employed = False
 
@@ -11167,7 +11167,7 @@ print(age or is_employed) # 19
 
 Just like with the `and` operator, you can use the `or` operator in conditionals like this:
 
-```
+```python
 age = 19
 is_student = True
 
@@ -11180,7 +11180,7 @@ else:
 * **Short-circuiting**: The `and` and `or` operators are known as short-circuit operators. Short-circuiting means Python checks values from left to right and stops as soon as it determines the final result.
 * **`not` Operator**: This operator takes a single operand and inverts its boolean value. It converts truthy values to `False` and falsy values to `True`. Unlike the previous operators we looked at, `not` always returns `True` or `False`. Here are some examples:
 
-```
+```python
 print(not '') # True, because empty string is falsy
 print(not 'Hello') # False, because non-empty string is truthy
 print(not 0) # True, because 0 is falsy
@@ -11191,7 +11191,7 @@ print(not True) # False, because True is truthy
 
 Here is an example of the `not` operator in a conditional:
 
-```
+```python
 is_admin = False
 
 if not is_admin:
@@ -11205,20 +11205,20 @@ Python Lists
 
 * **Introduction**: In Python, the list data type is an ordered sequence of elements that can be composed of strings, numbers or even other lists. Lists are mutable and zero based indexed.
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 ```
 
 * **Accessing Elements in a List**: To access an element from the `cities` list, you can reference its index number in the sequence:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 cities[0] # Los Angeles
 ```
 
 * **Accessing Elements Using Negative Indexing**: To access the last element of any list, you can use `-1` as the index number:
 
-```
+```python
 cities = ['Los Angeles', 'London', 'Tokyo']
 cities[-1] # Tokyo
 ```
@@ -11226,7 +11226,7 @@ cities[-1] # Tokyo
 * Negative indexing is used to access elements starting from the end of the list instead of the beginning at index `0`.
 * **Creating Lists Using the `list()` constructor**: Lists can also be created using the `list()` constructor. The `list()` constructor is used to convert an iterable into a list:
 
-```
+```python
 developer = 'Jessica'
 
 print(list(developer)) 
@@ -11235,14 +11235,14 @@ print(list(developer))
 
 * **Finding the Length of a List**: You can use the `len()` function to get the length of a list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 len(numbers) # 5
 ```
 
 * **List Mutability**: Lists are mutable, meaning you can update any element in the list as long as you pass in a valid index number. To update lists at a particular index, you can assign a new value to that index:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[0] = 'JavaScript'
 print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
@@ -11250,7 +11250,7 @@ print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
 
 * **Index Out of Range Error**: If you pass in an index (either positive or negative) that is out of bounds for the list, then you will receive an `IndexError`:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[10] = 'JavaScript'
 
@@ -11263,7 +11263,7 @@ IndexError: list assignment index out of range
 
 * **Removing Elements from a List**: Elements can be removed from a list using the `del` keyword:
 
-```
+```python
 developer = ['Jane Doe', 23, 'Python Developer']
 del developer[1]
 print(developer) # ['Jane Doe', 'Python Developer']
@@ -11271,7 +11271,7 @@ print(developer) # ['Jane Doe', 'Python Developer']
 
 * **Checking if an Element Exists in a List**: The `in` keyword can be used to check if an element exists in a list:
 
-```
+```python
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
 
 'Rust' in programming_languages # True
@@ -11280,27 +11280,27 @@ programming_languages = ['Python', 'Java', 'C++', 'Rust']
 
 * **Nesting Lists**: Lists can be nested inside other lists:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 ```
 
 * To access the nested list, you will need to access it using index `2` since lists are zero-based indexed.
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 developer[2] # ['Python', 'Rust', 'C++']
 ```
 
 * To further access the second language from that nested list, you will need to access it using index `1`:
 
-```
+```python
 developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
 developer[2][1] # Rust
 ```
 
 * **Unpacking Values from a List:** Unpacking values from a list is a technique used to assign values from a list to new variables. Here is an example to unpack the `developer` list into new variables called `name`, `age` and `job` like this:
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, age, job = developer
 ```
@@ -11308,21 +11308,21 @@ name, age, job = developer
 * If the number of variables on the left side of the assignment operator doesn't match the total number of items in the list, then you will receive a `ValueError`.
 * **Collecting Remaining Items From a List**: To collect any remaining elements from a list, you can use the asterisk (`*`) operator like this:
 
-```
+```python
 developer = ['Alice', 34, 'Rust Developer']
 name, *rest = developer
 ```
 
 * **Slicing Lists**: Slicing is the concept of accessing a portion of a list by using the slice operator `:`. To slice a list that starts at index `1` and ends before index `3`, you can use the following syntax:
 
-```
+```python
 desserts = ['Cake', 'Cookies', 'Ice Cream', 'Pie']
 desserts[1:3] # ['Cookies', 'Ice Cream']
 ```
 
 * **Step Intervals**: It is also possible to specify a step interval which determines how much to increment between the indices. Here is an example if you want to extract a list of just even numbers using slicing:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5, 6]
 numbers[1::2] # [2, 4, 6]
 ```
@@ -11332,7 +11332,7 @@ List Methods
 
 * **append()**: Used to add an item to the end of the list. Here is an example of using the `append()` method to add the number `6` to this `numbers` list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.append(6)
 print(numbers) # [1, 2, 3, 4, 5, 6]
@@ -11340,7 +11340,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 * **Appending lists**: The `append()` method can also be used to add one list at the end of another:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 
@@ -11350,7 +11350,7 @@ print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
 
 * **extend()**: Used to add multiple items to the end of a list. Here is an example of adding the numbers `6`, `8`, and `10` to the end of the `numbers` list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 even_numbers = [6, 8, 10]
 
@@ -11360,7 +11360,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10]
 
 * **insert()**: Used to insert an item at a specific index in the list. Here is an example of using the `insert()` method:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.insert(2, 2.5)
 
@@ -11369,7 +11369,7 @@ print(numbers) # [1, 2, 2.5, 3, 4, 5]
 
 * **remove():** Used to remove an item from the list. The `remove()` method will only remove the first occurrence of an item in the list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5, 5, 5]
 numbers.remove(5)
 
@@ -11378,21 +11378,21 @@ print(numbers) # [1, 2, 3, 4, 5, 5]
 
 * **pop()**: Used to remove a specific item from the list and return it:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.pop(1) # The number 2 is returned
 ```
 
 * If you don't specify an element for the `pop` method, then the last element is removed.
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.pop() # The number 5 is returned
 ```
 
 * **clear()**: Used to remove all items from the list:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 numbers.clear()
 
@@ -11401,7 +11401,7 @@ print(numbers) # []
 
 * **sort()**: The `sort()` method is used to sort the elements in place. Here is an example of sorting a random list of `numbers` in place:
 
-```
+```python
 numbers = [19, 2, 35, 1, 67, 41]
 numbers.sort()
 
@@ -11410,7 +11410,7 @@ print(numbers) # [1, 2, 19, 35, 41, 67]
 
 * **sorted()**: A built-in function that returns a new sorted list instead of modifying the original list:
 
-```
+```python
 numbers = [19, 2, 35, 1, 67, 41]
 sorted_numbers = sorted(numbers)
 
@@ -11420,7 +11420,7 @@ print(numbers) # [19, 2, 35, 1, 67, 41]
 
 * **reverse()**: Used to reverse the order of the elements in a list:
 
-```
+```python
 numbers = [6, 5, 4, 3, 2, 1]
 numbers.reverse()
 
@@ -11429,7 +11429,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 * **index()**: Used to find the first index where an element can be found in a list:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 programming_languages.index('Java') # 1
 ```
@@ -11441,13 +11441,13 @@ Tuples in Python
 
 * **Definition**: A tuple is a Python data type used to create an ordered sequence of values. Tuples can contain a mixed set of data types:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 ```
 
 * Tuples are immutable, meaning the elements in the tuple cannot be changed once created. If you try to update one of the items in the tuple, you will get a `TypeError`:
 
-```
+```python
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 programming_languages[0] = 'JavaScript'
 
@@ -11460,21 +11460,21 @@ TypeError: "tuple" object does not support item assignment
 
 * **Accessing Elements from a Tuple**: To access an element from a tuple, use bracket notation and the index number:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 developer[1] # 34
 ```
 
 * Negative indexing can be used to access elements starting from the end of the tuple:
 
-```
+```python
 numbers = (1, 2, 3, 4, 5)
 numbers[-2] # 4
 ```
 
 * If you try to pass in an index number that exceeds or equals the length of the tuple, then you will receive an `IndexError`:
 
-```
+```python
 numbers = (1, 2, 3, 4, 5)
 numbers[7]
 
@@ -11487,7 +11487,7 @@ IndexError: tuple index out of range
 
 * A tuple can also be created using the `tuple()` constructor. Within the constructor, you can pass in different iterables like strings, lists and even other tuples.
 
-```
+```python
 developer = 'Jessica'
 
 print(tuple(developer)) 
@@ -11496,7 +11496,7 @@ print(tuple(developer))
 
 * **Verifying Items in a Tuple**: To check if an item is in a tuple, you can use the `in` keyword like this:
 
-```
+```python
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 
 'Rust' in programming_languages # True
@@ -11505,28 +11505,28 @@ programming_languages = ('Python', 'Java', 'C++', 'Rust')
 
 * **Unpacking Tuples**: Items can be unpacked from a tuple like this:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 name, age, job = developer
 ```
 
 * If you need to collect any remaining elements from a tuple, you can use the asterisk (`*`) operator like this:
 
-```
+```python
 developer = ('Alice', 34, 'Rust Developer')
 name, *rest = developer
 ```
 
 * **Slicing Tuples**: Slicing can be used to extract a portion of a tuple. For example, the items `pie` and `cookies` can be sliced into a separate tuple:
 
-```
+```python
 desserts = ('cake', 'pie', 'cookies', 'ice cream')
 desserts[1:3] # ('pie', 'cookies')
 ```
 
 * **Removing Items from Tuples**: Removing an item from a tuple will raise a `TypeError` as tuples are immutable:
 
-```
+```python
 developer = ('Jane Doe', 23, 'Python Developer')
 del developer[1]
 
@@ -11544,14 +11544,14 @@ Common Tuple Methods
 
 * **`count()`**: Used to determine how many times an item appears in a tuple. For example, you can check how many times the language `'Rust'` appears in the tuple:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count('Rust') # 2
 ```
 
 * If the specified item in the `count()` method is not present at all in the tuple, then the return value will be `0`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.count('JavaScript') # 0
 ```
@@ -11559,7 +11559,7 @@ programming_languages.count('JavaScript') # 0
 * If no arguments are passed to the `count()` method, then Python will return a `TypeError`.
 * **index()**: Used to find the index where a particular item is present in the tuple. Here is an example of using the `index()` method to find the index for the language `'Java'`:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
 programming_languages.index('Java') # 1
 ```
@@ -11567,28 +11567,28 @@ programming_languages.index('Java') # 1
 * If the specified item cannot be found, then Python will return a `ValueError`.
 * You can pass an optional start index to the `index()` method to specify where to start searching for the item in the tuple:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 programming_languages.index('Python', 3) # 5
 ```
 
 * You can also pass in an optional end index to the `index()` method to specify where to stop searching for the item in the tuple:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python', 'JavaScript', 'Python')
 programming_languages.index('Python', 2, 5) # 2
 ```
 
 * **`sorted()`**: Used to sort the elements in any iterable and return a new sorted list. Here is an example of creating a new list of numbers using the `sorted()` function:
 
-```
+```python
 numbers = (13, 2, 78, 3, 45, 67, 18, 7)
 sorted(numbers) # [2, 3, 7, 13, 18, 45, 67, 78]
 ```
 
 * **Modifying Sorting Behavior**: You can customize the sorting behavior for an iterable using the optional `reverse` and `key` arguments. Here is an example of using the `key` argument to sort items in a tuple by length:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 sorted(programming_languages, key=len)
 
@@ -11598,7 +11598,7 @@ sorted(programming_languages, key=len)
 
 * You can create a new list of values in reverse order, using the `reverse` argument like this:
 
-```
+```python
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 
 print(sorted(programming_languages, reverse=True))
@@ -11613,7 +11613,7 @@ Loops in Python
 * **Definition**: Loops are used to repeat a block of code for a set number of times.
 * **`for` loop**: Used to iterate over a sequence (like a list, tuple or string) and execute a block of code for each item in that sequence. Here is an example of using a `for` loop to iterate through a list and print each language to the console:
 
-```
+```python
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 
 for language in programming_languages:
@@ -11631,7 +11631,7 @@ C++
 
 * Here is an example of using a `for` loop to loop through the string `code` and print out each character:
 
-```
+```python
 for char in 'code':
     print(char)
 
@@ -11647,7 +11647,7 @@ e
 
 * `for` loops can be nested. Here is an example of using a nested `for` loop:
 
-```
+```python
 categories = ['Fruit', 'Vegetable']
 foods = ['Apple', 'Carrot', 'Banana']
 
@@ -11669,7 +11669,7 @@ Vegetable Banana
 
 * **`while` loop**: Repeats a block of code until the condition is `False`. Here is an example of using a `while` loop for a guessing game:
 
-```
+```python
 secret_number = 3
 guess = 0
 
@@ -11695,7 +11695,7 @@ You got it!
 * **`break` and `continue` statements**: Used in loops to modify the execution of a loop.
 * The `break` statement is used to exit the loop immediately when a certain condition is met. Here is an example of using the `break` statement for a list of `developer_names`:
 
-```
+```python
 developer_names = ['Jess', 'Naomi', 'Tom']
 
 for developer in developer_names:
@@ -11706,7 +11706,7 @@ for developer in developer_names:
 
 * The `continue` statement is used to skip that current iteration and move onto the next iteration of the loop. Here is an example to use the `continue` statement instead of a `break` statement:
 
-```
+```python
 developer_names = ['Jess', 'Naomi', 'Tom']
 
 for developer in developer_names:
@@ -11717,7 +11717,7 @@ for developer in developer_names:
 
 * Both `for` and `while` loops can be combined with an `else` clause, which is executed only when the loop was not terminated by a `break`:
 
-```
+```python
 words = ['sky', 'apple', 'rhythm', 'fly', 'orange']
 
 for word in words:
@@ -11734,20 +11734,20 @@ Ranges and Their Use in Loops
 
 * **The `range()` function**: Used to generate a sequence of integers.
 
-```
+```python
 range(start, stop, step)
 ```
 
 * The required `stop` argument is an integer (non-inclusive) that represents the end point for the sequence of numbers being generated. Here is an example of using the `range()` function:
 
-```
+```python
 for num in range(3):
     print(num)
 ```
 
 * If a `start` argument is not specified, then the default will be `0`. By default the sequence of integers will increment by `1`. You can use the optional `step` argument to change the default increment value. Here is an example of generating a sequence of even integers from 2 up to but not including 11 (i.e., includes 10)
 
-```
+```python
 for num in range(2, 11, 2):
     print(num)
 ```
@@ -11755,7 +11755,7 @@ for num in range(2, 11, 2):
 * If you don't provide any arguments to the `range()` function, then you will get a `TypeError`.
 * The `range()` function only accepts integers for arguments and not floats. Using floats will also result in a `TypeError`:
 
-```
+```python
 ERROR!
 Traceback (most recent call last):
   File "<main.py>", line 1, in <module>
@@ -11764,14 +11764,14 @@ TypeError: 'float' object cannot be interpreted as an integer
 
 * You can use a negative integer for the `step` argument to generate a sequence of integers in decrementing order:
 
-```
+```python
 for num in range(40, 0, -10):
     print(num)
 ```
 
 * The `range()` function can also be used to create a list of integers by using it with the `list` constructor. The `list` constructor is used to convert an iterable into a list. Here is an example of generating a list of even integers between 2 and 10 inclusive:
 
-```
+```python
 numbers = list(range(2, 11, 2))
 print(numbers) # [2, 4, 6, 8, 10]
 ```
@@ -11781,7 +11781,7 @@ print(numbers) # [2, 4, 6, 8, 10]
 
 * **`enumerate()`**: used to iterate over a sequence and keep track of the index for each item in that sequence. The `enumerate()` function takes an iterable as an argument and returns an `enumerate` object that consist of the index and value of each item in the iterable.
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 for index, language in enumerate(languages):
@@ -11796,7 +11796,7 @@ for index, language in enumerate(languages):
 
 * The `enumerate()` function can also be used outside of a `for` loop:
 
-```
+```python
 languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 print(list(enumerate(languages)))
@@ -11806,7 +11806,7 @@ print(list(enumerate(languages)))
 * The `enumerate()` function also accepts an optional `start` argument that specifies the starting value for the count. If this argument is omitted, then the count will begin at `0`.
 * **`zip()`** : Used to iterate over multiple iterables in parallel. Here's an example using the `zip()` function to iterate over `developers` and `ids`:
 
-```
+```python
 developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
 ids = [1, 2, 3, 4]
 
@@ -11834,7 +11834,7 @@ List Comprehensions in Python
 
 * **Definition**: List comprehension allows you to create a new list in a single line by combining the loop and the condition directly within square brackets. This makes the code shorter and often easier to read.
 
-```
+```python
 even_numbers = [num for num in range(21) if num % 2 == 0]
 print(even_numbers)
 ```
@@ -11844,7 +11844,7 @@ Iterable Functions
 
 * **`filter()`**: Used to filter elements from an iterable based on a condition. It returns an iterator that contains only the elements that satisfy the condition. Here is an example of creating a new list of just words longer than four characters:
 
-```
+```python
 words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
 
 def is_long_word(word):
@@ -11856,7 +11856,7 @@ print(long_words) # ['mountain', 'river', 'cloud']
 
 * **`map()`**: Used to apply a function to each item in an iterable and return a new iterable with the results. Here is an example of using the `map()` function to convert a list of celsius temperatures to fahrenheit:
 
-```
+```python
 celsius = [0, 10, 20, 30, 40]
 
 def to_fahrenheit(temp):
@@ -11868,7 +11868,7 @@ print(fahrenheit) # [32.0, 50.0, 68.0, 86.0, 104.0]
 
 * **`sum()`**: Used to get the sum from an iterable like a list or tuple. Here is an example of using the `sum()` function:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers)
 print(total) # Result: 50
@@ -11876,7 +11876,7 @@ print(total) # Result: 50
 
 * You can also pass in an optional `start` argument which sets the initial value for the summation. Here is an updated example using the `start` argument as a positional argument:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers, 10) # positional argument
 print(total) # 60
@@ -11884,7 +11884,7 @@ print(total) # 60
 
 * You can also choose to use the `start` argument as a keyword argument like this instead:
 
-```
+```python
 numbers = [5, 10, 15, 20]
 total = sum(numbers, start=10) # keyword argument
 print(total) # 60
@@ -11896,7 +11896,7 @@ Lambda Functions
 * **Definition**: A lambda function in Python is a concise way to create a function without a name (an anonymous function).
 * Lambda functions are often used as an argument to another function. Here is an example of a lambda function:
 
-```
+```python
 numbers = [1, 2, 3, 4, 5]
 
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
@@ -11910,7 +11910,7 @@ Dictionaries
 
 * **Dictionaries**: Dictionaries are built-in data structures that store collections of key-value pairs. Keys need to be immutable data types. This is the general syntax of a Python dictionary:
 
-```
+```python
 dictionary = {
     key1: value1,
     key2: value2
@@ -11919,13 +11919,13 @@ dictionary = {
 
 * **`dict()` Constructor**: The `dict()` constructor is an alternative way to build the dictionary. You pass a list of tuples as an argument to the `dict()` constructor. These tuples contain the key as the first element and the value as the second element.
 
-```
+```python
 pizza = dict([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250), ('toppings', ['mozzarella', 'basil'])])
 ```
 
 * **Bracket Notation**: To access the value of a key-value pair, you can use the syntax known as bracket notation.
 
-```
+```python
 dictionary[key]
 ```
 
@@ -11934,13 +11934,13 @@ Common Dictionary Methods
 
 * **`get()` Method**: The `get()` method retrieves the value associated with a key. It's similar to the bracket notation, but it lets you set a default value, preventing errors if the key doesn't exist.
 
-```
+```python
 dictionary.get(key, default)
 ```
 
 * **`keys()` and `values()` Methods**: The `keys()` and `values()` methods return a view object with all the keys and values in the dictionary, respectively. A view object is a way to see the content of a dictionary without creating a separate copy of the data.
 
-```
+```python
 pizza = {
     'name': 'Margherita Pizza',
     'price': 8.9,
@@ -11956,33 +11956,33 @@ pizza.values()
 
 * **`items()` Method**: The `items()` method returns a view object with all the key-value pairs in the dictionary, including both the keys and the values.
 
-```
+```python
 pizza.items()
 # dict_items([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250)])
 ```
 
 * **`clear()` Method**: The `clear()` method removes all the key-value pairs from the dictionary.
 
-```
+```python
 pizza.clear()
 ```
 
 * **`pop()` Method**: The `pop()` method removes the key-value pair with the key specified as the first argument and returns its value. If the key doesn't exist, it returns the default value specified as the second argument. If the key doesn't exist and the default value is not specified, a `KeyError` is raised.
 
-```
+```python
 pizza.pop('price', 10)
 pizza.pop('total_price') # KeyError
 ```
 
 * **`popitem()` Method**: In Python 3.7 and above, the `popitem()` method removes the last inserted item.
 
-```
+```python
 pizza.popitem()
 ```
 
 * **`update()` Method**: The `update()` method updates the key-value pairs with the key-value pairs of another dictionary. If they have keys in common, their values are overwritten. New keys will be added to the dictionary as new key-value pairs.
 
-```
+```python
 pizza.update({ 'price': 15, 'total_time': 25 })
 ```
 
@@ -11991,7 +11991,7 @@ Looping Over a Dictionary
 
 * **Iterating Over Values**: If you need to iterate over the values in a dictionary, you can write a `for` loop with `values()` to get all the values of a dictionary.
 
-```
+```python
 products = {
     'Laptop': 990,
     'Smartphone': 600,
@@ -12005,7 +12005,7 @@ for price in products.values():
 
 Output:
 
-```
+```python
 990
 600
 250
@@ -12014,7 +12014,7 @@ Output:
 
 * **Iterating Over Keys**: If you need to iterate over the keys in the `products` dictionary above, you can write `products.keys()` or `products` directly.
 
-```
+```python
 for product in products.keys():
     print(product)
     
@@ -12026,7 +12026,7 @@ for product in products:
 
 Output:
 
-```
+```python
 Laptop
 Smartphone
 Tablet
@@ -12035,14 +12035,14 @@ Headphones
 
 * **Iterating Over Key-Value Pairs**: If you need to iterate over the keys and their corresponding values simultaneously, you can iterate over `products.items()`. You get individual tuples with the keys and their corresponding values.
 
-```
+```python
 for product in products.items():
     print(product)
 ```
 
 Output:
 
-```
+```python
 ('Laptop', 990)
 ('Smartphone', 600)
 ('Tablet', 250)
@@ -12051,14 +12051,14 @@ Output:
 
 To store the key and value in separate loop variables, you need to separate them with a comma. The first variable stores the key, and the second stores the value.
 
-```
+```python
 for product, price in products.items():
     print(product, price)
 ```
 
 Output:
 
-```
+```python
 Laptop 990
 Smartphone 600
 Tablet 250
@@ -12069,14 +12069,14 @@ Headphones 70
 
 Assigning the index and item to separate loop variables is the common way to use `enumerate()`. For example, with `products.items()`, you can get the entire key-value pair in addition to the index:
 
-```
+```python
 for index, product in enumerate(products.items()):
     print(index, product)
 ```
 
 Output:
 
-```
+```python
 0 ('Laptop', 990)
 1 ('Smartphone', 600)
 2 ('Tablet', 250)
@@ -12085,14 +12085,14 @@ Output:
 
 To customize the initial value of the count, you can pass a second argument to `enumerate()`. For example, here we are starting the count from 1.
 
-```
+```python
 for index, product in enumerate(products.items(), 1):
     print(index, product)
 ```
 
 Output:
 
-```
+```python
 1 ('Laptop', 990)
 2 ('Smartphone', 600)
 3 ('Tablet', 250)
@@ -12105,13 +12105,13 @@ Sets
 * **Sets**: Sets are built-in data structures in Python that do not allow duplicate values. Sets are mutable and unordered, which means that their elements are not stored in any specific order, so you cannot use indices or keys to access them. Also, sets can only contain values of immutable data types, like numbers, strings, and tuples.
 * **Defining a Set**: To define a set, you need to write its elements within curly brackets and separate them with commas.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 ```
 
 * **Defining an Empty Set**: If you need to define an empty set, you must use the `set()` function. Only writing empty curly braces will automatically create a dictionary.
 
-```
+```python
 set() # Set
 {}    # Dictionary
 ```
@@ -12121,20 +12121,20 @@ Common Set Methods
 
 * **`add()` Method**: You can add an element to a set with the `add()` method, passing the new element as an argument.
 
-```
+```python
 my_set.add(6)
 ```
 
 * **`remove()` and `discard()` Methods**: To remove an element from a set, you can either use the `remove()` method or the `discard()` method, passing the element you want to remove as an argument. The `remove()` method will raise a `KeyError` if the element is not found while the `discard()` method will not.
 
-```
+```python
 my_set.remove(4)
 my_set.discard(4)
 ```
 
 * **`clear()` method**: The `clear()` method removes all the elements from the set.
 
-```
+```python
 my_set.clear()
 ```
 
@@ -12143,7 +12143,7 @@ Mathematical Set Operations
 
 * **`issubset()` and `issuperset()` Methods**: The `issubset()` and the `issuperset()` methods check if a set is a subset or superset of another set, respectively.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 5}
 
@@ -12153,7 +12153,7 @@ print(my_set.issuperset(your_set)) # True
 
 * **`isdisjoint()` Method**: The `isdisjoint()` method checks if two sets are disjoint, if they don't have elements in common.
 
-```
+```python
 my_set = {1, 2, 3}
 your_set = {4, 5, 6}
 
@@ -12162,7 +12162,7 @@ print(my_set.isdisjoint(your_set)) # True
 
 * **Union Operator (`|`)**: The union operator `|` returns a new set with all the elements from both sets.
 
-```
+```python
 my_set = {1, 2, 3}
 your_set = {4, 5, 6}
 
@@ -12171,7 +12171,7 @@ my_set | your_set # {1, 2, 3, 4, 5, 6}
 
 * **Intersection Operator (`&`)**: The intersection operator `&` returns a new set with only the elements that the sets have in common.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -12180,7 +12180,7 @@ my_set & your_set # {2, 3, 4}
 
 * **Difference Operator (`-`)**: The difference operator `-` returns a new set with the elements of the first set that are not in the other set.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -12189,7 +12189,7 @@ my_set - your_set # {1, 5}
 
 * **Symmetric Difference Operator (`^`)**: The symmetric difference operator `^` returns a new set with the elements that are either in the first or the second set, but not both.
 
-```
+```python
 my_set = {1, 2, 3, 4, 5}
 your_set = {2, 3, 4, 6}
 
@@ -12198,7 +12198,7 @@ my_set ^ your_set # {1, 5, 6}
 
 * **`in` Operator**: You can check if an element is in a set or not with the `in` operator.
 
-```
+```python
 print(5 in my_set)
 ```
 
@@ -12213,19 +12213,19 @@ Import Statement
 * **Import Statement**: To access the elements defined in built-in modules, you use an import statement. Import statements are generally written at the top of the file. Import statements work the same for functions, classes, constants, variables, and any other elements defined in the module.
 * **Basic Import Statement**: You can use the `import` keyword followed by the name of the module:
 
-```
+```python
 import module_name
 ```
 
 Then, if you need to call a function from that module, you would use dot notation, with the name of the module followed by the name of the function.
 
-```
+```python
 module_name.function_name()
 ```
 
 For example, you would write the following in your code to import the `math` module and get the square root of 36:
 
-```
+```python
 import math
 
 math.sqrt(36)
@@ -12233,31 +12233,31 @@ math.sqrt(36)
 
 * **Importing a Module with a Different Name**: If you need to import the module with a different name (also known as an "alias"), you can use `as` followed by the alias at the end of the import statement. This is often used for long module names or to avoid naming conflicts.
 
-```
+```python
 import module_name as module_alias
 ```
 
 For example, to refer to the `math` module as `m` in your code, you can assign an alias like this:
 
-```
+```python
 import math as m
 ```
 
 Then, you can access the elements of the module using the alias:
 
-```
+```python
 m.sqrt(36)
 ```
 
 * **Importing Specific Elements**: If you don't need everything from a module, you can import specific elements using `from`. In this case, the import statement starts with `from`, followed by the module name, then the `import` keyword, and finally the names of the elements you want to import.
 
-```
+```python
 from module_name import name1, name2
 ```
 
 Then, you can use these names without the module prefix in your Python script. For example:
 
-```
+```python
 from math import radians, sin, cos
 
 angle_degrees = 40
@@ -12274,19 +12274,19 @@ This is helpful, but it can result in naming conflicts if you already have funct
 
 If you need to assign aliases to these names, you can do so as well, using the `as` keyword followed by the alias.
 
-```
+```python
 from module_name import name1 as alias1, name2 as alias2
 ```
 
 * **Import Statement with Asterisk (`*`)**: The asterisk tells Python that you want to import everything in that module, but you want to import it so that you don't need to use the name of the module as a prefix.
 
-```
+```python
 from module_name import *
 ```
 
 For example, if you use this to import the `math` module, you'll be able to call any function defined in that module without specifying the name of the module as a prefix.
 
-```
+```python
 from math import *
 print(sqrt(36))  # 6.0
 ```
@@ -12300,7 +12300,7 @@ However, this is generally discouraged because it can lead to namespace collisio
 
 This is why you'll often find this conditional in Python scripts. It contains the code that you only want to run **only** if the Python script is running as the main program.
 
-```
+```python
 if __name__ == '__main__': 
     # Code
 ```
@@ -12382,7 +12382,7 @@ Exception Signaling
 
 The `raise` statement is also useful when you create your own custom exceptions, as you can use it to throw an exception with a custom message. Here's an example of that:
 
-```
+```python
 class InvalidCredentialsError(Exception):
     def __init__(self, message="Invalid username or password"):
         self.message = message
@@ -12400,7 +12400,7 @@ def login(username, password):
 
 Here's a how you can use the `login` function with the `InvalidCredentialsError` exception:
 
-```
+```python
 # failed login attempt
 try:
     message = login("user", "wrongpassword")
@@ -12422,7 +12422,7 @@ else:
 
 The `raise` statement can also be used with the `from` keyword to chain exceptions, showing the relationship between different errors:
 
-```
+```python
 def parse_config(filename):
   try:
       with open(filename, 'r') as file:
@@ -12441,7 +12441,7 @@ Python Classes and Objects
 
 * **Class Definition**: A class is a blueprint for creating objects. It defines the behavior an object will have through its attributes and methods. Here is a basic example of a class definition in Python:
 
-```
+```python
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -12453,7 +12453,7 @@ class Dog:
 
 * **Creating Objects**: Objects are instances of a class. They are created by calling the class with the necessary arguments.
 
-```
+```python
 dog1 = Dog('Jack', 3)
 dog2 = Dog('Thatcher', 5)
 
@@ -12463,7 +12463,7 @@ dog2.bark()  # THATCHER says woof woof!
 
 * **Calling Methods on Objects**: You can call methods on objects to perform actions or retrieve information.
 
-```
+```python
 object_name1.method_name()
 object_name2.method_name()
 ```
@@ -12476,7 +12476,7 @@ Attributes
 * **Instance Attributes**: Defined in `__init__()` using `self`, and unique to each object.
 * **Class Attributes**: Defined directly inside the class and shared by all instances.
 
-```
+```python
 class Dog:
     species = 'French Bulldog'  # Class attribute
 
@@ -12495,7 +12495,7 @@ Methods
 
 * **Methods**: Functions defined inside a class that operate on the object's attributes.
 
-```
+```python
 class Car:
     def __init__(self, color, model):
         self.color = color
@@ -12510,7 +12510,7 @@ print(my_car_1.describe())  # This car is a red Tesla Model S
 
 * **Accessing Methods**: Call methods on objects using the dot notation. Here is an example of calling the `describe` method on two different car objects:
 
-```
+```python
 class Car:
     def __init__(self, color, model):
         self.color = color  
@@ -12532,7 +12532,7 @@ Dunder (Magic) Methods
 
 * **Definition**: Special methods that start and end with a double underscore (e.g., `__init__`, `__len__`, `__str__`, `__eq__`). Python uses them internally for built-in operations.
 
-```
+```python
 class Book:
     def __init__(self, title, pages):
         self.title = title
@@ -12564,7 +12564,7 @@ Real World Example: Shopping Cart
 
 * **Cart Class with Dunder Methods**: Allows adding, removing, iterating, and checking contents with built-in behavior.
 
-```
+```python
 class Cart:
     def __init__(self):
         self.items = []
@@ -12611,7 +12611,7 @@ What is Encapsulation?
 * **Encapsulation**: The bundling of the attributes and methods of an object into a single unit. It lets you hide the internal state of the object behind a simple set of public methods and attributes that act like doors. Behind those doors are private attributes and methods that control how the data changes and who can see it.
 * **Example of Encapsulation**: If you want to track a wallet balance, you will allow deposit and withdrawal, but you won't want anyone to tamper with the wallet balance itself:
 
-```
+```python
 class Wallet:
    def __init__(self, balance):
        self.__balance = balance # Private attribute
@@ -12638,7 +12638,7 @@ What Are Getters and Setters?
 * **Why Properties Instead of Methods**: Properties are used instead of methods for better readability and cleaner code. They let you access values with dot notation, like regular attributes, without parentheses.
 * **Creating a Getter**: To create a getter, you use the `@property` decorator. Here's a getter that gets the radius of a circle:
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self.radius = radius # Calling the setter
@@ -12661,7 +12661,7 @@ Using self.radius inside `__init__()` ensures the setter runs during object crea
 
 * **Creating a Setter**: To create the setter that will set the radius, you have to define another method with the same name and use `@<property_name>.setter` above it:
 
-```
+```python
 class Circle:
     def __init__(self, radius):
         self.radius = radius # Calling the setter
@@ -12685,7 +12685,7 @@ print('After modifying the radius:', my_circle.radius) # After modifying the rad
 
 * **How Python Handles Getters and Setters**: Once you define getters and setters, Python automatically calls them under the hood whenever you use normal attribute syntax this way:
 
-```
+```python
 my_circle.radius # This will call the getter
 my_circle.radius = 4 # This will call the setter
 ```
@@ -12694,7 +12694,7 @@ Inside the setter, you should not assign to the property name itself because tha
 
 * **Deleter**: After setting and getting a value with setter and getter, you can control how it is deleted with a `deleter`. A deleter runs custom logic when you use the `del` statement on a property. To create a deleter, you use the `@<property_name>.deleter` decorator.
 
-```
+```python
   # Deleter
     @radius.deleter
     def radius(self):
@@ -12707,7 +12707,7 @@ What Is Inheritance and How Does It Promote Code Reuse?
 
 * **Inheritance**: The process by which a child class uses the attributes and methods of a parent class. Inheritance promotes code reuse, provides clear hierarchies, and customizes behavior without rewriting everything. To implement inheritance, a child class takes in the name of a parent class:
 
-```
+```python
 class Parent:
     # Parent attributes and methods
 
@@ -12717,7 +12717,7 @@ class Child(Parent):
 
 * **Single and Multiple Inheritance**: When a child class inherits properties and methods from a single parent, as you can see above, the process is called **single inheritance**. When a child class inherits properties and methods from more than one parent, that is **multiple inheritance**. Here's the syntax for that:
 
-```
+```python
 class Parent:
     # Attributes and methods for Parent
 
@@ -12736,7 +12736,7 @@ What Is Polymorphism and How Does It Promote Code Reuse?
 
 * **Polymorphism**: The OOP principle that lets different classes use the same method name, but each class implements it differently when called. Here's the syntax for it:
 
-```
+```python
 class A:
    def action(self): ...
 
@@ -12757,7 +12757,7 @@ What is Name Mangling and How Does it Work?
 * **Name Mangling**: A process in which Python internally renames an attribute prefixed with a double underscore by adding an underscore and the class name as a prefix, turning `__attribute` into `_ClassName__attribute`.
 * **The Purpose of Name Mangling**: The main purpose of name mangling is to prevent accidental attribute and method overriding when you use inheritance. Here's a code that makes that more understandable:
 
-```
+```python
 class Parent:
     def __init__(self):
         self.__data = 'Parent data'
@@ -12779,7 +12779,7 @@ What Is Abstraction and How Does It Help Keep Complex Systems Organized?
 * **How Python Implements Abstraction**: Python implements abstraction through the `abc` module. The module provides the `ABC` class (abstract base class) and the `@abstractmethod` decorator. An abstract base class (ABC) defines the common methods and properties subclasses must implement. It can't be instantiated.
 * **How Abstract Method is Defined**: An abstract method is defined with `@abstractmethod` and must be overridden in subclasses, even if it has a default implementation. The basic syntax of abstraction looks like this:
 
-```
+```python
 from abc import ABC, abstractmethod
 
 # Define an abstract base class
@@ -12809,7 +12809,7 @@ Algorithms and Big O Notation
 
 * **O(1) - Constant Time**: Algorithm takes the same amount of time regardless of input size.
 
-```
+```python
 def check_even_or_odd(number):
     if number % 2 == 0:
         return 'Even'
@@ -12820,7 +12820,7 @@ def check_even_or_odd(number):
 * **O(log n) - Logarithmic Time**: Time increases slowly as input grows. Common in algorithms that repeatedly reduce problem size by a fraction (like Binary Search).
 * **O(n) - Linear Time**: Running time increases proportionally to input size.
 
-```
+```python
 for grade in grades:
     print(grade)
 ```
@@ -12828,7 +12828,7 @@ for grade in grades:
 * **O(n log n) - Log-Linear Time**: Common time complexity of efficient sorting algorithms like Merge Sort and Quick Sort.
 * **O(n²) - Quadratic Time**: Running time increases quadratically. Often seen in nested loops.
 
-```
+```python
 for i in range(n):
     for j in range(n):
         print("Hello, World!")
@@ -12846,7 +12846,7 @@ Problem-Solving Techniques
 * **Understanding the Problem**: Read the problem statement multiple times. Identify the input, expected output, and how to transform input to output.
 * **Pseudocode**: High-level description of algorithm logic that is language-independent. Uses common written language mixed with programming constructs like `IF`, `ELSE`, `FOR`, `WHILE`.
 
-```
+```python
 GET original_string
 SET reversed_string = ""
 FOR EACH character IN original_string:
@@ -12864,7 +12864,7 @@ Arrays
 
 ### Python Lists (Dynamic Arrays)
 
-```
+```python
 numbers = [3, 4, 5, 6]
 
 # Access elements
@@ -12896,7 +12896,7 @@ Stacks
 * **Push Operation**: Adding an element to the top of the stack. Time complexity: O(1).
 * **Pop Operation**: Removing an element from the top of the stack. Time complexity: O(1).
 
-```
+```python
 # Using Python list as stack
 stack = []
 
@@ -12916,7 +12916,7 @@ Queues
 * **Enqueue Operation**: Adding an element to the back of the queue. Time complexity: O(1).
 * **Dequeue Operation**: Removing an element from the front of the queue. Time complexity: O(1).
 
-```
+```python
 from collections import deque
 
 # Using deque for efficient queue operations
@@ -12968,7 +12968,7 @@ Hash Maps and Sets
 
 ### Python Dictionaries (Hash Maps)
 
-```
+```python
 # Creating dictionaries
 my_dictionary = {
     "A": 1,
@@ -13003,7 +13003,7 @@ my_dictionary.items()
 * **Sets**: Unordered collections of unique elements. No duplicates allowed, no specific order maintained.
 * **Immutable Elements Only**: Sets can only contain immutable data types (numbers, strings, tuples) because hash values must remain constant.
 
-```
+```python
 # Creating sets
 numbers = {1, 2, 3, 4}
 empty_set = set()  # Must use set(), not {}
@@ -13206,7 +13206,7 @@ The heap property determines the relationship between parent and child nodes. Th
 
 ### Python `heapq` module example
 
-```
+```python
 import heapq
 
 # Create empty heap
@@ -13233,7 +13233,7 @@ heapq.heapify(nums)
 
 ### Using Priorities
 
-```
+```python
 my_heap = []
 heapq.heappush(my_heap, (3, "A"))
 heapq.heappush(my_heap, (2, "B"))
@@ -13255,7 +13255,7 @@ Dynamic Programming Solutions
 
 * **Memoization (Top-Down Approach)**: Memoization stores the results of expensive function calls and returns the cached result when the same inputs occur again.
 
-```
+```python
 def climb_stairs_memo(n, memo={}):
     """Dynamic programming with memoization"""
     # Check if we've already calculated this value
@@ -13273,7 +13273,7 @@ def climb_stairs_memo(n, memo={}):
 
 * **Tabulation (Bottom-Up Approach)**: Tabulation builds the solution from the ground up, filling a table with solutions to subproblems.
 
-```
+```python
 def climb_stairs_tabulation(n):
     """Dynamic programming with tabulation"""
     if n <= 2:
